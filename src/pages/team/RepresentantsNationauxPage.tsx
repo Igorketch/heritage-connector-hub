@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Globe, Stethoscope, Crown, Users, Sparkles, HandHeart, MapPin, Award, BookOpen, GraduationCap, Building2 } from 'lucide-react';
+import { Globe, Stethoscope, Crown, Users, Sparkles, HandHeart, MapPin, Award, BookOpen, GraduationCap, Building2, Theater, Medal, Tv } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
@@ -7,6 +7,7 @@ import reginaPortrait from '@/assets/regina-portrait.png';
 import persidePortrait from '@/assets/perside-portrait.png';
 import pepertuaPortrait from '@/assets/pepertua-portrait-refined.jpeg';
 import florencePortrait from '@/assets/florence-portrait.png';
+import massanPortrait from '@/assets/massan-portrait.png';
 
 const representantsData: Record<Language, TeamMember[]> = {
   fr: [
@@ -75,6 +76,23 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Building2, title: "Conseils d'Administration", description: "Membre du Conseil du Bui Family Union (USA) et de Bongkisheri Diaspora (USA)" }
       ],
       quote: "Œuvrer pour la préservation du patrimoine africain, la transmission des savoirs autochtones et le renforcement de la solidarité diasporique."
+    },
+    {
+      name: "Maman Massan A Biroko",
+      role: "Membre d'Honneur • Représentante Pays • Cameroun",
+      portrait: massanPortrait,
+      bio: [
+        "Maman Massan A Biroko est une artiste camerounaise dont la carrière débute dans les années 1986, inscrite au cœur du développement théâtral et culturel du Cameroun. Fondatrice de la Compagnie LABYMAN, elle participe très tôt à des créations majeures, à l'organisation de festivals et aux Rencontres Théâtrales Internationales du Cameroun. Son parcours se distingue par une présence constante sur les scènes nationales et internationales.",
+        "Dans les années 2000, elle joue un rôle clé dans la mise en place et l'essor du Festival International de Théâtre pour le Développement. Initiatrice et coproductrice du festival Mbam-arts, conteuse dans l'âme, son engagement artistique et social lui vaut les grades de Chevalier, Officier et Commandeur de l'Ordre de la Valeur.",
+        "Pionnière de l'Association Mandjara de Douala (ASMADLA), elle a joué un rôle déterminant dans ses premières étapes d'organisation et son ancrage institutionnel. Elle occupe aujourd'hui un rôle honorifique et représentatif au sein d'International Mandjara Heritage, contribuant au rayonnement international du mouvement Mandjara et agissant comme mémoire institutionnelle et corporative."
+      ],
+      achievements: [
+        { icon: Theater, title: "Fondatrice Cie LABYMAN", description: "Carrière théâtrale depuis 1986, créations majeures sur les scènes nationales et internationales" },
+        { icon: Medal, title: "Commandeur de l'Ordre de la Valeur", description: "Distinctions honorifiques : Chevalier, Officier et Commandeur de l'Ordre de la Valeur" },
+        { icon: Tv, title: "Cinéma & Télévision", description: "Depuis 2014, présence dans des films, séries et productions publicitaires camerounaises" },
+        { icon: Users, title: "Pionnière ASMADLA", description: "Rôle déterminant dans la fondation et l'ancrage institutionnel de l'Association Mandjara de Douala" }
+      ],
+      quote: "Artiste polyvalente, formatrice, bâtisseuse culturelle et gardienne de mémoire, une figure majeure du patrimoine artistique et communautaire camerounais."
     }
   ],
   en: [
@@ -143,6 +161,23 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Building2, title: "Board Member", description: "Board Member of Bui Family Union (USA) and Bongkisheri Diaspora (USA)" }
       ],
       quote: "Advancing the preservation of African heritage, the transmission of indigenous knowledge systems, and the consolidation of diaspora solidarity."
+    },
+    {
+      name: "Maman Massan A Biroko",
+      role: "Honorary Member • Country Representative • Cameroon",
+      portrait: massanPortrait,
+      bio: [
+        "Maman Massan A Biroko is a Cameroonian artist whose career began in 1986, at the heart of Cameroon's theatrical and cultural development. Founder of the LABYMAN Company, she participated early on in major productions, festival organization and the International Theatre Encounters of Cameroon. Her career is marked by a constant presence on national and international stages.",
+        "In the 2000s, she played a key role in establishing the International Theatre Festival for Development. Initiator and co-producer of the Mbam-arts festival, a storyteller at heart, her artistic and social commitment earned her the ranks of Knight, Officer and Commander of the Order of Valor.",
+        "A pioneer of the Mandjara Association of Douala (ASMADLA), she played a decisive role in its early organizational stages and institutional anchoring. She now holds an honorary and representative role within International Mandjara Heritage, contributing to the international outreach of the Mandjara movement and serving as institutional and corporate memory."
+      ],
+      achievements: [
+        { icon: Theater, title: "Founder of LABYMAN Co.", description: "Theatre career since 1986, major productions on national and international stages" },
+        { icon: Medal, title: "Commander of the Order of Valor", description: "Honorary distinctions: Knight, Officer and Commander of the Order of Valor" },
+        { icon: Tv, title: "Cinema & Television", description: "Since 2014, appearances in Cameroonian films, series and advertising productions" },
+        { icon: Users, title: "ASMADLA Pioneer", description: "Decisive role in founding and institutionally anchoring the Mandjara Association of Douala" }
+      ],
+      quote: "A versatile artist, trainer, cultural builder and guardian of memory, a major figure of Cameroon's artistic and community heritage."
     }
   ]
 };
