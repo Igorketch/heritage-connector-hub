@@ -13,6 +13,7 @@ const representantsData: Record<Language, TeamMember[]> = {
       name: "Reine mère Regina Fonyuy Wirba",
       role: "Représentante Pays • Cameroun • Communauté Nso'",
       portrait: reginaPortrait,
+      portraitPosition: 'center 20%',
       bio: [
         "L'honorable Reine mère Regina Fonyuy Wirba est une infirmière anesthésiste engagée et une figure communautaire respectée, originaire de Jakiri, au sein de la communauté Nso'. Elle conjugue expertise professionnelle en santé et engagement communautaire au service du bien-être et de l'autonomisation des femmes.",
         "En reconnaissance de son dévouement et de son rôle fédérateur, elle a été honorée du titre de « Reine Mère de Bongkisheri Douala », une distinction symbolisant sa sagesse, son sens du service et son influence positive au sein de la communauté."
@@ -63,6 +64,7 @@ const representantsData: Record<Language, TeamMember[]> = {
       name: "Queen Mother Regina Fonyuy Wirba",
       role: "Country Representative • Cameroon • Nso' Community",
       portrait: reginaPortrait,
+      portraitPosition: 'center 20%',
       bio: [
         "The Honorable Queen Mother Regina Fonyuy Wirba is a committed nurse anesthetist and a respected community figure, originally from Jakiri within the Nso' community. She combines professional healthcare expertise with community engagement in the service of well-being and women's empowerment.",
         "In recognition of her dedication and unifying role, she was honored with the title of 'Queen Mother of Bongkisheri Douala,' a distinction symbolizing her wisdom, sense of service and positive influence within the community."
