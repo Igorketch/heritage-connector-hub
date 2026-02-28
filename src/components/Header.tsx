@@ -94,9 +94,6 @@ export const Header = () => {
                     className="absolute top-full left-0 mt-2 w-64 bg-heritage-earth border border-heritage-gold/20 rounded-lg shadow-xl overflow-hidden z-50"
                   >
                     <div className="py-2">
-                      <Link to="/team" className="block px-4 py-2 text-sm text-heritage-cream/90 hover:text-heritage-gold hover:bg-heritage-gold/10 transition-colors font-medium border-b border-heritage-gold/10">
-                        {t('nav.team.all')}
-                      </Link>
                       {teamSubLinks.map(subLink => (
                         <Link key={subLink.href} to={subLink.href} className="block px-4 py-2.5 text-sm text-heritage-cream/80 hover:text-heritage-gold hover:bg-heritage-gold/10 transition-colors">
                           {subLink.name}
@@ -158,9 +155,6 @@ export const Header = () => {
                     {isMobileTeamOpen && (
                       <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
                         <div className="ml-4 mt-1 space-y-1 border-l-2 border-heritage-gold/30 pl-4">
-                          <Link to="/team" className="block py-2 text-sm text-heritage-cream/80 hover:text-heritage-gold transition-colors font-medium">
-                            {t('nav.team.all')}
-                          </Link>
                           {teamSubLinks.map(subLink => (
                             <Link key={subLink.href} to={subLink.href} className="block py-2 text-sm text-heritage-cream/70 hover:text-heritage-gold transition-colors">
                               {subLink.name}
