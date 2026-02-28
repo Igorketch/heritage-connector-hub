@@ -11,7 +11,7 @@ const PeoplesPage = () => {
 
   const peoples = [
     {
-      name: 'Les Bamoun',
+      name: 'The Bamoun',
       region: 'Noun Region, Cameroon',
       image: bamounImage,
       description: 'Exceptional artistic and cultural heritage, including the writing system invented by King Njoya at the end of the 19th century.',
