@@ -288,6 +288,19 @@ const translations: Record<Language, Record<string, string>> = {
     // Parrains Page
     'team.parrains.coming_title': 'Section à venir',
     'team.parrains.coming_desc': 'Les parrains de l\'International Mandjara Heritage seront présentés prochainement.',
+
+    // Publications Page
+    'publications.badge': 'Recherche & Documentation',
+    'publications.title': 'Nos',
+    'publications.title_highlight': 'Publications',
+    'publications.subtitle': 'Découvrez les travaux de recherche et publications académiques liés au patrimoine et à la communauté Mandjara.',
+    'publications.type_thesis': 'Thèse de doctorat',
+    'publications.thesis_desc': 'Cette thèse examine les politiques publiques, programmes et projets sensibles au genre dans la communauté Mandjara au Cameroun. Elle analyse les processus de construction des identités masculines et féminines, la mobilisation féminine et les phénomènes sociopolitiques à travers le prisme du genre.',
+    'publications.read': 'Lire le document',
+    'publications.download': 'Télécharger',
+    'publications.contribute_title': 'Contribuez à Notre Documentation',
+    'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
+    'publications.contribute_cta': 'Nous Contacter',
   },
 
   en: {
@@ -560,6 +573,19 @@ const translations: Record<Language, Record<string, string>> = {
     // Parrains Page
     'team.parrains.coming_title': 'Coming Soon',
     'team.parrains.coming_desc': 'The patrons of International Mandjara Heritage will be presented soon.',
+
+    // Publications Page
+    'publications.badge': 'Research & Documentation',
+    'publications.title': 'Our',
+    'publications.title_highlight': 'Publications',
+    'publications.subtitle': 'Discover research works and academic publications related to the Mandjara heritage and community.',
+    'publications.type_thesis': 'Doctoral thesis',
+    'publications.thesis_desc': 'This thesis examines gender-sensitive public policies, programs and projects in the Mandjara community in Cameroon. It analyses the processes of constructing masculine and feminine identities, female mobilisation and sociopolitical phenomena through the lens of gender.',
+    'publications.read': 'Read document',
+    'publications.download': 'Download',
+    'publications.contribute_title': 'Contribute to Our Documentation',
+    'publications.contribute_text': 'Are you a researcher, academic or author of work related to the Mandjara heritage? Share your publication with us to enrich our collection.',
+    'publications.contribute_cta': 'Contact Us',
   },
 };
 

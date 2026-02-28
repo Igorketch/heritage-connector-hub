@@ -19,6 +19,7 @@ import RepresentantsNationauxPage from "./pages/team/RepresentantsNationauxPage"
 import ComiteSagesPage from "./pages/team/ComiteSagesPage";
 import ContactPage from "./pages/ContactPage";
 import DonationPage from "./pages/DonationPage";
+import PublicationsPage from "./pages/PublicationsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
               <Route path="/team/comite-sages" element={<ComiteSagesPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/donation" element={<DonationPage />} />
+              <Route path="/publications" element={<PublicationsPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

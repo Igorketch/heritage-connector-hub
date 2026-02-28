@@ -15,7 +15,7 @@ export const Footer = () => {
       { name: t('nav.team'), href: '/team' },
     ],
     ressources: [
-      { name: t('footer.publications'), href: '#' },
+      { name: t('footer.publications'), href: '/publications' },
       { name: t('footer.events'), href: '#' },
       { name: t('footer.gallery'), href: '#' },
       { name: t('footer.partners'), href: '#' },
