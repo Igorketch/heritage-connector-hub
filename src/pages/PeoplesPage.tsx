@@ -101,7 +101,11 @@ const PeoplesPage = () => {
                   <div className="relative">
                     <div className={`absolute -inset-4 bg-${people.color}/20 rounded-3xl blur-2xl`} />
                     <div className="relative overflow-hidden rounded-2xl">
-                      <img src={people.image} alt={people.name} className="w-full h-[400px] lg:h-[500px] object-cover" />
+                      <img
+                        src={people.image}
+                        alt={people.name}
+                        className={`w-full h-[400px] lg:h-[500px] ${people.name === 'Les Bamoun' ? 'object-contain bg-heritage-sand/40 p-8' : 'object-cover'}`}
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/60 via-transparent to-transparent" />
                       <div className="absolute bottom-6 left-6 right-6">
                         <div className="flex items-center gap-2 text-heritage-cream/90 text-sm">
