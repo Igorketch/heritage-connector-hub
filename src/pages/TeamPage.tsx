@@ -24,6 +24,7 @@ interface TeamMember {
   name: string;
   role: string;
   portrait: string;
+  portraitPosition?: string;
   bio: string[];
   achievements: Achievement[];
   quote: string;
@@ -134,6 +135,7 @@ const conseilAdministration: TeamMember[] = [
     name: "Reine Mère Eveline Kinyuy",
     role: "Membre du CA • Vice-Présidente Liaison Nso'",
     portrait: evelinePortrait,
+    portraitPosition: 'center 20%',
     bio: [
       "La Reine Mère Eveline Kinyuy est une leader communautaire respectée et une figure culturelle engagée, établie à Brampton, en Ontario (Canada). Elle œuvre activement dans les domaines de l'éducation, du soutien communautaire, de la préservation du patrimoine culturel et de la transmission intergénérationnelle des valeurs.",
       "Au sein de l'International Mandjara Heritage, elle est membre du Conseil d'administration et du Bureau exécutif, où elle occupe le poste de Vice-présidente chargée de la liaison avec la communauté Nso'."
@@ -395,6 +397,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         name: "Reine Mère Eveline Kinyuy",
         role: "Vice-Présidente • Liaison Communauté Nso'",
         portrait: evelinePortrait,
+        portraitPosition: 'center 20%',
         bio: [
           "La Reine Mère Eveline Kinyuy est une leader communautaire respectée et une figure culturelle engagée, établie à Brampton, en Ontario (Canada).",
           "Au sein du Bureau exécutif, elle joue un rôle clé dans la préservation du patrimoine culturel et la liaison avec la communauté Nso'."
@@ -420,6 +423,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         name: "Queen Mother Eveline Kinyuy",
         role: "Vice-President • Nso' Community Liaison",
         portrait: evelinePortrait,
+        portraitPosition: 'center 20%',
         bio: [
           "Queen Mother Eveline Kinyuy is a respected community leader and committed cultural figure, based in Brampton, Ontario (Canada).",
           "Within the Executive Board, she plays a key role in cultural heritage preservation and liaison with the Nso' community."
@@ -456,7 +460,8 @@ const TeamMemberCard = ({ member, index }: { member: TeamMember; index: number }
             <img
               src={member.portrait}
               alt={`${member.name} - ${member.role}`}
-              className="w-full h-full object-cover object-top"
+               className="w-full h-full object-cover"
+               style={{ objectPosition: member.portraitPosition || 'top' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-heritage-brown/60 via-transparent to-transparent" />
             
