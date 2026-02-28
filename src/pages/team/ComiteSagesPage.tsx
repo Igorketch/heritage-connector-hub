@@ -1,3 +1,4 @@
+// Council of Elders page
 import { motion } from 'framer-motion';
 import { ScrollText, Crown, Languages, BookOpen, Plane, Palette, Users, Building2, GraduationCap, HandHeart, Briefcase } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
