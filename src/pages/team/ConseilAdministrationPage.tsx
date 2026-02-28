@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Building2, Crown, GraduationCap, Users, Leaf, Heart, Award, HeartPulse, Globe, HandHeart } from 'lucide-react';
+import { Building2, Crown, GraduationCap, Users, Leaf, Heart, Award, HeartPulse, Globe, HandHeart, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
@@ -7,6 +7,7 @@ import lauretinePortrait from '@/assets/lauretine-portrait.jpg';
 import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import charlottePortrait from '@/assets/charlotte-portrait.jpg';
 import evelinePortrait from '@/assets/eveline-kinyuy-portrait.jpg';
+import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
 
 const conseilData: Record<Language, TeamMember[]> = {
   fr: [
@@ -40,6 +41,21 @@ const conseilData: Record<Language, TeamMember[]> = {
         { icon: Heart, title: "AF. INSTITUT", description: "Institut de beauté et centre de formation multiculturel" }
       ],
       quote: "Un engagement constant en faveur de l'entrepreneuriat responsable, du bien-être, et du développement durable des communautés."
+    },
+    {
+      name: "Nathalie Sandrine Kouotou",
+      role: "Membre du CA • Secrétaire Générale",
+      portrait: nathaliePortrait,
+      bio: [
+        "Nathalie Sandrine Kouotou est une professionnelle engagée dans la coordination administrative et la gestion organisationnelle. Elle apporte son expertise au service de la structuration et du bon fonctionnement des instances de gouvernance.",
+        "Au sein de l'International Mandjara Heritage, elle siège au Conseil d'administration et occupe également le poste de Secrétaire Générale au Bureau exécutif, assurant la coordination administrative, le suivi des dossiers stratégiques et l'organisation des réunions institutionnelles."
+      ],
+      achievements: [
+        { icon: ScrollText, title: "Secrétaire Générale", description: "Coordination administrative et organisationnelle du Bureau exécutif" },
+        { icon: Building2, title: "Membre du CA", description: "Membre du Conseil d'administration d'International Mandjara Heritage" },
+        { icon: Users, title: "Gestion Administrative", description: "Suivi des dossiers stratégiques et organisation des réunions institutionnelles" }
+      ],
+      quote: "Contribuer à la coordination et au bon fonctionnement de l'organisation pour mieux servir notre mission."
     },
     {
       name: "Charlotte Wirsiy",
@@ -107,6 +123,21 @@ const conseilData: Record<Language, TeamMember[]> = {
         { icon: Heart, title: "AF. INSTITUT", description: "Beauty institute and multicultural training center" }
       ],
       quote: "A constant commitment to responsible entrepreneurship, wellness, and sustainable community development."
+    },
+    {
+      name: "Nathalie Sandrine Kouotou",
+      role: "Board Member • Secretary General",
+      portrait: nathaliePortrait,
+      bio: [
+        "Nathalie Sandrine Kouotou is a committed professional in administrative coordination and organizational management. She brings her expertise to the structuring and smooth functioning of governance bodies.",
+        "Within International Mandjara Heritage, she serves on the Board of Directors and also holds the position of Secretary General on the Executive Board, ensuring administrative coordination, strategic file management and the organization of institutional meetings."
+      ],
+      achievements: [
+        { icon: ScrollText, title: "Secretary General", description: "Administrative and organizational coordination of the Executive Board" },
+        { icon: Building2, title: "Board Member", description: "Member of the Board of Directors of International Mandjara Heritage" },
+        { icon: Users, title: "Administrative Management", description: "Strategic file management and organization of institutional meetings" }
+      ],
+      quote: "Contributing to the coordination and smooth functioning of the organization to better serve our mission."
     },
     {
       name: "Charlotte Wirsiy",
