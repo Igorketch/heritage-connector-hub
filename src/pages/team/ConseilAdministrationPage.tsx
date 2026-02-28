@@ -62,6 +62,7 @@ const conseilData: Record<Language, TeamMember[]> = {
       name: "Reine Mère Eveline Kinyuy",
       role: "Membre du CA • Vice-Présidente Liaison Nso'",
       portrait: evelinePortrait,
+      portraitPosition: 'center 20%',
       bio: [
         "La Reine Mère Eveline Kinyuy est une leader communautaire respectée et une figure culturelle engagée, établie à Brampton, en Ontario (Canada). Elle œuvre activement dans les domaines de l'éducation, du soutien communautaire, de la préservation du patrimoine culturel et de la transmission intergénérationnelle des valeurs au sein des communautés africaines et de la diaspora.",
         "Titulaire d'un Master en sciences de l'éducation et d'un diplôme en sociologie, elle possède une formation en tant que conseillère d'orientation et préposée aux services de soutien à la personne. Au sein de l'International Mandjara Heritage, elle est membre du Conseil d'administration et du Bureau exécutif, où elle occupe le poste de Vice-présidente chargée de la liaison avec la communauté Nso'."
@@ -128,6 +129,7 @@ const conseilData: Record<Language, TeamMember[]> = {
       name: "Queen Mother Eveline Kinyuy",
       role: "Board Member • Vice-Chair Nso' Liaison",
       portrait: evelinePortrait,
+      portraitPosition: 'center 20%',
       bio: [
         "Queen Mother Eveline Kinyuy is a respected community leader and committed cultural figure, based in Brampton, Ontario (Canada). She is actively involved in education, community support, cultural heritage preservation and intergenerational transmission of values within African and diaspora communities.",
         "Holder of a Master's in Education and a diploma in Sociology, she is trained as a guidance counselor and personal support worker. Within International Mandjara Heritage, she serves on the Board of Directors and the Executive Board as Vice-Chair responsible for liaison with the Nso' community."
