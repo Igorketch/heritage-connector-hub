@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
-import { Globe, Stethoscope, Crown, Users, Sparkles, HandHeart, MapPin, Award, BookOpen } from 'lucide-react';
+import { Globe, Stethoscope, Crown, Users, Sparkles, HandHeart, MapPin, Award, BookOpen, GraduationCap, Building2 } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import reginaPortrait from '@/assets/regina-portrait.png';
 import persidePortrait from '@/assets/perside-portrait.png';
 import pepertuaPortrait from '@/assets/pepertua-portrait-refined.jpeg';
+import florencePortrait from '@/assets/florence-portrait.png';
 
 const representantsData: Record<Language, TeamMember[]> = {
   fr: [
@@ -57,6 +58,23 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Users, title: "Engagement Culturel", description: "Promotion du dialogue interculturel et valorisation des voix africaines" }
       ],
       quote: "Un engagement constant en faveur de l'éducation, de la préservation culturelle et de la valorisation des voix africaines."
+    },
+    {
+      name: "Reine-Mère Florence Fonka Fortibui",
+      role: "Représentante Pays • États-Unis • Communauté Nso'",
+      portrait: florencePortrait,
+      bio: [
+        "Reine-Mère Florence Fonka Fortibui est Reine-Mère de Ndzerem Nso et princesse du royaume (Fondom) de Nso', dans le département du Bui, Région du Nord-Ouest, Cameroun. En tant qu'autorité traditionnelle au sein du système sociopolitique et culturel Nso', elle occupe un rôle à la fois symbolique et fonctionnel, enraciné dans les structures de gouvernance autochtones et les mécanismes de continuité culturelle.",
+        "Membre Honoraire et Représentante des États-Unis d'Amérique pour International Mandjara Heritage, elle contribue aux actions de rayonnement et de diplomatie culturelle visant à renforcer les liens entre les communautés camerounaises et les diasporas en Amérique du Nord. Résidant dans l'État du Maryland tout en maintenant des liens actifs avec le Cameroun, elle incarne un modèle de leadership transnational reliant les communautés d'origine et les sociétés d'accueil.",
+        "Éducatrice au sein du système scolaire public du comté de Prince George (Maryland), elle enseigne et accompagne les jeunes générations. Sa formation académique, acquise au Cameroun, en Grande-Bretagne et aux États-Unis, lui confère une base intellectuelle internationale et interculturelle solide. Elle siège également au Conseil d'Administration du Bui Family Union (USA) et de Bongkisheri Diaspora (USA)."
+      ],
+      achievements: [
+        { icon: Crown, title: "Reine-Mère de Ndzerem Nso", description: "Autorité traditionnelle et princesse du royaume de Nso', Région du Nord-Ouest, Cameroun" },
+        { icon: Globe, title: "Représentante USA", description: "Membre Honoraire et Représentante des États-Unis pour International Mandjara Heritage" },
+        { icon: GraduationCap, title: "Éducatrice", description: "Enseignante au sein du système scolaire public du comté de Prince George, Maryland" },
+        { icon: Building2, title: "Conseils d'Administration", description: "Membre du Conseil du Bui Family Union (USA) et de Bongkisheri Diaspora (USA)" }
+      ],
+      quote: "Œuvrer pour la préservation du patrimoine africain, la transmission des savoirs autochtones et le renforcement de la solidarité diasporique."
     }
   ],
   en: [
@@ -108,6 +126,23 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Users, title: "Cultural Engagement", description: "Promotion of intercultural dialogue and valorization of African voices" }
       ],
       quote: "A constant commitment to education, cultural preservation and the valorization of African voices."
+    },
+    {
+      name: "Queen Mother Florence Fonka Fortibui",
+      role: "Country Representative • United States • Nso' Community",
+      portrait: florencePortrait,
+      bio: [
+        "Queen Mother Florence Fonka Fortibui is a Queen Mother of Ndzerem Nso and a princess of the Fondom of Nso in Bui Division, North West Region, Cameroon. As a traditional authority within the Nso' sociopolitical and cultural system, she occupies a role that is simultaneously symbolic and functional, grounded in indigenous governance structures and systems of cultural continuity.",
+        "An Honorary Member and United States of America Representative for International Mandjara Heritage, she contributes to institutional outreach and cultural diplomacy efforts that strengthen connections between Cameroonian communities and diaspora constituencies in North America. Residing in Maryland while maintaining active ties to Cameroon, she embodies a transnational leadership model that bridges communities of origin and host societies.",
+        "Professionally, she is an educator within the Prince George's County Public Schools system in Maryland, where she teaches and mentors younger generations. Her academic formation includes studies in Cameroon, Britain and the United States. She also serves as a Board Member of the Bui Family Union (USA) and Bongkisheri Diaspora (USA)."
+      ],
+      achievements: [
+        { icon: Crown, title: "Queen Mother of Ndzerem Nso", description: "Traditional authority and princess of the Fondom of Nso', North West Region, Cameroon" },
+        { icon: Globe, title: "USA Representative", description: "Honorary Member and USA Representative for International Mandjara Heritage" },
+        { icon: GraduationCap, title: "Educator", description: "Teacher within Prince George's County Public Schools system, Maryland" },
+        { icon: Building2, title: "Board Member", description: "Board Member of Bui Family Union (USA) and Bongkisheri Diaspora (USA)" }
+      ],
+      quote: "Advancing the preservation of African heritage, the transmission of indigenous knowledge systems, and the consolidation of diaspora solidarity."
     }
   ]
 };
