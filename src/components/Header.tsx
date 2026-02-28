@@ -77,8 +77,8 @@ export const Header = () => {
             ))}
 
             {/* Team Dropdown */}
-            <div className="relative" onMouseEnter={() => setIsTeamDropdownOpen(true)} onMouseLeave={() => setIsTeamDropdownOpen(false)}>
-              <button className={`relative text-sm tracking-wide group transition-colors duration-300 flex items-center gap-1 ${isTeamActive() ? 'text-heritage-gold font-semibold' : 'text-heritage-cream/80 hover:text-heritage-gold font-medium'}`}>
+            <div className="relative" onMouseLeave={() => setIsTeamDropdownOpen(false)}>
+              <button onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)} className={`relative text-sm tracking-wide group transition-colors duration-300 flex items-center gap-1 ${isTeamActive() ? 'text-heritage-gold font-semibold' : 'text-heritage-cream/80 hover:text-heritage-gold font-medium'}`}>
                 {t('nav.team')}
                 <ChevronDown size={14} className={`transition-transform duration-200 ${isTeamDropdownOpen ? 'rotate-180' : ''}`} />
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-heritage-gold transition-all duration-300 ${isTeamActive() ? 'w-full' : 'w-0 group-hover:w-full'}`} />
