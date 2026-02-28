@@ -20,6 +20,7 @@ interface TeamMember {
   name: string;
   role: string;
   portrait: string;
+  portraitPosition?: string;
   bio: string[];
   achievements: Achievement[];
   quote: string;
@@ -121,6 +122,7 @@ const teamMembers: TeamMember[] = [
     name: "Regina Fonyuy Wirba",
     role: "Représentante Pays • Cameroun • Communauté Nso'",
     portrait: reginaPortrait,
+    portraitPosition: 'center 20%',
     bio: [
       "L'honorable Reine mère Regina Fonyuy Wirba est une infirmière anesthésiste engagée et une figure communautaire respectée, originaire de Jakiri, au sein de la communauté Nso'. Elle conjugue expertise professionnelle en santé et engagement communautaire au service du bien-être et de l'autonomisation des femmes.",
       "En reconnaissance de son dévouement et de son rôle fédérateur, elle a été honorée du titre de « Reine Mère de Bongkisheri Douala », une distinction symbolisant sa sagesse, son sens du service et son influence positive au sein de la communauté."
@@ -297,7 +299,8 @@ const TeamMemberCard = ({ member, index }: { member: TeamMember; index: number }
             <img
               src={member.portrait}
               alt={`${member.name} - ${member.role}`}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
+              style={{ objectPosition: member.portraitPosition || 'top' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-heritage-brown/60 via-transparent to-transparent" />
             
