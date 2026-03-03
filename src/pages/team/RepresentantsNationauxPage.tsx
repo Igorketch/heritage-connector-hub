@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Stethoscope, Crown, Users, Sparkles, HandHeart, MapPin, Award, BookOpen, GraduationCap, Building2 } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
@@ -8,15 +9,17 @@ import persidePortrait from '@/assets/perside-portrait.png';
 import pepertuaPortrait from '@/assets/pepertua-portrait-refined.jpeg';
 import florencePortrait from '@/assets/florence-portrait.png';
 
-interface CategoryData {
-  title: string;
+interface SubCategory {
+  id: string;
+  label: string;
   members: TeamMember[];
 }
 
-const representantsData: Record<Language, CategoryData[]> = {
+const representantsData: Record<Language, SubCategory[]> = {
   fr: [
     {
-      title: "Bamoun",
+      id: 'bamoun',
+      label: 'Bamoun',
       members: [
         {
           name: "Madame Ngameyet épouse Mouliom Perside",
@@ -37,7 +40,8 @@ const representantsData: Record<Language, CategoryData[]> = {
       ]
     },
     {
-      title: "Nso'",
+      id: 'nso',
+      label: "Nso'",
       members: [
         {
           name: "Reine mère Regina Fonyuy Wirba",
@@ -92,13 +96,15 @@ const representantsData: Record<Language, CategoryData[]> = {
       ]
     },
     {
-      title: "Bafia",
+      id: 'bafia',
+      label: 'Bafia',
       members: []
     }
   ],
   en: [
     {
-      title: "Bamoun",
+      id: 'bamoun',
+      label: 'Bamoun',
       members: [
         {
           name: "Mrs. Ngameyet née Mouliom Perside",
@@ -119,7 +125,8 @@ const representantsData: Record<Language, CategoryData[]> = {
       ]
     },
     {
-      title: "Nso'",
+      id: 'nso',
+      label: "Nso'",
       members: [
         {
           name: "Queen Mother Regina Fonyuy Wirba",
@@ -174,7 +181,8 @@ const representantsData: Record<Language, CategoryData[]> = {
       ]
     },
     {
-      title: "Bafia",
+      id: 'bafia',
+      label: 'Bafia',
       members: []
     }
   ]
@@ -183,6 +191,9 @@ const representantsData: Record<Language, CategoryData[]> = {
 const RepresentantsNationauxPage = () => {
   const { language, t } = useLanguage();
   const categories = representantsData[language];
+  const [activeTab, setActiveTab] = useState('bamoun');
+
+  const activeCategory = categories.find(c => c.id === activeTab);
 
   return (
     <PageLayout>
@@ -206,46 +217,47 @@ const RepresentantsNationauxPage = () => {
             </p>
           </motion.div>
 
-          {categories.map((category, catIndex) => (
-            <div key={category.title} className={catIndex > 0 ? 'mt-20' : ''}>
-              {/* Category Header */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="mb-12"
+          {/* Sub-category Tabs */}
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveTab(cat.id)}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
+                  activeTab === cat.id
+                    ? 'bg-heritage-gold text-heritage-earth border-heritage-gold shadow-lg shadow-heritage-gold/20'
+                    : 'bg-heritage-earth/50 text-heritage-cream/70 border-heritage-gold/30 hover:border-heritage-gold/60 hover:text-heritage-cream'
+                }`}
               >
-                <div className="flex items-center gap-4">
-                  <div className="h-px flex-1 max-w-[60px] bg-heritage-gold/40" />
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-heritage-gold">
-                    {category.title}
-                  </h2>
-                  <div className="h-px flex-1 bg-heritage-gold/20" />
-                </div>
-              </motion.div>
+                {cat.label}
+              </button>
+            ))}
+          </div>
 
-              {/* Members */}
-              {category.members.length > 0 ? (
-                <div className="space-y-20">
-                  {category.members.map((member, index) => (
-                    <TeamMemberCard key={member.name} member={member} index={index} />
-                  ))}
+          {/* Members */}
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            {activeCategory && activeCategory.members.length > 0 ? (
+              <div className="space-y-20">
+                {activeCategory.members.map((member, index) => (
+                  <TeamMemberCard key={member.name} member={member} index={index} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-20">
+                <div className="w-20 h-20 rounded-full bg-heritage-gold/10 border border-heritage-gold/20 flex items-center justify-center mx-auto mb-6">
+                  <Globe className="w-8 h-8 text-heritage-gold/40" />
                 </div>
-              ) : (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  className="text-center py-12 border border-heritage-gold/10 rounded-2xl bg-heritage-earth/30"
-                >
-                  <p className="text-heritage-cream/40 italic">
-                    {language === 'fr' ? 'Membres à venir' : 'Members coming soon'}
-                  </p>
-                </motion.div>
-              )}
-            </div>
-          ))}
+                <p className="text-heritage-cream/50 text-lg italic">
+                  {language === 'fr' ? 'Membres à venir...' : 'Members coming soon...'}
+                </p>
+              </div>
+            )}
+          </motion.div>
         </div>
       </section>
     </PageLayout>
