@@ -23,14 +23,15 @@ const sagesData: Record<Language, SubCategory[]> = {
       members: [
         {
           name: "Titamfon Nji Ncharé Oumarou",
-          role: "Conseiller",
+          role: "Titamfon, Vice Premier Ministre, Notable du Royaume — Conseiller",
           portrait: ncharePortrait,
           bio: [
             "Figure majeure de la préservation et de la transmission du patrimoine culturel Bamoun, Monsieur Ncharé Oumarou occupe le poste de Directeur des Affaires administratives et culturelles du Palais des Rois Bamoun, où il œuvre depuis plusieurs décennies à la sauvegarde et à la diffusion de l'héritage historique du Royaume Bamoun.",
             "Linguiste, archiviste et muséologue, il est reconnu comme spécialiste de l'écriture Shu-Mom et des langues inventées par le Roi Njoya. Co-traducteur du Saint Coran en langue bamoun, il contribue à la transmission intergénérationnelle des savoirs Bamoun."
           ],
           achievements: [
-            { icon: Crown, title: "Palais des Rois Bamoun", description: "Directeur des Affaires administratives et culturelles depuis plusieurs décennies" },
+            { icon: Crown, title: "Palais des Rois Bamoun", description: "Directeur des Affaires administratives et culturelles du Palais" },
+            { icon: Building2, title: "Musée des Rois Bamoun", description: "Directeur général du musée des Rois Bamoun" },
             { icon: Languages, title: "Écriture Shu-Mom", description: "Spécialiste des langues inventées par le Roi Njoya et traducteur du Coran en bamoun" },
             { icon: BookOpen, title: "Archiviste & Muséologue", description: "Conservation et interprétation des manuscrits royaux du Royaume Bamoun" },
             { icon: ScrollText, title: "Comité des Sages", description: "Conseiller apportant expertise historique et sagesse aux orientations de l'organisation" }
@@ -94,14 +95,15 @@ const sagesData: Record<Language, SubCategory[]> = {
       members: [
         {
           name: "Titamfon Nji Ncharé Oumarou",
-          role: "Advisor",
+          role: "Titamfon, Vice Prime Minister, Kingdom Notable — Advisor",
           portrait: ncharePortrait,
           bio: [
             "A major figure in the preservation and transmission of Bamoun cultural heritage, Mr. Ncharé Oumarou serves as Director of Administrative and Cultural Affairs at the Palace of Bamoun Kings, where he has worked for several decades to safeguard and disseminate the historical heritage of the Bamoun Kingdom.",
             "A linguist, archivist and museologist, he is recognized as a specialist in Shu-Mom writing and the languages invented by King Njoya. Co-translator of the Holy Quran into the Bamoun language, he contributes to the intergenerational transmission of Bamoun knowledge."
           ],
           achievements: [
-            { icon: Crown, title: "Palace of Bamoun Kings", description: "Director of Administrative and Cultural Affairs for several decades" },
+            { icon: Crown, title: "Palace of Bamoun Kings", description: "Director of Administrative and Cultural Affairs of the Palace" },
+            { icon: Building2, title: "Museum of Bamoun Kings", description: "Director General of the Museum of Bamoun Kings" },
             { icon: Languages, title: "Shu-Mom Writing", description: "Specialist in languages invented by King Njoya and translator of the Quran into Bamoun" },
             { icon: BookOpen, title: "Archivist & Museologist", description: "Conservation and interpretation of royal manuscripts of the Bamoun Kingdom" },
             { icon: ScrollText, title: "Council of Elders", description: "Advisor bringing historical expertise and wisdom to the organization's direction" }
