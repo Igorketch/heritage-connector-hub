@@ -12,6 +12,22 @@ import massanPortrait from '@/assets/massan-portrait.png';
 const representantsData: Record<Language, TeamMember[]> = {
   fr: [
     {
+      name: "Madame Ngameyet épouse Mouliom Perside",
+      role: "Représentante Pays • Cameroun",
+      portrait: persidePortrait,
+      bio: [
+        "Leader sociale et communautaire engagée, Madame Perside œuvre activement au Cameroun pour la promotion de la solidarité, de l'inclusion sociale et de l'autonomisation des femmes. Elle contribue au développement et à la mise en œuvre d'initiatives culturelles et sociales favorisant le dialogue interculturel et le vivre-ensemble.",
+        "Présidente de plusieurs associations caritatives et sociales, elle œuvre principalement à l'amélioration des conditions de vie des jeunes filles, des femmes et de leurs familles. Membre fondatrice de l'Association Mandjara de Douala (ASMADLA), elle promeut la cohésion communautaire entre les trois peuples frères — Bamoun, Bafia et Nso'."
+      ],
+      achievements: [
+        { icon: Globe, title: "Représentante Pays", description: "International Mandjara Heritage au Cameroun, développement d'initiatives culturelles" },
+        { icon: Users, title: "ASMADLA", description: "Membre fondatrice de l'Association Mandjara de Douala pour la cohésion communautaire" },
+        { icon: HandHeart, title: "Leadership Social", description: "Présidente d'associations caritatives pour l'autonomisation des femmes" },
+        { icon: MapPin, title: "Engagement Commonwealth", description: "Participation aux dynamiques de collaboration et renforcement des capacités" }
+      ],
+      quote: "Promouvoir l'amour du prochain, la solidarité et les échanges d'expériences culturelles pour un impact social durable."
+    },
+    {
       name: "Reine mère Regina Fonyuy Wirba",
       role: "Représentante Pays • Cameroun • Communauté Nso'",
       portrait: reginaPortrait,
@@ -27,22 +43,6 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Sparkles, title: "ASMADLA", description: "Membre du Bureau exécutif de l'Association Mandjara de Douala" }
       ],
       quote: "Un engagement profond en faveur de la santé, de la dignité humaine et de la transmission des valeurs culturelles."
-    },
-    {
-      name: "Madame Ngameyet épouse Mouliom Perside",
-      role: "Représentante Pays • Cameroun",
-      portrait: persidePortrait,
-      bio: [
-        "Leader sociale et communautaire engagée, Madame Perside œuvre activement au Cameroun pour la promotion de la solidarité, de l'inclusion sociale et de l'autonomisation des femmes. Elle contribue au développement et à la mise en œuvre d'initiatives culturelles et sociales favorisant le dialogue interculturel et le vivre-ensemble.",
-        "Présidente de plusieurs associations caritatives et sociales, elle œuvre principalement à l'amélioration des conditions de vie des jeunes filles, des femmes et de leurs familles. Membre fondatrice de l'Association Mandjara de Douala (ASMADLA), elle promeut la cohésion communautaire entre les trois peuples frères — Bamoun, Bafia et Nso'."
-      ],
-      achievements: [
-        { icon: Globe, title: "Représentante Pays", description: "International Mandjara Heritage au Cameroun, développement d'initiatives culturelles" },
-        { icon: Users, title: "ASMADLA", description: "Membre fondatrice de l'Association Mandjara de Douala pour la cohésion communautaire" },
-        { icon: HandHeart, title: "Leadership Social", description: "Présidente d'associations caritatives pour l'autonomisation des femmes" },
-        { icon: MapPin, title: "Engagement Commonwealth", description: "Participation aux dynamiques de collaboration et renforcement des capacités" }
-      ],
-      quote: "Promouvoir l'amour du prochain, la solidarité et les échanges d'expériences culturelles pour un impact social durable."
     },
     {
       name: "Professeure Perpetua K. Nkamanyang Lola",
@@ -97,6 +97,22 @@ const representantsData: Record<Language, TeamMember[]> = {
   ],
   en: [
     {
+      name: "Mrs. Ngameyet née Mouliom Perside",
+      role: "Country Representative • Cameroon",
+      portrait: persidePortrait,
+      bio: [
+        "A committed social and community leader, Mrs. Perside works actively in Cameroon promoting solidarity, social inclusion and women's empowerment. She contributes to the development and implementation of cultural and social initiatives fostering intercultural dialogue and community cohesion.",
+        "President of several charitable and social associations, she works primarily to improve living conditions for girls, women and their families. A founding member of the Mandjara Association of Douala (ASMADLA), she promotes community cohesion among the three sister peoples — Bamoun, Bafia and Nso'."
+      ],
+      achievements: [
+        { icon: Globe, title: "Country Representative", description: "International Mandjara Heritage in Cameroon, development of cultural initiatives" },
+        { icon: Users, title: "ASMADLA", description: "Founding member of the Mandjara Association of Douala for community cohesion" },
+        { icon: HandHeart, title: "Social Leadership", description: "President of charitable associations for women's empowerment" },
+        { icon: MapPin, title: "Commonwealth Engagement", description: "Participation in collaborative dynamics and capacity building" }
+      ],
+      quote: "Promoting love of neighbor, solidarity and cultural exchange for lasting social impact."
+    },
+    {
       name: "Queen Mother Regina Fonyuy Wirba",
       role: "Country Representative • Cameroon • Nso' Community",
       portrait: reginaPortrait,
@@ -112,22 +128,6 @@ const representantsData: Record<Language, TeamMember[]> = {
         { icon: Sparkles, title: "ASMADLA", description: "Executive Board member of the Mandjara Association of Douala" }
       ],
       quote: "A deep commitment to health, human dignity and the transmission of cultural values."
-    },
-    {
-      name: "Mrs. Ngameyet née Mouliom Perside",
-      role: "Country Representative • Cameroon",
-      portrait: persidePortrait,
-      bio: [
-        "A committed social and community leader, Mrs. Perside works actively in Cameroon promoting solidarity, social inclusion and women's empowerment. She contributes to the development and implementation of cultural and social initiatives fostering intercultural dialogue and community cohesion.",
-        "President of several charitable and social associations, she works primarily to improve living conditions for girls, women and their families. A founding member of the Mandjara Association of Douala (ASMADLA), she promotes community cohesion among the three sister peoples — Bamoun, Bafia and Nso'."
-      ],
-      achievements: [
-        { icon: Globe, title: "Country Representative", description: "International Mandjara Heritage in Cameroon, development of cultural initiatives" },
-        { icon: Users, title: "ASMADLA", description: "Founding member of the Mandjara Association of Douala for community cohesion" },
-        { icon: HandHeart, title: "Social Leadership", description: "President of charitable associations for women's empowerment" },
-        { icon: MapPin, title: "Commonwealth Engagement", description: "Participation in collaborative dynamics and capacity building" }
-      ],
-      quote: "Promoting love of neighbor, solidarity and cultural exchange for lasting social impact."
     },
     {
       name: "Professor Perpetua K. Nkamanyang Lola",
