@@ -283,7 +283,7 @@ const translations: Record<Language, Record<string, string>> = {
     'team.cat.representants': 'Représentants nationaux',
     'team.cat.representants_sub': 'Ambassadeurs du patrimoine Mandjara à travers le monde',
     'team.cat.sages': 'Comité des Sages',
-    'team.cat.sages_sub': 'Gardiens de la sagesse et de la tradition',
+    'team.cat.sages_sub': 'Gardiennes et gardiens de la sagesse et de la tradition',
 
     // Parrains Page
     'team.parrains.coming_title': 'Section à venir',
