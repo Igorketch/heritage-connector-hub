@@ -412,7 +412,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         quote: "Un parcours dédié à la préservation du patrimoine et au service communautaire."
       }
     ]},
-    { id: "representants-nationaux", title: "Représentants nationaux", subtitle: "Ambassadeurs du patrimoine Mandjara à travers le monde", icon: Globe, members: representantsNationaux },
+    { id: "representants-nationaux", title: "Représentation nationale", subtitle: "Ambassadeurs du patrimoine Mandjara à travers le monde", icon: Globe, members: representantsNationaux },
     { id: "comite-sages", title: "Comité des Sages", subtitle: "Gardiens de la sagesse et de la tradition", icon: ScrollText, members: comiteSages }
   ],
   en: [

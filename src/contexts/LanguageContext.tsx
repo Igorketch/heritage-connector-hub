@@ -32,7 +32,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.membres_honneur': 'Membres d\'honneur',
     'nav.team.conseil': 'Conseil d\'Administration',
     'nav.team.bureau': 'Bureau Exécutif',
-    'nav.team.representants': 'Représentants nationaux',
+    'nav.team.representants': 'Représentation nationale',
     'nav.team.comite': 'Comité des sages',
 
     // Hero
@@ -280,7 +280,7 @@ const translations: Record<Language, Record<string, string>> = {
     'team.cat.conseil_sub': 'Direction stratégique et gouvernance de l\'organisation',
     'team.cat.bureau': 'Bureau Exécutif',
     'team.cat.bureau_sub': 'Coordination opérationnelle des activités',
-    'team.cat.representants': 'Représentants nationaux',
+    'team.cat.representants': 'Représentation nationale',
     'team.cat.representants_sub': 'Ambassadeurs du patrimoine Mandjara à travers le monde',
     'team.cat.sages': 'Comité des Sages',
     'team.cat.sages_sub': 'Gardiennes et gardiens de la sagesse et de la tradition',
