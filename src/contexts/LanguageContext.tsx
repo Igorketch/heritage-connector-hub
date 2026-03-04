@@ -34,6 +34,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.bureau': 'Bureau Exécutif',
     'nav.team.representants': 'Représentation nationale',
     'nav.team.comite': 'Comité des sages',
+    'nav.publications': 'Publications',
+    'nav.evenements': 'Événements',
 
     // Hero
     'hero.badge': 'Patrimoine • Culture • Héritage',
@@ -302,6 +304,13 @@ const translations: Record<Language, Record<string, string>> = {
     'publications.nguoun_desc': 'Le Nguoun 2024, grande fête traditionnelle du peuple Bamoun.',
     'publications.partners_title': 'Partenaires',
     'publications.coming_soon': 'Information à venir',
+
+    // Events Page
+    'events.badge': 'Événements & Partenaires',
+    'events.title': 'Nos',
+    'events.title_highlight': 'Événements',
+    'events.subtitle': 'Découvrez nos événements culturels, partenariats et activités communautaires.',
+
     'publications.contribute_title': 'Contribuez à Notre Documentation',
     'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
     'publications.contribute_cta': 'Nous Contacter',
