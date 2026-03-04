@@ -10,7 +10,9 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
+  const [isRessourcesDropdownOpen, setIsRessourcesDropdownOpen] = useState(false);
   const [isMobileTeamOpen, setIsMobileTeamOpen] = useState(false);
+  const [isMobileRessourcesOpen, setIsMobileRessourcesOpen] = useState(false);
   const location = useLocation();
   const { t } = useLanguage();
 
@@ -20,8 +22,6 @@ export const Header = () => {
     { name: t('nav.peoples'), href: '/peoples' },
     { name: t('nav.mission'), href: '/mission' },
     { name: t('nav.values'), href: '/values' },
-    { name: t('nav.publications'), href: '/publications' },
-    { name: t('nav.evenements'), href: '/evenements' },
     { name: t('nav.contact'), href: '/contact' },
   ];
 
@@ -32,6 +32,13 @@ export const Header = () => {
     { name: t('nav.team.bureau'), href: '/team/bureau-executif' },
     { name: t('nav.team.representants'), href: '/team/representants-nationaux' },
     { name: t('nav.team.comite'), href: '/team/comite-sages' },
+  ];
+
+  const ressourcesSubLinks = [
+    { name: t('nav.publications'), href: '/publications' },
+    { name: t('nav.evenements'), href: '/evenements' },
+    { name: t('nav.galerie'), href: '/galerie' },
+    { name: t('nav.partenaires'), href: '/partenaires' },
   ];
 
   useEffect(() => {
@@ -45,6 +52,7 @@ export const Header = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsMobileTeamOpen(false);
+    setIsMobileRessourcesOpen(false);
   }, [location.pathname]);
 
   const isActive = (href: string) => {
@@ -52,6 +60,11 @@ export const Header = () => {
     return location.pathname.startsWith(href.split('#')[0]);
   };
   const isTeamActive = () => location.pathname.startsWith('/team');
+  const isRessourcesActive = () =>
+    location.pathname.startsWith('/publications') ||
+    location.pathname.startsWith('/evenements') ||
+    location.pathname.startsWith('/galerie') ||
+    location.pathname.startsWith('/partenaires');
 
   return (
     <motion.header
@@ -77,6 +90,35 @@ export const Header = () => {
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-heritage-gold transition-all duration-300 ${isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'}`} />
               </Link>
             ))}
+
+            {/* Ressources Dropdown */}
+            <div className="relative" onMouseLeave={() => setIsRessourcesDropdownOpen(false)}>
+              <button onClick={() => setIsRessourcesDropdownOpen(!isRessourcesDropdownOpen)} className={`relative text-sm tracking-wide group transition-colors duration-300 flex items-center gap-1 ${isRessourcesActive() ? 'text-heritage-gold font-semibold' : 'text-heritage-cream/80 hover:text-heritage-gold font-medium'}`}>
+                {t('nav.ressources')}
+                <ChevronDown size={14} className={`transition-transform duration-200 ${isRessourcesDropdownOpen ? 'rotate-180' : ''}`} />
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-heritage-gold transition-all duration-300 ${isRessourcesActive() ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+              </button>
+
+              <AnimatePresence>
+                {isRessourcesDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-2 w-64 bg-heritage-earth border border-heritage-gold/20 rounded-lg shadow-xl overflow-hidden z-50"
+                  >
+                    <div className="py-2">
+                      {ressourcesSubLinks.map(subLink => (
+                        <Link key={subLink.href} to={subLink.href} className="block px-4 py-2.5 text-sm text-heritage-cream/80 hover:text-heritage-gold hover:bg-heritage-gold/10 transition-colors">
+                          {subLink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
 
             {/* Team Dropdown */}
             <div className="relative" onMouseLeave={() => setIsTeamDropdownOpen(false)}>
@@ -146,8 +188,30 @@ export const Header = () => {
                   </motion.div>
                 ))}
 
-                {/* Mobile Team Submenu */}
+                {/* Mobile Ressources Submenu */}
                 <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: navLinks.length * 0.1 }}>
+                  <button onClick={() => setIsMobileRessourcesOpen(!isMobileRessourcesOpen)} className={`w-full flex items-center justify-between py-3 px-4 rounded-lg transition-colors ${isRessourcesActive() ? 'text-heritage-gold bg-heritage-gold/10 font-semibold' : 'text-heritage-cream/90 hover:text-heritage-gold hover:bg-heritage-cream/5'}`}>
+                    {t('nav.ressources')}
+                    <ChevronDown size={18} className={`transition-transform duration-200 ${isMobileRessourcesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  <AnimatePresence>
+                    {isMobileRessourcesOpen && (
+                      <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
+                        <div className="ml-4 mt-1 space-y-1 border-l-2 border-heritage-gold/30 pl-4">
+                          {ressourcesSubLinks.map(subLink => (
+                            <Link key={subLink.href} to={subLink.href} className="block py-2 text-sm text-heritage-cream/70 hover:text-heritage-gold transition-colors">
+                              {subLink.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Mobile Team Submenu */}
+                <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: (navLinks.length + 1) * 0.1 }}>
                   <button onClick={() => setIsMobileTeamOpen(!isMobileTeamOpen)} className={`w-full flex items-center justify-between py-3 px-4 rounded-lg transition-colors ${isTeamActive() ? 'text-heritage-gold bg-heritage-gold/10 font-semibold' : 'text-heritage-cream/90 hover:text-heritage-gold hover:bg-heritage-cream/5'}`}>
                     {t('nav.team')}
                     <ChevronDown size={18} className={`transition-transform duration-200 ${isMobileTeamOpen ? 'rotate-180' : ''}`} />

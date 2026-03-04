@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { PartyPopper, Handshake, GraduationCap, Users, Info, ArrowRight } from 'lucide-react';
+import { PartyPopper, GraduationCap, Users, Info, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const EvenementsPage = () => {
@@ -38,7 +38,7 @@ const EvenementsPage = () => {
       {/* Content */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-background to-heritage-sand">
         <div className="container mx-auto px-4 lg:px-8">
-          {/* Événements */}
+          {/* Nguoun 2024 */}
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -61,27 +61,6 @@ const EvenementsPage = () => {
                   <ArrowRight className="w-5 h-5 text-heritage-gold opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 ml-4" />
                 </div>
               </Link>
-            </motion.div>
-          </div>
-
-          {/* Partenaires */}
-          <div className="max-w-4xl mx-auto mt-16">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
-                <Handshake className="w-7 h-7 text-heritage-gold" />
-                {t('publications.partners_title')}
-              </h2>
-              <div className="card-heritage p-8 lg:p-10">
-                <h3 className="text-xl font-bold text-foreground mb-2">ACPHA</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Association Canadienne pour la Promotion des Héritages Africains (ACPHA)
-                </p>
-              </div>
             </motion.div>
           </div>
 

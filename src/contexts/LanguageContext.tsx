@@ -36,6 +36,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.comite': 'Comité des sages',
     'nav.publications': 'Publications',
     'nav.evenements': 'Événements',
+    'nav.ressources': 'Ressources',
+    'nav.galerie': 'Galerie',
+    'nav.partenaires': 'Partenaires',
 
     // Hero
     'hero.badge': 'Patrimoine • Culture • Héritage',
@@ -327,6 +330,18 @@ const translations: Record<Language, Record<string, string>> = {
     'publications.contribute_title': 'Contribuez à Notre Documentation',
     'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
     'publications.contribute_cta': 'Nous Contacter',
+
+    // Galerie Page
+    'galerie.badge': 'Photos & Médias',
+    'galerie.title': 'Notre',
+    'galerie.title_highlight': 'Galerie',
+    'galerie.subtitle': 'Découvrez en images les moments forts de notre communauté et de nos événements.',
+
+    // Partenaires Page
+    'partenaires.badge': 'Nos Partenaires',
+    'partenaires.title': 'Nos',
+    'partenaires.title_highlight': 'Partenaires',
+    'partenaires.subtitle': 'Les organisations et institutions qui soutiennent notre mission de préservation du patrimoine.',
   },
 
   en: {
@@ -347,6 +362,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.comite': 'Council of Elders',
     'nav.publications': 'Publications',
     'nav.evenements': 'Events',
+    'nav.ressources': 'Resources',
+    'nav.galerie': 'Gallery',
+    'nav.partenaires': 'Partners',
 
     // Hero
     'hero.badge': 'Heritage • Culture • Legacy',
@@ -637,6 +655,18 @@ const translations: Record<Language, Record<string, string>> = {
     'nguoun.significance_title': 'Cultural Significance',
     'nguoun.significance_text': 'The Nguoun represents a privileged moment of communion and reunion for the Bamoun people. It is an opportunity to renew community bonds, pass on ancestral knowledge to younger generations and celebrate Bamoun cultural identity in all its richness and diversity.',
     'nguoun.videos_title': 'Nguoun September 2024 Videos',
+
+    // Galerie Page
+    'galerie.badge': 'Photos & Media',
+    'galerie.title': 'Our',
+    'galerie.title_highlight': 'Gallery',
+    'galerie.subtitle': 'Discover in images the highlights of our community and events.',
+
+    // Partenaires Page
+    'partenaires.badge': 'Our Partners',
+    'partenaires.title': 'Our',
+    'partenaires.title_highlight': 'Partners',
+    'partenaires.subtitle': 'The organizations and institutions supporting our mission to preserve heritage.',
   },
 };
 
