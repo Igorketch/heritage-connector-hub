@@ -311,6 +311,18 @@ const translations: Record<Language, Record<string, string>> = {
     'events.title_highlight': 'Événements',
     'events.subtitle': 'Découvrez nos événements culturels, partenariats et activités communautaires.',
 
+    // Nguoun Page
+    'nguoun.badge': 'Événement Culturel',
+    'nguoun.subtitle': 'La grande fête traditionnelle biennale du peuple Bamoun à Foumban, Cameroun.',
+    'nguoun.about_title': 'Qu\'est-ce que le Nguoun ?',
+    'nguoun.about_text': 'Le Nguoun est la plus grande fête traditionnelle du peuple Bamoun. Cet événement biennal célèbre la culture, l\'histoire et les traditions du royaume Bamoun. Il rassemble la communauté Bamoun du monde entier autour de cérémonies rituelles, de danses traditionnelles, de musiques et de festivités qui perpétuent un héritage culturel riche et ancestral.',
+    'nguoun.date_label': 'Date',
+    'nguoun.location_label': 'Lieu',
+    'nguoun.people_label': 'Peuple',
+    'nguoun.people_value': 'Peuple Bamoun',
+    'nguoun.significance_title': 'Importance culturelle',
+    'nguoun.significance_text': 'Le Nguoun représente un moment privilégié de communion et de retrouvailles pour le peuple Bamoun. C\'est l\'occasion de renouveler les liens communautaires, de transmettre les savoirs ancestraux aux jeunes générations et de célébrer l\'identité culturelle Bamoun dans toute sa richesse et sa diversité.',
+
     'publications.contribute_title': 'Contribuez à Notre Documentation',
     'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
     'publications.contribute_cta': 'Nous Contacter',
@@ -611,6 +623,18 @@ const translations: Record<Language, Record<string, string>> = {
     'events.title': 'Our',
     'events.title_highlight': 'Events',
     'events.subtitle': 'Discover our cultural events, partnerships and community activities.',
+
+    // Nguoun Page
+    'nguoun.badge': 'Cultural Event',
+    'nguoun.subtitle': 'The grand biennial traditional festival of the Bamoun people in Foumban, Cameroon.',
+    'nguoun.about_title': 'What is the Nguoun?',
+    'nguoun.about_text': 'The Nguoun is the greatest traditional festival of the Bamoun people. This biennial event celebrates the culture, history and traditions of the Bamoun kingdom. It brings together the Bamoun community from around the world for ritual ceremonies, traditional dances, music and festivities that perpetuate a rich and ancestral cultural heritage.',
+    'nguoun.date_label': 'Date',
+    'nguoun.location_label': 'Location',
+    'nguoun.people_label': 'People',
+    'nguoun.people_value': 'Bamoun People',
+    'nguoun.significance_title': 'Cultural Significance',
+    'nguoun.significance_text': 'The Nguoun represents a privileged moment of communion and reunion for the Bamoun people. It is an opportunity to renew community bonds, pass on ancestral knowledge to younger generations and celebrate Bamoun cultural identity in all its richness and diversity.',
   },
 };
 
