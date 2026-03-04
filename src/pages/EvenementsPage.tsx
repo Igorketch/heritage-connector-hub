@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { PartyPopper, Handshake, GraduationCap, Users, Info } from 'lucide-react';
+import { PartyPopper, Handshake, GraduationCap, Users, Info, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const EvenementsPage = () => {
   const { t } = useLanguage();
@@ -49,12 +50,17 @@ const EvenementsPage = () => {
                 <PartyPopper className="w-7 h-7 text-heritage-gold" />
                 {t('publications.events_title')}
               </h2>
-              <div className="card-heritage p-8 lg:p-10">
-                <h3 className="text-xl font-bold text-foreground mb-2">Nguoun 2024</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {t('publications.nguoun_desc')}
-                </p>
-              </div>
+              <Link to="/evenements/nguoun-2024" className="card-heritage p-8 lg:p-10 block group hover:border-heritage-gold/40 transition-colors">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Nguoun 2024</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t('publications.nguoun_desc')}
+                    </p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-heritage-gold opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 ml-4" />
+                </div>
+              </Link>
             </motion.div>
           </div>
 
