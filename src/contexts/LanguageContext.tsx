@@ -322,6 +322,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nguoun.people_value': 'Peuple Bamoun',
     'nguoun.significance_title': 'Importance culturelle',
     'nguoun.significance_text': 'Le Nguoun représente un moment privilégié de communion et de retrouvailles pour le peuple Bamoun. C\'est l\'occasion de renouveler les liens communautaires, de transmettre les savoirs ancestraux aux jeunes générations et de célébrer l\'identité culturelle Bamoun dans toute sa richesse et sa diversité.',
+    'nguoun.videos_title': 'Vidéos du Nguoun 2024',
 
     'publications.contribute_title': 'Contribuez à Notre Documentation',
     'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
@@ -635,6 +636,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nguoun.people_value': 'Bamoun People',
     'nguoun.significance_title': 'Cultural Significance',
     'nguoun.significance_text': 'The Nguoun represents a privileged moment of communion and reunion for the Bamoun people. It is an opportunity to renew community bonds, pass on ancestral knowledge to younger generations and celebrate Bamoun cultural identity in all its richness and diversity.',
+    'nguoun.videos_title': 'Nguoun 2024 Videos',
   },
 };
 
