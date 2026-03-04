@@ -20,6 +20,8 @@ export const Header = () => {
     { name: t('nav.peoples'), href: '/peoples' },
     { name: t('nav.mission'), href: '/mission' },
     { name: t('nav.values'), href: '/values' },
+    { name: t('nav.publications'), href: '/publications' },
+    { name: t('nav.evenements'), href: '/evenements' },
     { name: t('nav.contact'), href: '/contact' },
   ];
 

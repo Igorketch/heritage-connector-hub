@@ -34,6 +34,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.bureau': 'Bureau Exécutif',
     'nav.team.representants': 'Représentation nationale',
     'nav.team.comite': 'Comité des sages',
+    'nav.publications': 'Publications',
+    'nav.evenements': 'Événements',
 
     // Hero
     'hero.badge': 'Patrimoine • Culture • Héritage',
@@ -302,6 +304,13 @@ const translations: Record<Language, Record<string, string>> = {
     'publications.nguoun_desc': 'Le Nguoun 2024, grande fête traditionnelle du peuple Bamoun.',
     'publications.partners_title': 'Partenaires',
     'publications.coming_soon': 'Information à venir',
+
+    // Events Page
+    'events.badge': 'Événements & Partenaires',
+    'events.title': 'Nos',
+    'events.title_highlight': 'Événements',
+    'events.subtitle': 'Découvrez nos événements culturels, partenariats et activités communautaires.',
+
     'publications.contribute_title': 'Contribuez à Notre Documentation',
     'publications.contribute_text': 'Vous êtes chercheur, universitaire ou auteur d\'un travail lié au patrimoine Mandjara ? Partagez votre publication avec nous pour enrichir notre collection.',
     'publications.contribute_cta': 'Nous Contacter',
@@ -323,6 +332,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.bureau': 'Executive Board',
     'nav.team.representants': 'National Representatives',
     'nav.team.comite': 'Council of Elders',
+    'nav.publications': 'Publications',
+    'nav.evenements': 'Events',
 
     // Hero
     'hero.badge': 'Heritage • Culture • Legacy',
@@ -594,6 +605,12 @@ const translations: Record<Language, Record<string, string>> = {
     'publications.contribute_title': 'Contribute to Our Documentation',
     'publications.contribute_text': 'Are you a researcher, academic or author of work related to the Mandjara heritage? Share your publication with us to enrich our collection.',
     'publications.contribute_cta': 'Contact Us',
+
+    // Events Page
+    'events.badge': 'Events & Partners',
+    'events.title': 'Our',
+    'events.title_highlight': 'Events',
+    'events.subtitle': 'Discover our cultural events, partnerships and community activities.',
   },
 };
 
