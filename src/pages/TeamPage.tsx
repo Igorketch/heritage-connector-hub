@@ -12,7 +12,7 @@ import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import charlottePortrait from '@/assets/charlotte-portrait.jpg';
 import lauretinePortrait from '@/assets/lauretine-portrait.jpg';
 import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
-import evelinePortrait from '@/assets/eveline-kinyuy-portrait.jpg';
+import evelinePortrait from '@/assets/eveline-kinyuy-portrait-2.png';
 
 interface Achievement {
   icon: React.ElementType;
