@@ -28,7 +28,7 @@ const bureauData: Record<Language, TeamMember[]> = {
     },
     {
       name: "Reine Mère Eveline Kinyuy",
-      role: "Vice-Présidente • Liaison Communauté Nso'",
+      role: "Vice-Présidente • Chargée de la liaison avec la Communauté Nso'",
       portrait: evelinePortrait,
       portraitPosition: 'center 20%',
       bio: [
@@ -59,7 +59,7 @@ const bureauData: Record<Language, TeamMember[]> = {
     },
     {
       name: "Madame Aïchetou Fafa Pouyona",
-      role: "Trésorière (Bamoun)",
+      role: "Trésorière",
       portrait: aichetouPortrait,
       bio: [
         "Entrepreneure engagée et leader innovante, Madame Aïchetou est spécialisée dans la valorisation durable des ressources naturelles africaines, avec plus de quinze années d'expérience dans l'agroalimentaire, le bien-être, la formation et le développement d'entreprises.",

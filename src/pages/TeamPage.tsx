@@ -396,7 +396,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
     { id: "bureau-executif", title: "Bureau Exécutif", subtitle: "Coordination opérationnelle des activités", icon: Briefcase, members: [
       {
         name: "Reine Mère Eveline Kinyuy",
-        role: "Vice-Présidente • Liaison Communauté Nso'",
+        role: "Vice-Présidente • Chargée de la liaison avec la Communauté Nso'",
         portrait: evelinePortrait,
         portraitPosition: 'center 20%',
         bio: [
