@@ -107,12 +107,6 @@ const PeoplesPage = () => {
                         className="w-full h-[400px] lg:h-[500px] object-contain bg-heritage-sand/40 p-8"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/60 via-transparent to-transparent" />
-                      <div className="absolute bottom-6 left-6 right-6">
-                        <div className="flex items-center gap-2 text-heritage-cream/90 text-sm">
-                          <MapPin className="w-4 h-4" />
-                          {people.region}
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
