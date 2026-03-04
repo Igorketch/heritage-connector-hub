@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { FileText, Download, Calendar, User, BookOpen } from 'lucide-react';
+import { FileText, Calendar, User, BookOpen, PartyPopper, Handshake, GraduationCap, Users, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface Publication {
@@ -106,7 +106,7 @@ const PublicationsPage = () => {
                   {pub.description}
                 </p>
 
-                {/* Actions */}
+                {/* Actions - Only Read button */}
                 <div className="flex flex-wrap gap-3">
                   <a href={pub.fileUrl} target="_blank" rel="noopener noreferrer">
                     <Button variant="heritage" size="default">
@@ -114,15 +114,89 @@ const PublicationsPage = () => {
                       {t('publications.read')}
                     </Button>
                   </a>
-                  <a href={pub.fileUrl} download={pub.fileName}>
-                    <Button variant="outline" size="default">
-                      <Download size={16} />
-                      {t('publications.download')}
-                    </Button>
-                  </a>
                 </div>
               </motion.article>
             ))}
+          </div>
+
+          {/* Événements Section */}
+          <div className="max-w-4xl mx-auto mt-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <PartyPopper className="w-7 h-7 text-heritage-gold" />
+                {t('publications.events_title')}
+              </h2>
+              <div className="card-heritage p-8 lg:p-10">
+                <h3 className="text-xl font-bold text-foreground mb-2">Nguoun 2024</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t('publications.nguoun_desc')}
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Partenaires Section */}
+          <div className="max-w-4xl mx-auto mt-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <Handshake className="w-7 h-7 text-heritage-gold" />
+                {t('publications.partners_title')}
+              </h2>
+              <div className="card-heritage p-8 lg:p-10">
+                <h3 className="text-xl font-bold text-foreground mb-2">ACPHA</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Association Canadienne pour la Promotion des Héritages Africains (ACPHA)
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Stage 2012 */}
+          <div className="max-w-4xl mx-auto mt-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <GraduationCap className="w-7 h-7 text-heritage-gold" />
+                Stage 2012 des étudiants
+              </h2>
+              <div className="card-heritage p-8 lg:p-10 flex items-center gap-3 text-muted-foreground">
+                <Info size={18} className="text-heritage-gold flex-shrink-0" />
+                <p className="italic">{t('publications.coming_soon')}</p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Les grandes retrouvailles 2012 */}
+          <div className="max-w-4xl mx-auto mt-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <Users className="w-7 h-7 text-heritage-gold" />
+                Les grandes retrouvailles 2012 au Cameroun
+              </h2>
+              <div className="card-heritage p-8 lg:p-10 flex items-center gap-3 text-muted-foreground">
+                <Info size={18} className="text-heritage-gold flex-shrink-0" />
+                <p className="italic">{t('publications.coming_soon')}</p>
+              </div>
+            </motion.div>
           </div>
 
           {/* Call to contribute */}
