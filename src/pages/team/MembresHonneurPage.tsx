@@ -4,6 +4,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
+import massanPortrait from '@/assets/massan-abiroko-portrait.png';
 
 const membresHonneurData: Record<Language, TeamMember[]> = {
   fr: [
@@ -23,6 +24,20 @@ const membresHonneurData: Record<Language, TeamMember[]> = {
         { icon: HandHeart, title: "Bongkisheri Littoral", description: "Ancienne présidente, structuration communautaire et valorisation culturelle" }
       ],
       quote: "Un engagement constant au service de la culture, de la mémoire collective et de l'unité des peuples."
+    },
+    {
+      name: "Maman Massan A Biroko",
+      role: "Membre d'honneur",
+      portrait: massanPortrait,
+      bio: [
+        "Maman Massan A Biroko est une figure respectée et une gardienne des traditions au sein de la communauté Mandjara.",
+        "Son dévouement à la préservation du patrimoine culturel et à la transmission des valeurs ancestrales lui vaut une reconnaissance unanime au sein de l'International Mandjara Heritage."
+      ],
+      achievements: [
+        { icon: Award, title: "Membre d'honneur IMH", description: "Reconnaissance pour sa contribution à la préservation du patrimoine Mandjara" },
+        { icon: HandHeart, title: "Gardienne des traditions", description: "Transmission des savoirs et valeurs ancestrales aux générations futures" }
+      ],
+      quote: "La mémoire d'un peuple vit à travers celles et ceux qui la transmettent avec amour."
     }
   ],
   en: [
@@ -42,6 +57,20 @@ const membresHonneurData: Record<Language, TeamMember[]> = {
         { icon: HandHeart, title: "Bongkisheri Littoral", description: "Former president, community structuring and cultural promotion" }
       ],
       quote: "A constant commitment to culture, collective memory and the unity of peoples."
+    },
+    {
+      name: "Maman Massan A Biroko",
+      role: "Honorary Member",
+      portrait: massanPortrait,
+      bio: [
+        "Maman Massan A Biroko is a respected figure and guardian of traditions within the Mandjara community.",
+        "Her dedication to preserving cultural heritage and transmitting ancestral values has earned her unanimous recognition within International Mandjara Heritage."
+      ],
+      achievements: [
+        { icon: Award, title: "IMH Honorary Member", description: "Recognition for her contribution to preserving Mandjara heritage" },
+        { icon: HandHeart, title: "Guardian of Traditions", description: "Transmitting knowledge and ancestral values to future generations" }
+      ],
+      quote: "A people's memory lives through those who transmit it with love."
     }
   ]
 };
