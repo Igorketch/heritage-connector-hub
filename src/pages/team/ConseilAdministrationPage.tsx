@@ -6,7 +6,7 @@ import { useLanguage, Language } from '@/contexts/LanguageContext';
 import lauretinePortrait from '@/assets/lauretine-portrait.jpg';
 import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import charlottePortrait from '@/assets/charlotte-portrait.jpg';
-import evelinePortrait from '@/assets/eveline-kinyuy-portrait.jpg';
+import evelinePortrait from '@/assets/eveline-kinyuy-portrait-2.png';
 import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
 
 const conseilData: Record<Language, TeamMember[]> = {

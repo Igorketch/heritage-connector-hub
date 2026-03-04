@@ -4,7 +4,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import lauretinePortrait from '@/assets/lauretine-portrait.jpg';
-import evelinePortrait from '@/assets/eveline-kinyuy-portrait.jpg';
+import evelinePortrait from '@/assets/eveline-kinyuy-portrait-2.png';
 import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
 
