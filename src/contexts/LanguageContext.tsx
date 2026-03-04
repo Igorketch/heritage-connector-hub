@@ -36,6 +36,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.comite': 'Comité des sages',
     'nav.publications': 'Publications',
     'nav.evenements': 'Événements',
+    'nav.ressources': 'Ressources',
+    'nav.galerie': 'Galerie',
+    'nav.partenaires': 'Partenaires',
 
     // Hero
     'hero.badge': 'Patrimoine • Culture • Héritage',
@@ -347,6 +350,9 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.comite': 'Council of Elders',
     'nav.publications': 'Publications',
     'nav.evenements': 'Events',
+    'nav.ressources': 'Resources',
+    'nav.galerie': 'Gallery',
+    'nav.partenaires': 'Partners',
 
     // Hero
     'hero.badge': 'Heritage • Culture • Legacy',
