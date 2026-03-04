@@ -605,6 +605,12 @@ const translations: Record<Language, Record<string, string>> = {
     'publications.contribute_title': 'Contribute to Our Documentation',
     'publications.contribute_text': 'Are you a researcher, academic or author of work related to the Mandjara heritage? Share your publication with us to enrich our collection.',
     'publications.contribute_cta': 'Contact Us',
+
+    // Events Page
+    'events.badge': 'Events & Partners',
+    'events.title': 'Our',
+    'events.title_highlight': 'Events',
+    'events.subtitle': 'Discover our cultural events, partnerships and community activities.',
   },
 };
 
