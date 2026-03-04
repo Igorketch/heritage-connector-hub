@@ -332,6 +332,8 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.team.bureau': 'Executive Board',
     'nav.team.representants': 'National Representatives',
     'nav.team.comite': 'Council of Elders',
+    'nav.publications': 'Publications',
+    'nav.evenements': 'Events',
 
     // Hero
     'hero.badge': 'Heritage • Culture • Legacy',
