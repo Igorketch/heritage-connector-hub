@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { PartyPopper, Calendar, MapPin, Users } from 'lucide-react';
+import { PartyPopper, Calendar, MapPin, Users, Film } from 'lucide-react';
 
 const NguounPage = () => {
   const { t } = useLanguage();
@@ -94,6 +94,39 @@ const NguounPage = () => {
               <p className="text-muted-foreground leading-relaxed">
                 {t('nguoun.significance_text')}
               </p>
+            </motion.div>
+
+            {/* Videos */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-serif text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
+                <Film className="w-6 h-6 text-heritage-gold" />
+                {t('nguoun.videos_title')}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="card-heritage overflow-hidden rounded-xl">
+                  <video
+                    controls
+                    className="w-full aspect-video object-cover"
+                    preload="metadata"
+                  >
+                    <source src="/videos/nguoun-2024-video-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div className="card-heritage overflow-hidden rounded-xl">
+                  <video
+                    controls
+                    className="w-full aspect-video object-cover"
+                    preload="metadata"
+                  >
+                    <source src="/videos/nguoun-2024-video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
