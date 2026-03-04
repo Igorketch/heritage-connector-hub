@@ -21,6 +21,7 @@ import ContactPage from "./pages/ContactPage";
 import DonationPage from "./pages/DonationPage";
 import PublicationsPage from "./pages/PublicationsPage";
 import EvenementsPage from "./pages/EvenementsPage";
+import NguounPage from "./pages/evenements/NguounPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

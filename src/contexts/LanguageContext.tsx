@@ -623,6 +623,18 @@ const translations: Record<Language, Record<string, string>> = {
     'events.title': 'Our',
     'events.title_highlight': 'Events',
     'events.subtitle': 'Discover our cultural events, partnerships and community activities.',
+
+    // Nguoun Page
+    'nguoun.badge': 'Cultural Event',
+    'nguoun.subtitle': 'The grand biennial traditional festival of the Bamoun people in Foumban, Cameroon.',
+    'nguoun.about_title': 'What is the Nguoun?',
+    'nguoun.about_text': 'The Nguoun is the greatest traditional festival of the Bamoun people. This biennial event celebrates the culture, history and traditions of the Bamoun kingdom. It brings together the Bamoun community from around the world for ritual ceremonies, traditional dances, music and festivities that perpetuate a rich and ancestral cultural heritage.',
+    'nguoun.date_label': 'Date',
+    'nguoun.location_label': 'Location',
+    'nguoun.people_label': 'People',
+    'nguoun.people_value': 'Bamoun People',
+    'nguoun.significance_title': 'Cultural Significance',
+    'nguoun.significance_text': 'The Nguoun represents a privileged moment of communion and reunion for the Bamoun people. It is an opportunity to renew community bonds, pass on ancestral knowledge to younger generations and celebrate Bamoun cultural identity in all its richness and diversity.',
   },
 };
 
