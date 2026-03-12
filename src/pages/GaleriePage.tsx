@@ -13,6 +13,7 @@ import njiNchare from '@/assets/galerie/nji-nchare-oumarou.jpg';
 import queenFlorence from '@/assets/galerie/queen-florence.png';
 import queenMotherEveline from '@/assets/galerie/queen-mother-eveline.png';
 import symboleBafia from '@/assets/galerie/symbole-bafia.png';
+import nguonSpecial from '@/assets/galerie/nguon-special-event.jpg';
 
 const galleryItems = [
   { src: queenMotherEveline, alt: 'Queen Mother Eveline Kinyuy', category: 'portraits', span: 'row-span-2' },
@@ -24,6 +25,7 @@ const galleryItems = [
   { src: njiNchare, alt: 'Nji Nchare Oumarou', category: 'portraits', span: 'row-span-2' },
   { src: mamanAbiroko, alt: 'Maman Abiroko', category: 'portraits', span: '' },
   { src: symboleBafia, alt: 'Symbole des Bafia - Mfombam Yen', category: 'symboles', span: '' },
+  { src: nguonSpecial, alt: 'Journée culturelle Nguon Special - Communauté Bamoun', category: 'symboles', span: '' },
 ];
 
 const GaleriePage = () => {
