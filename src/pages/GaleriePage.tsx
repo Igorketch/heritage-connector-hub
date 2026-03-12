@@ -13,6 +13,7 @@ import njiNchare from '@/assets/galerie/nji-nchare-oumarou.jpg';
 import queenFlorence from '@/assets/galerie/queen-florence.png';
 import queenMotherEveline from '@/assets/galerie/queen-mother-eveline.png';
 import symboleBafia from '@/assets/galerie/symbole-bafia.png';
+import nguonSpecial from '@/assets/galerie/nguon-special-event.jpg';
 
 const galleryItems = [
   { src: queenMotherEveline, alt: 'Queen Mother Eveline Kinyuy', category: 'portraits', span: 'row-span-2' },
