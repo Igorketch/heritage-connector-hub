@@ -25,6 +25,7 @@ const galleryItems = [
   { src: njiNchare, alt: 'Nji Nchare Oumarou', category: 'portraits', span: 'row-span-2' },
   { src: mamanAbiroko, alt: 'Maman Abiroko', category: 'portraits', span: '' },
   { src: symboleBafia, alt: 'Symbole des Bafia - Mfombam Yen', category: 'symboles', span: '' },
+  { src: nguonSpecial, alt: 'Journée culturelle Nguon Special - Communauté Bamoun', category: 'symboles', span: '' },
 ];
 
 const GaleriePage = () => {
