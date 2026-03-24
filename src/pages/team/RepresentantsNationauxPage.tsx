@@ -213,7 +213,7 @@ const RepresentantsNationauxPage = () => {
               {t('team.cat.representants')}
             </h1>
             <p className="text-xl text-heritage-cream/70 max-w-2xl mx-auto">
-              {t('team.cat.representants_sub')}
+              {language === 'fr' ? "Ambassadrices et Ambassadeurs du patrimoine Mandjara à travers le monde" : t('team.cat.representants_sub')}
             </p>
           </motion.div>
 
