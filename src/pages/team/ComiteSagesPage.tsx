@@ -84,7 +84,7 @@ const sagesData: Record<Language, SubCategory[]> = {
     },
     {
       id: 'special',
-      label: 'Conseillers spéciaux',
+      label: 'Conseil consultatif spécial international',
       members: []
     }
   ],
@@ -156,7 +156,7 @@ const sagesData: Record<Language, SubCategory[]> = {
     },
     {
       id: 'special',
-      label: 'Special Advisers',
+      label: 'International Special Advisory Council',
       members: []
     }
   ]
