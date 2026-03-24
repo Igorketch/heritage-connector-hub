@@ -27,7 +27,7 @@ const membresHonneurData: Record<Language, TeamMember[]> = {
     },
     {
       name: "Maman Massan A Biroko",
-      role: "Membre d'honneur",
+      role: "",
       portrait: massanPortrait,
       bio: [
         "Maman Massan A Biroko est une figure respectée et une gardienne des traditions au sein de la communauté Mandjara.",
@@ -60,7 +60,7 @@ const membresHonneurData: Record<Language, TeamMember[]> = {
     },
     {
       name: "Maman Massan A Biroko",
-      role: "Honorary Member",
+      role: "",
       portrait: massanPortrait,
       bio: [
         "Maman Massan A Biroko is a respected figure and guardian of traditions within the Mandjara community.",
