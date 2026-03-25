@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Handshake } from 'lucide-react';
+import { Handshake, ExternalLink } from 'lucide-react';
 
 const PartenairesPage = () => {
   const { t } = useLanguage();
@@ -48,12 +48,29 @@ const PartenairesPage = () => {
                 <Handshake className="w-7 h-7 text-heritage-gold" />
                 {t('publications.partners_title')}
               </h2>
-              <div className="card-heritage p-8 lg:p-10">
-                <h3 className="text-xl font-bold text-foreground mb-2">ACPHA</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Association Canadienne pour la Promotion des Héritages Africains (ACPHA)
-                </p>
-              </div>
+              <a href="https://acpha.ca" target="_blank" rel="noopener noreferrer" className="card-heritage p-8 lg:p-10 block group hover:border-heritage-gold/40 transition-colors">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">ACPHA</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Association Canadienne pour la Promotion des Héritages Africains (ACPHA)
+                    </p>
+                  </div>
+                  <ExternalLink className="w-5 h-5 text-heritage-gold opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 ml-4" />
+                </div>
+              </a>
+
+              <a href="https://idees-afrique.ca/" target="_blank" rel="noopener noreferrer" className="card-heritage p-8 lg:p-10 block group hover:border-heritage-gold/40 transition-colors mt-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">IDÉES-AFRIQUE</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Institut de Développement Économique, Éducatif et Social pour l'Afrique
+                    </p>
+                  </div>
+                  <ExternalLink className="w-5 h-5 text-heritage-gold opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 ml-4" />
+                </div>
+              </a>
             </motion.div>
           </div>
         </div>
