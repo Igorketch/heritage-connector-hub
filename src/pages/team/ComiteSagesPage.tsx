@@ -9,6 +9,7 @@ import ncharePortrait from '@/assets/nchare-portrait.png';
 import yohanaPortrait from '@/assets/yohana-portrait.png';
 import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
+import adamuPortrait from '@/assets/adamu-portrait.jpg';
 
 interface SubCategory {
   id: string;
@@ -94,7 +95,25 @@ const sagesData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      members: []
+      members: [
+        {
+          name: "Shey Tadze Adamu Mbiydzela",
+          role: "Président Général de NSODA — Conseiller",
+          portrait: adamuPortrait,
+          bio: [
+            "Shey Tadze Adamu est un leader culturel camerounais de premier plan et un professionnel largement reconnu pour sa direction de la Nso Development & Cultural Association (NSODA). Il est également technologue en radiologie médicale avec plus de 25 ans d'expérience. Sa vie et sa carrière se définissent par un engagement envers la préservation de la culture Nso, l'avancement socio-économique du peuple Nso au Cameroun et dans la diaspora, et le service à l'humanité.",
+            "Né dans le village de Mah, dans la division de Bui au Nord-Ouest du Cameroun, il a été profondément influencé par la vie communautaire de ses grands-parents et les valeurs traditionnelles du peuple Nso. Sous sa direction, NSODA a mené diverses initiatives communautaires, notamment en matière d'infrastructures, d'éducation, de santé et de sports dans la division de Bui.",
+            "En reconnaissance de son dévouement à la conservation culturelle, à la cohésion communautaire et à la transmission de la sagesse ancestrale, Shey Tadze Adamu Mbiydzela siège également comme Conseiller au sein du Comité des Sages d'International Mandjara Heritage."
+          ],
+          achievements: [
+            { icon: Crown, title: "Président Général NSODA", description: "Leader de la Nso Development & Cultural Association depuis décembre 2021" },
+            { icon: Building2, title: "Technologue en radiologie", description: "Plus de 25 ans d'expérience en imagerie médicale" },
+            { icon: Users, title: "Unificateur communautaire", description: "Médiation de crises et plaidoyer pour les intérêts du peuple Nso" },
+            { icon: ScrollText, title: "Comité des Sages", description: "Conseiller apportant sagesse traditionnelle et leadership communautaire" }
+          ],
+          quote: "L'identité culturelle est le socle du développement durable, et le bonheur est à la portée de ceux qui vont au-delà d'eux-mêmes."
+        }
+      ]
     },
     {
       id: 'bafia',
@@ -184,7 +203,25 @@ const sagesData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      members: []
+      members: [
+        {
+          name: "Shey Tadze Adamu Mbiydzela",
+          role: "President General of NSODA — Advisor",
+          portrait: adamuPortrait,
+          bio: [
+            "Shey Tadze Adamu is a prominent Cameroonian cultural leader and professional widely recognized for his leadership of the Nso Development & Cultural Association (NSODA). He is also a Senior Radiologic Technologist with more than 25 years of experience. His life and career are defined by a commitment to the preservation of Nso culture, the socio-economic advancement of the Nso people both within Cameroon and in the diaspora, and service to humanity.",
+            "Born in the village of Mah in Nso, Bui Division of the Northwest region of Cameroon, he was deeply influenced by the community life of his grandparents and the traditional values of the Nso people. Under his leadership, NSODA has spearheaded various community initiatives, including improvements in local infrastructure, education, healthcare, and sports within the Bui Division.",
+            "In recognition of his lifelong dedication to cultural stewardship, community cohesion, and the transmission of ancestral wisdom, Shey Tadze Adamu Mbiydzela also serves as a Counselor within the Council of Elders of International Mandjara Heritage."
+          ],
+          achievements: [
+            { icon: Crown, title: "President General NSODA", description: "Leader of the Nso Development & Cultural Association since December 2021" },
+            { icon: Building2, title: "Radiologic Technologist", description: "Over 25 years of experience in medical imaging" },
+            { icon: Users, title: "Community Unifier", description: "Crisis mediation and advocacy for the interests of the Nso people" },
+            { icon: ScrollText, title: "Council of Elders", description: "Advisor bringing traditional wisdom and community leadership" }
+          ],
+          quote: "Cultural identity is the bedrock of sustainable development, and happiness lies within the reach of those who reach beyond themselves."
+        }
+      ]
     },
     {
       id: 'bafia',
