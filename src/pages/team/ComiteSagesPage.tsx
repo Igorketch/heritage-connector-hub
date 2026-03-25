@@ -6,6 +6,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import ncharePortrait from '@/assets/nchare-portrait.png';
+import yohanaPortrait from '@/assets/yohana-portrait.png';
 import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
 
@@ -37,6 +38,23 @@ const sagesData: Record<Language, SubCategory[]> = {
             { icon: ScrollText, title: "Comité des Sages", description: "Conseiller apportant expertise historique et sagesse aux orientations de l'organisation" }
           ],
           quote: "Une mémoire vivante au service de la culture, de l'histoire et de l'identité des peuples."
+        },
+        {
+          name: "Dre Yohana Kimoun",
+          role: "Conseillère",
+          portrait: yohanaPortrait,
+          bio: [
+            "Dre Yohana Kimoun est une pharmacienne propriétaire, biologiste et clinicienne dont le parcours professionnel et personnel reflète un engagement profond envers le soin, le savoir et la communauté. Éducatrice agréée en diabète et en cessation de tabagisme, elle allie expertise clinique et dévouement à l'autonomisation des patients ainsi qu'à la prévention en santé.",
+            "Elle est également professeure associée à l'Université d'Ottawa, où elle contribue à la formation de la relève en pharmacie en offrant au sein de sa pharmacie un milieu de stage aux étudiants du programme PharmD.",
+            "Son engagement au sein de l'organisation Internationale Mandjara Heritage, où elle siège à titre de conseillère au sein du Comité des sages, s'inscrit dans une démarche vivante, évolutive et tournée vers l'avenir, où la mémoire collective devient un moteur d'innovation et de cohésion."
+          ],
+          achievements: [
+            { icon: Building2, title: "Pharmacienne propriétaire", description: "Biologiste et clinicienne engagée dans le soin et la communauté" },
+            { icon: GraduationCap, title: "Professeure associée", description: "Université d'Ottawa, formation de la relève en pharmacie (PharmD)" },
+            { icon: HandHeart, title: "Éducatrice en santé", description: "Agréée en diabète et en cessation de tabagisme, prévention en santé" },
+            { icon: ScrollText, title: "Comité des Sages", description: "Conseillère, vision stratégique à la croisée des sciences, de l'éducation et de la culture" }
+          ],
+          quote: "Quels que soient nos exploits, nos racines demeurent le socle indéniable qui a rendu tout cela possible."
         },
         {
           name: "Nji Nfût Sylvie Mouchingam épouse TABUE",
@@ -109,6 +127,23 @@ const sagesData: Record<Language, SubCategory[]> = {
             { icon: ScrollText, title: "Council of Elders", description: "Advisor bringing historical expertise and wisdom to the organization's direction" }
           ],
           quote: "A living memory in the service of culture, history and the identity of peoples."
+        },
+        {
+          name: "Dr. Yohana Kimoun",
+          role: "Advisor",
+          portrait: yohanaPortrait,
+          bio: [
+            "Dr. Yohana Kimoun is a pharmacist-owner, biologist, and clinician whose professional and personal journey reflects a deep commitment to care, knowledge, and community. A certified diabetes educator and smoking cessation counselor, she combines clinical expertise with a dedication to patient empowerment and health prevention.",
+            "She is also an Associate Professor at the University of Ottawa, where she contributes to training the next generation of pharmacists by offering, within her pharmacy, a practicum environment for PharmD students.",
+            "Her involvement within the International Mandjara Heritage organization, where she serves as a member of the Council of Elders, is part of a living, evolving, and forward-looking approach in which collective memory becomes a driving force for innovation and cohesion."
+          ],
+          achievements: [
+            { icon: Building2, title: "Pharmacist-Owner", description: "Biologist and clinician committed to care and community" },
+            { icon: GraduationCap, title: "Associate Professor", description: "University of Ottawa, training the next generation of pharmacists (PharmD)" },
+            { icon: HandHeart, title: "Health Educator", description: "Certified diabetes educator and smoking cessation counselor" },
+            { icon: ScrollText, title: "Council of Elders", description: "Advisor, strategic vision at the crossroads of science, education and culture" }
+          ],
+          quote: "Whatever our exploits, our roots remain the undeniable foundation that made them possible."
         },
         {
           name: "Nji Nfût Sylvie Mouchingam née TABUE",
