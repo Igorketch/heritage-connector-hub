@@ -10,6 +10,7 @@ import yohanaPortrait from '@/assets/yohana-portrait.png';
 import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
 import adamuPortrait from '@/assets/adamu-portrait.jpg';
+import raoulPortrait from '@/assets/raoul-portrait.jpg';
 
 interface SubCategory {
   id: string;
