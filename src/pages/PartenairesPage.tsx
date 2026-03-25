@@ -48,7 +48,7 @@ const PartenairesPage = () => {
                 <Handshake className="w-7 h-7 text-heritage-gold" />
                 {t('publications.partners_title')}
               </h2>
-              <a href="https://acpha.ca" target="_blank" rel="noopener noreferrer" className="card-heritage p-8 lg:p-10 block group hover:border-heritage-gold/40 transition-colors">
+              <a href="https://www.acpha.ca/" target="_blank" rel="noopener noreferrer" className="card-heritage p-8 lg:p-10 block group hover:border-heritage-gold/40 transition-colors">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-2">ACPHA</h3>
