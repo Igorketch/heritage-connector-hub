@@ -10,6 +10,7 @@ import yohanaPortrait from '@/assets/yohana-portrait.png';
 import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
 import adamuPortrait from '@/assets/adamu-portrait.jpg';
+import raoulPortrait from '@/assets/raoul-portrait.jpg';
 
 interface SubCategory {
   id: string;
@@ -123,7 +124,25 @@ const sagesData: Record<Language, SubCategory[]> = {
     {
       id: 'special',
       label: 'Conseil consultatif spécial international',
-      members: []
+      members: [
+        {
+          name: "Dr. Raoul Tamekou Tsowa",
+          role: "Conseiller",
+          portrait: raoulPortrait,
+          bio: [
+            "Dr. Raoul Tamekou Tsowa est un analyste des politiques publiques, chercheur et entrepreneur social basé à Montréal. Titulaire d'un doctorat en science politique, il travaille au sein de Ressources naturelles Canada dans le domaine de la mesure du rendement et de l'analyse stratégique des politiques publiques.",
+            "Il est également le fondateur et président-directeur général d'IDÉES-AFRIQUE, un organisme canadien engagé dans la promotion du dialogue interculturel, de la recherche appliquée et de l'innovation sociale entre le Canada et l'Afrique. À travers cette plateforme, il développe et pilote plusieurs initiatives structurantes, notamment le Festival de l'Afrique à Beauharnois – \"Beauharnois s'enjaille!\", des projets de recherche, des publications spécialisées et des programmes éducatifs portant sur les enjeux de diversité, de gouvernance et de développement.",
+            "À ce parcours déjà riche s'ajoute son engagement au sein de l'organisation Internationale Mandjara Heritage, où il siège à titre de conseiller au sein du Comité des sages. Cette fonction s'inscrit dans une dynamique de préservation et de transmission du patrimoine culturel et des savoirs, dans une approche résolument intergénérationnelle."
+          ],
+          achievements: [
+            { icon: Building2, title: "Ressources naturelles Canada", description: "Analyste des politiques publiques, mesure du rendement et analyse stratégique" },
+            { icon: GraduationCap, title: "Doctorat en science politique", description: "Chercheur spécialisé en évaluation des politiques publiques et diplomatie culturelle" },
+            { icon: HandHeart, title: "IDÉES-AFRIQUE", description: "Fondateur et PDG, promotion du dialogue interculturel et de l'innovation sociale Canada-Afrique" },
+            { icon: ScrollText, title: "Comité des Sages", description: "Conseiller, convergence stratégique entre recherche, patrimoine et coopération internationale" }
+          ],
+          quote: "À l'intersection de la recherche, de l'action publique et de l'entrepreneuriat social, au service du patrimoine et du dialogue interculturel."
+        }
+      ]
     }
   ],
   en: [
@@ -231,7 +250,25 @@ const sagesData: Record<Language, SubCategory[]> = {
     {
       id: 'special',
       label: 'International Special Advisory Council',
-      members: []
+      members: [
+        {
+          name: "Dr. Raoul Tamekou Tsowa",
+          role: "Advisor",
+          portrait: raoulPortrait,
+          bio: [
+            "Dr. Raoul Tamekou Tsowa is a public policy analyst, researcher, and social entrepreneur based in Montreal. He holds a Ph.D. in Political Science and works at Natural Resources Canada in the field of performance measurement and strategic public policy analysis.",
+            "He is also the Founder and Chief Executive Officer of IDÉES-AFRIQUE, a Canadian organization dedicated to promoting intercultural dialogue, applied research, and social innovation between Canada and Africa. Through this platform, he develops and leads several structuring initiatives, including the Festival of Africa in Beauharnois – \"Beauharnois s'enjaille!\", research projects, specialized publications, and educational programs addressing issues related to diversity, governance, and development.",
+            "Complementing this already distinguished career is his engagement with the organization Internationale Mandjara Heritage, where he serves as an advisor within the Council of Elders. This role is rooted in a commitment to the preservation and transmission of cultural heritage and knowledge, through a distinctly intergenerational approach."
+          ],
+          achievements: [
+            { icon: Building2, title: "Natural Resources Canada", description: "Public policy analyst, performance measurement and strategic analysis" },
+            { icon: GraduationCap, title: "Ph.D. in Political Science", description: "Researcher specializing in public policy evaluation and cultural diplomacy" },
+            { icon: HandHeart, title: "IDÉES-AFRIQUE", description: "Founder and CEO, promoting intercultural dialogue and social innovation between Canada and Africa" },
+            { icon: ScrollText, title: "Council of Elders", description: "Advisor, strategic convergence between research, heritage and international cooperation" }
+          ],
+          quote: "At the intersection of research, public action and social entrepreneurship, in service of heritage and intercultural dialogue."
+        }
+      ]
     }
   ]
 };
