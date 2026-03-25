@@ -16,9 +16,9 @@ export const Footer = () => {
     ],
     ressources: [
       { name: t('footer.publications'), href: '/publications' },
-      { name: t('footer.events'), href: '#' },
-      { name: t('footer.gallery'), href: '#' },
-      { name: t('footer.partners'), href: '#' },
+      { name: t('footer.events'), href: '/evenements' },
+      { name: t('footer.gallery'), href: '/galerie' },
+      { name: t('footer.partners'), href: '/partenaires' },
     ],
     legal: [
       { name: t('footer.legal_notices'), href: '#' },
