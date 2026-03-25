@@ -57,6 +57,23 @@ const sagesData: Record<Language, SubCategory[]> = {
           quote: "Quels que soient nos exploits, nos racines demeurent le socle indéniable qui a rendu tout cela possible."
         },
         {
+          name: "Nji Ousmanou NGAM",
+          role: "Conseiller",
+          portrait: ousmanouPortrait,
+          bio: [
+            "Ousmanou NGAM est titulaire d'un Executive MBA de l'Université du Québec à Montréal et d'un Advanced Management Programme de l'ESSEC de Paris. En tant que Président de Global Trade Logistics Canada Inc, il a notamment orchestré l'acquisition du laboratoire de Cosmétique Capillaire KARILISS Inc, parmi d'autres réalisations notables.",
+            "Avant son installation au Canada, il a dirigé plusieurs entreprises en Afrique, en Europe et en Chine. Son engagement actif en tant qu'administrateur au sein de la fondation MMS (mère du monde pour la santé), ainsi que ses interventions comme éducateur à l'école TEFLER de l'Université d'Ottawa, soulignent son dévouement envers des causes philanthropiques et éducatives.",
+            "Ousmanou NGAM est membre de plusieurs organisations patronales Québécoises, notamment MMS, la Chambre de Commerce de Montréal Métropolitain, de Laval, Sainte-Thérèse-Blainville et du Conseil des Relations Internationales de Montréal."
+          ],
+          achievements: [
+            { icon: Building2, title: "Global Trade Logistics Canada", description: "Président et acquisition du laboratoire KARILISS Inc" },
+            { icon: GraduationCap, title: "Formation d'Excellence", description: "Executive MBA (UQÀM) et Advanced Management Programme (ESSEC Paris)" },
+            { icon: HandHeart, title: "Fondation MMS", description: "Administrateur de la fondation Mère du Monde pour la Santé" },
+            { icon: Briefcase, title: "Réseaux d'Affaires", description: "Chambres de Commerce de Montréal, Laval, Sainte-Thérèse-Blainville et Conseil des Relations Internationales de Montréal" }
+          ],
+          quote: "Un dévouement envers des causes philanthropiques, éducatives et le développement des échanges internationaux."
+        },
+        {
           name: "Nji Nfût Sylvie Mouchingam épouse TABUE",
           role: "Conseillère",
           portrait: sylviePortrait,
@@ -71,22 +88,6 @@ const sagesData: Record<Language, SubCategory[]> = {
             { icon: ScrollText, title: "Comité des Sages", description: "Conseillère pour la vision éthique et la transmission intergénérationnelle" }
           ],
           quote: "Un leadership fondé sur le service, la foi, la responsabilité sociale et l'impact durable."
-        },
-        {
-          name: "Nji Ousmanou NGAM",
-          role: "Conseiller",
-          portrait: ousmanouPortrait,
-          bio: [
-            "Ousmanou NGAM est titulaire d'un Executive MBA de l'Université du Québec à Montréal et d'un Advanced Management Programme de l'ESSEC de Paris. En tant que Président de Global Trade Logistics Canada Inc, il a notamment orchestré l'acquisition du laboratoire de Cosmétique Capillaire KARILISS Inc.",
-            "Avant son installation au Canada, il a dirigé plusieurs entreprises en Afrique, en Europe et en Chine. Son engagement actif en tant qu'administrateur au sein de la fondation MMS, ainsi que ses interventions comme éducateur à l'école TEFLER de l'Université d'Ottawa, soulignent son dévouement envers des causes philanthropiques et éducatives."
-          ],
-          achievements: [
-            { icon: Building2, title: "Global Trade Logistics Canada", description: "Président et acquisition du laboratoire KARILISS Inc" },
-            { icon: GraduationCap, title: "Formation d'Excellence", description: "Executive MBA (UQÀM) et Advanced Management Programme (ESSEC Paris)" },
-            { icon: HandHeart, title: "Fondation MMS", description: "Administrateur de la fondation Mère du Monde pour la Santé" },
-            { icon: Briefcase, title: "Réseaux d'Affaires", description: "Membre des Chambres de Commerce de Montréal, Laval et Sainte-Thérèse-Blainville" }
-          ],
-          quote: "Un dévouement envers des causes philanthropiques, éducatives et le développement des échanges internationaux."
         }
       ]
     },
@@ -146,6 +147,23 @@ const sagesData: Record<Language, SubCategory[]> = {
           quote: "Whatever our exploits, our roots remain the undeniable foundation that made them possible."
         },
         {
+          name: "Nji Ousmanou NGAM",
+          role: "Advisor",
+          portrait: ousmanouPortrait,
+          bio: [
+            "Ousmanou NGAM holds an Executive MBA from the Université du Québec à Montréal and an Advanced Management Programme from ESSEC Paris. As President of Global Trade Logistics Canada Inc, he notably orchestrated the acquisition of the KARILISS Inc hair cosmetics laboratory, among other notable achievements.",
+            "Before settling in Canada, he led several companies in Africa, Europe and China. His active involvement as a board member of the MMS Foundation (Mother of the World for Health), as well as his contributions as an educator at the Telfer School of the University of Ottawa, highlight his dedication to philanthropic and educational causes.",
+            "Ousmanou NGAM is a member of several Quebec business organizations, including MMS, the Chamber of Commerce of Metropolitan Montreal, Laval, Sainte-Thérèse-Blainville and the Council of International Relations of Montreal."
+          ],
+          achievements: [
+            { icon: Building2, title: "Global Trade Logistics Canada", description: "President and acquisition of KARILISS Inc laboratory" },
+            { icon: GraduationCap, title: "Excellence in Education", description: "Executive MBA (UQÀM) and Advanced Management Programme (ESSEC Paris)" },
+            { icon: HandHeart, title: "MMS Foundation", description: "Board member of the Mother of the World for Health Foundation" },
+            { icon: Briefcase, title: "Business Networks", description: "Chambers of Commerce of Montreal, Laval, Sainte-Thérèse-Blainville and Council of International Relations of Montreal" }
+          ],
+          quote: "A dedication to philanthropic, educational causes and the development of international exchanges."
+        },
+        {
           name: "Nji Nfût Sylvie Mouchingam née TABUE",
           role: "Advisor",
           portrait: sylviePortrait,
@@ -160,22 +178,6 @@ const sagesData: Record<Language, SubCategory[]> = {
             { icon: ScrollText, title: "Council of Elders", description: "Advisor for ethical vision and intergenerational transmission" }
           ],
           quote: "Leadership founded on service, faith, social responsibility and lasting impact."
-        },
-        {
-          name: "Nji Ousmanou NGAM",
-          role: "Advisor",
-          portrait: ousmanouPortrait,
-          bio: [
-            "Ousmanou NGAM holds an Executive MBA from the Université du Québec à Montréal and an Advanced Management Programme from ESSEC Paris. As President of Global Trade Logistics Canada Inc, he notably orchestrated the acquisition of the KARILISS Inc hair cosmetics laboratory.",
-            "Before settling in Canada, he led several companies in Africa, Europe and China. His active involvement as a board member of the MMS Foundation, as well as his contributions as an educator at the Telfer School of the University of Ottawa, highlight his dedication to philanthropic and educational causes."
-          ],
-          achievements: [
-            { icon: Building2, title: "Global Trade Logistics Canada", description: "President and acquisition of KARILISS Inc laboratory" },
-            { icon: GraduationCap, title: "Excellence in Education", description: "Executive MBA (UQÀM) and Advanced Management Programme (ESSEC Paris)" },
-            { icon: HandHeart, title: "MMS Foundation", description: "Board member of the Mother of the World for Health Foundation" },
-            { icon: Briefcase, title: "Business Networks", description: "Member of Chambers of Commerce of Montreal, Laval and Sainte-Thérèse-Blainville" }
-          ],
-          quote: "A dedication to philanthropic, educational causes and the development of international exchanges."
         }
       ]
     },
