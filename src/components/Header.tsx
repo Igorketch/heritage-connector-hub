@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import mandjaraLogo from '@/assets/mandjara-logo.png';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
@@ -78,7 +79,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <img alt="International Mandjara Heritage" className="h-24 w-auto transition-transform duration-300 group-hover:scale-105" src="/lovable-uploads/99ac0785-119b-4f3b-8613-37a056986b4c.png" />
+              <img alt="International Mandjara Heritage" className="h-28 w-auto transition-transform duration-300 group-hover:scale-105" src={mandjaraLogo} />
             </div>
           </Link>
 
