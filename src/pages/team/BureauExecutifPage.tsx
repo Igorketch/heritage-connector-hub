@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { PageLayout } from '@/components/PageLayout';
+import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { bureauData } from '@/data/bureauExecutifData';
 
 const BureauExecutifPage = () => {
   const { language, t } = useLanguage();
-  const navigate = useNavigate();
   const bureauExecutif = bureauData[language];
 
   return (
@@ -32,33 +32,7 @@ const BureauExecutifPage = () => {
             </p>
           </motion.div>
 
-          {/* Circular Thumbnails Grid */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
-            {bureauExecutif.map((member, index) => (
-              <motion.button
-                key={member.slug}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.12 }}
-                onClick={() => navigate(`/team/bureau-executif/${member.slug}`)}
-                className="group text-center focus:outline-none"
-              >
-                <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 mx-auto mb-4 rounded-full overflow-hidden border-3 border-heritage-gold/30 transition-all duration-500 shadow-lg group-hover:border-heritage-gold group-hover:shadow-heritage-gold/30 group-hover:shadow-xl">
-                  <img
-                    src={member.portrait}
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    style={{ objectPosition: member.portraitPosition || 'top' }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                <h4 className="font-display font-semibold text-heritage-cream text-sm md:text-base leading-tight max-w-[160px] mx-auto">
-                  {member.name}
-                </h4>
-                <p className="text-heritage-gold/70 text-xs md:text-sm mt-1 max-w-[150px] mx-auto">{member.role}</p>
-              </motion.button>
-            ))}
-          </div>
+          <TeamThumbnailGrid members={bureauExecutif} basePath="/team/bureau-executif" />
         </div>
       </section>
     </PageLayout>

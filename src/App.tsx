@@ -13,11 +13,15 @@ import MissionPage from "./pages/MissionPage";
 import TeamPage from "./pages/TeamPage";
 import ParrainsPage from "./pages/team/ParrainsPage";
 import MembresHonneurPage from "./pages/team/MembresHonneurPage";
+import HonneurMemberProfilePage from "./pages/team/HonneurMemberProfilePage";
 import ConseilAdministrationPage from "./pages/team/ConseilAdministrationPage";
+import ConseilMemberProfilePage from "./pages/team/ConseilMemberProfilePage";
 import BureauExecutifPage from "./pages/team/BureauExecutifPage";
 import BureauMemberProfilePage from "./pages/team/BureauMemberProfilePage";
 import RepresentantsNationauxPage from "./pages/team/RepresentantsNationauxPage";
+import RepresentantsMemberProfilePage from "./pages/team/RepresentantsMemberProfilePage";
 import ComiteSagesPage from "./pages/team/ComiteSagesPage";
+import SagesMemberProfilePage from "./pages/team/SagesMemberProfilePage";
 import ContactPage from "./pages/ContactPage";
 import DonationPage from "./pages/DonationPage";
 import PublicationsPage from "./pages/PublicationsPage";
@@ -46,11 +50,15 @@ const App = () => (
               <Route path="/team" element={<TeamPage />} />
               <Route path="/team/parrains" element={<ParrainsPage />} />
               <Route path="/team/membres-honneur" element={<MembresHonneurPage />} />
+              <Route path="/team/membres-honneur/:slug" element={<HonneurMemberProfilePage />} />
               <Route path="/team/conseil-administration" element={<ConseilAdministrationPage />} />
+              <Route path="/team/conseil-administration/:slug" element={<ConseilMemberProfilePage />} />
               <Route path="/team/bureau-executif" element={<BureauExecutifPage />} />
               <Route path="/team/bureau-executif/:slug" element={<BureauMemberProfilePage />} />
               <Route path="/team/representants-nationaux" element={<RepresentantsNationauxPage />} />
+              <Route path="/team/representants-nationaux/:slug" element={<RepresentantsMemberProfilePage />} />
               <Route path="/team/comite-sages" element={<ComiteSagesPage />} />
+              <Route path="/team/comite-sages/:slug" element={<SagesMemberProfilePage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/donation" element={<DonationPage />} />
               <Route path="/publications" element={<PublicationsPage />} />
