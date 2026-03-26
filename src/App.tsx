@@ -15,6 +15,7 @@ import ParrainsPage from "./pages/team/ParrainsPage";
 import MembresHonneurPage from "./pages/team/MembresHonneurPage";
 import ConseilAdministrationPage from "./pages/team/ConseilAdministrationPage";
 import BureauExecutifPage from "./pages/team/BureauExecutifPage";
+import BureauMemberProfilePage from "./pages/team/BureauMemberProfilePage";
 import RepresentantsNationauxPage from "./pages/team/RepresentantsNationauxPage";
 import ComiteSagesPage from "./pages/team/ComiteSagesPage";
 import ContactPage from "./pages/ContactPage";
@@ -47,6 +48,7 @@ const App = () => (
               <Route path="/team/membres-honneur" element={<MembresHonneurPage />} />
               <Route path="/team/conseil-administration" element={<ConseilAdministrationPage />} />
               <Route path="/team/bureau-executif" element={<BureauExecutifPage />} />
+              <Route path="/team/bureau-executif/:slug" element={<BureauMemberProfilePage />} />
               <Route path="/team/representants-nationaux" element={<RepresentantsNationauxPage />} />
               <Route path="/team/comite-sages" element={<ComiteSagesPage />} />
               <Route path="/contact" element={<ContactPage />} />
