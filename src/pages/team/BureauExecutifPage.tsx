@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
 import { Briefcase, Crown, GraduationCap, Building2, HandHeart, Users, Globe, Stethoscope, Sparkles, Heart, Leaf, Award, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
@@ -142,6 +143,15 @@ const bureauData: Record<Language, TeamMember[]> = {
 const BureauExecutifPage = () => {
   const { language, t } = useLanguage();
   const bureauExecutif = bureauData[language];
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const profileRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const handleThumbnailClick = (index: number) => {
+    setSelectedIndex(index);
+    setTimeout(() => {
+      profileRefs.current[index]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  };
 
   return (
     <PageLayout>
@@ -165,9 +175,50 @@ const BureauExecutifPage = () => {
             </p>
           </motion.div>
 
+          {/* Circular Thumbnails */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-16">
+            {bureauExecutif.map((member, index) => (
+              <motion.button
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                onClick={() => handleThumbnailClick(index)}
+                className={`group text-center focus:outline-none ${selectedIndex === index ? 'scale-105' : ''}`}
+              >
+                <div className={`relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto mb-3 rounded-full overflow-hidden border-3 transition-all duration-500 shadow-lg ${
+                  selectedIndex === index
+                    ? 'border-heritage-gold shadow-heritage-gold/30 shadow-xl'
+                    : 'border-heritage-gold/30 group-hover:border-heritage-gold/70 group-hover:shadow-heritage-gold/20 group-hover:shadow-xl'
+                }`}>
+                  <img
+                    src={member.portrait}
+                    alt={member.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    style={{ objectPosition: member.portraitPosition || 'top' }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                <h4 className="font-display font-semibold text-heritage-cream text-sm leading-tight max-w-[140px] mx-auto">
+                  {member.name}
+                </h4>
+                <p className="text-heritage-gold/70 text-xs mt-1 max-w-[130px] mx-auto">{member.role}</p>
+              </motion.button>
+            ))}
+          </div>
+
+          <div className="w-24 h-px bg-heritage-gold/30 mx-auto mb-16" />
+
+          {/* Full Profiles */}
           <div className="space-y-20">
             {bureauExecutif.map((member, index) => (
-              <TeamMemberCard key={member.name} member={member} index={index} />
+              <div
+                key={member.name}
+                ref={(el) => { profileRefs.current[index] = el; }}
+                className="scroll-mt-24"
+              >
+                <TeamMemberCard member={member} index={index} />
+              </div>
             ))}
           </div>
         </div>
