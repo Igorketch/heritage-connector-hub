@@ -5,6 +5,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
 import fonMbingloImg from '@/assets/team/fon-mbinglo.jpg';
+import camilleMouteImg from '@/assets/team/camille-moute.jpg';
 
 interface Patron {
   name: string;
@@ -93,7 +94,32 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'bafia',
       label: 'Bafia',
-      patrons: []
+      patrons: [
+        {
+          name: "Sa Majesté Moute à Bidias Camille",
+          role: "Patriarche des Bafia",
+          image: camilleMouteImg,
+        }
+      ],
+      message: {
+        title: "Message de Sa Majesté Moute à Bidias Camille",
+        paragraphs: [
+          "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
+          "C'est avec honneur et satisfaction que j'accepte d'accorder mon Haut Patronage Royal et Traditionnel à l'organisation International Mandjara Heritage, et d'y servir comme Parrain, aux côtés de Sa Majesté le Sultan Roi des Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil, et de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'.",
+          "Dans cet esprit de fraternité et d'unité des autorités traditionnelles, j'exprime mon profond attachement à mes frères, Sa Majesté le Sultan Roi Nabil et Son Altesse Royale Sehm Mbinglo I, avec lesquels je partage une vision commune de préservation et de rayonnement de notre héritage. C'est avec leur soutien et dans cette synergie fraternelle que nous apporterons pleinement notre contribution à la réussite de cette initiative.",
+          "La mémoire d'un peuple constitue l'un de ses plus grands trésors. Elle doit être préservée, protégée et transmise de génération en génération afin que les racines demeurent vivantes et que les générations futures connaissent l'histoire, les valeurs et la dignité de leurs ancêtres. Cette transmission intergénérationnelle représente un fondement essentiel de la continuité de nos cultures et de nos royaumes.",
+          "Je salue avec estime l'initiative portée par une fille Mandjara, fondatrice de cette organisation, dont l'engagement contribue à consolider les liens de fraternité, à préserver notre patrimoine culturel commun, et à promouvoir la transmission des valeurs qui fondent notre identité.",
+          "En accordant ce Haut Patronage Royal et Traditionnel, j'exprime mon attachement à la sauvegarde de notre héritage culturel, et j'encourage celles et ceux qui portent cette initiative à poursuivre leurs efforts afin que notre héritage commun continue d'inspirer et de rassembler les générations présentes et futures.",
+          "J'adresse également mes remerciements à toutes les personnes qui soutiennent cette cause de ralliement, et j'invite tous les enfants Mandjara de la diaspora à demeurer attachés à leurs racines, à leur histoire et aux valeurs qui fondent notre identité commune.",
+          "En ma qualité de Patriarche des Bafia, je bénis cette initiative et la confie à la sagesse de nos ancêtres et à la lumière du Dieu suprême. Puisse-t-elle continuer à grandir et à servir la mémoire, l'unité et l'honneur du peuple Mandjara."
+        ],
+        signature: [
+          "Sa Majesté Moute à Bidias Camille",
+          "Patriarche des Bafia",
+          "Parrain de International Mandjara Heritage",
+          "Haut Patronage Royal et Traditionnel"
+        ]
+      }
     }
   ],
   en: [
@@ -163,7 +189,32 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'bafia',
       label: 'Bafia',
-      patrons: []
+      patrons: [
+        {
+          name: "His Majesty Moute à Bidias Camille",
+          role: "Patriarch of the Bafia",
+          image: camilleMouteImg,
+        }
+      ],
+      message: {
+        title: "Message from His Majesty Moute à Bidias Camille",
+        paragraphs: [
+          "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
+          "It is with honour and satisfaction that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to serve as Patron, alongside His Majesty the Sultan King of the Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil, and His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'.",
+          "In this spirit of fraternity and unity among traditional authorities, I express my deep attachment to my brothers, His Majesty the Sultan King Nabil and His Royal Highness Sehm Mbinglo I, with whom I share a common vision of preservation and promotion of our heritage. It is with their support and in this fraternal synergy that we will fully contribute to the success of this initiative.",
+          "The memory of a people constitutes one of its greatest treasures. It must be preserved, protected and transmitted from generation to generation so that roots remain alive and future generations know the history, values and dignity of their ancestors. This intergenerational transmission represents an essential foundation for the continuity of our cultures and our kingdoms.",
+          "I commend with esteem the initiative carried by a Mandjara daughter, founder of this organization, whose commitment contributes to consolidating the bonds of fraternity, preserving our common cultural heritage, and promoting the transmission of the values that underpin our identity.",
+          "By granting this High Royal and Traditional Patronage, I express my attachment to the safeguarding of our cultural heritage, and I encourage those who carry this initiative to pursue their efforts so that our common heritage continues to inspire and unite present and future generations.",
+          "I also extend my thanks to all those who support this rallying cause, and I invite all Mandjara children of the diaspora to remain attached to their roots, their history and the values that underpin our common identity.",
+          "In my capacity as Patriarch of the Bafia, I bless this initiative and entrust it to the wisdom of our ancestors and to the light of the Supreme God. May it continue to grow and serve the memory, unity and honour of the Mandjara people."
+        ],
+        signature: [
+          "His Majesty Moute à Bidias Camille",
+          "Patriarch of the Bafia",
+          "Patron of International Mandjara Heritage",
+          "High Royal and Traditional Patronage"
+        ]
+      }
     }
   ]
 };
