@@ -62,7 +62,26 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      patrons: []
+      patrons: [],
+      message: {
+        title: "Message de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'",
+        paragraphs: [
+          "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
+          "C'est avec une immense fierté, une profonde gratitude et une sincère appréciation pour la continuité historique de notre héritage commun, que j'accepte d'accorder mon Haut Patronage Royal et Traditionnel à l'organisation International Mandjara Heritage, et de m'y associer en qualité de Parrain, aux côtés de Sa Majesté Nfonrifoum Mbombo Njoya Mouhamed Nabil, Sultan Roi des Bamoun, et de Sa Majesté Moute à Bidias Camille, Patriarche des Bafia.",
+          "Depuis de nombreuses années, j'observe avec attention et estime les efforts entrepris pour préserver et raviver l'héritage Mandjara. Je garde en mémoire les premiers élans qui ont conduit aux festivals Mandjara de 2009 et 2011, ainsi qu'à l'initiative Les Grandes Retrouvailles organisée à Douala, dont j'avais salué l'esprit de rassemblement et la force symbolique. Ces moments ont rappelé à nos peuples la profondeur de nos liens ancestraux et la responsabilité qui nous incombe de les transmettre.",
+          "Les peuples Bamoun, Nso' et Bafia partagent une histoire façonnée par la parenté, la solidarité et une mémoire commune. Cette fraternité ancienne constitue un socle précieux, et c'est dans cette continuité que je reconnais la pertinence de la démarche portée aujourd'hui par International Mandjara Heritage. En inscrivant notre héritage dans un cadre structuré, contemporain et ouvert au monde, tout en demeurant fidèle aux fondements traditionnels, cette organisation contribue à renforcer l'unité, la dignité et la visibilité de notre identité collective.",
+          "Je tiens également à saluer l'engagement remarquable des dignes filles Mandjara, à l'origine de cette initiative, dont la détermination s'inscrit dans la lignée des femmes qui, depuis toujours, portent la vie, la mémoire et la cohésion de nos communautés. Comme je l'ai rappelé par le passé, la force d'une société repose sur ses femmes, piliers de l'unité, de la culture et du développement. Leur rôle dans la transmission des valeurs et dans l'éducation des générations futures demeure essentiel pour l'avenir de nos royaumes.",
+          "En accordant ce Haut Patronage Royal et Traditionnel, j'exprime mon attachement à toute initiative qui œuvre à :\n• Préserver et promouvoir notre héritage culturel ;\n• Renforcer les liens entre nos communautés et leurs diasporas ;\n• Encourager la transmission intergénérationnelle ;\n• Soutenir des actions éducatives et culturelles porteuses d'unité et de cohésion.",
+          "J'encourage toutes celles et ceux qui portent cette vision à poursuivre leur engagement avec constance, humilité et fidélité aux valeurs qui fondent notre identité. Que cette initiative contribue à inspirer, rassembler et guider les générations présentes et futures, au-delà des frontières et des distances.",
+          "En ma qualité de Fon Suprême des Nso', je bénis cette démarche et la confie à la sagesse de nos ancêtres, afin qu'elle continue de servir la mémoire, l'unité et l'honneur du peuple Mandjara, et qu'elle éclaire le chemin de celles et ceux qui œuvrent pour la continuité de notre héritage."
+        ],
+        signature: [
+          "Son Altesse Royale Sehm Mbinglo I,",
+          "Fon Suprême des Nso',",
+          "Parrain de International Mandjara Heritage",
+          "Haut Patronage Royal et Traditionnel"
+        ]
+      }
     },
     {
       id: 'bafia',
@@ -107,7 +126,26 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      patrons: []
+      patrons: [],
+      message: {
+        title: "Message from His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'",
+        paragraphs: [
+          "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
+          "It is with immense pride, deep gratitude and sincere appreciation for the historical continuity of our shared heritage, that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to be associated with it as Patron, alongside His Majesty Nfonrifoum Mbombo Njoya Mouhamed Nabil, Sultan King of the Bamoun, and His Majesty Moute à Bidias Camille, Patriarch of the Bafia.",
+          "For many years, I have observed with attention and esteem the efforts undertaken to preserve and revive the Mandjara heritage. I remember the early impulses that led to the Mandjara festivals of 2009 and 2011, as well as the initiative Les Grandes Retrouvailles organized in Douala, whose spirit of gathering and symbolic strength I had commended. These moments reminded our peoples of the depth of our ancestral bonds and the responsibility that falls upon us to transmit them.",
+          "The Bamoun, Nso' and Bafia peoples share a history shaped by kinship, solidarity and a common memory. This ancient brotherhood constitutes a precious foundation, and it is in this continuity that I recognize the relevance of the approach carried today by International Mandjara Heritage. By inscribing our heritage in a structured, contemporary and globally open framework, while remaining faithful to traditional foundations, this organization contributes to strengthening the unity, dignity and visibility of our collective identity.",
+          "I also wish to commend the remarkable commitment of the worthy Mandjara daughters behind this initiative, whose determination follows in the footsteps of the women who have always carried life, memory and the cohesion of our communities. As I have recalled in the past, the strength of a society rests on its women, pillars of unity, culture and development. Their role in transmitting values and in educating future generations remains essential for the future of our kingdoms.",
+          "By granting this High Royal and Traditional Patronage, I express my attachment to any initiative that works to:\n• Preserve and promote our cultural heritage;\n• Strengthen the bonds between our communities and their diasporas;\n• Encourage intergenerational transmission;\n• Support educational and cultural actions that foster unity and cohesion.",
+          "I encourage all those who carry this vision to pursue their commitment with constancy, humility and faithfulness to the values that underpin our identity. May this initiative contribute to inspiring, uniting and guiding present and future generations, beyond borders and distances.",
+          "In my capacity as Supreme Fon of the Nso', I bless this initiative and entrust it to the wisdom of our ancestors, so that it may continue to serve the memory, unity and honour of the Mandjara people, and illuminate the path of those who work for the continuity of our heritage."
+        ],
+        signature: [
+          "His Royal Highness Sehm Mbinglo I,",
+          "Supreme Fon of the Nso',",
+          "Patron of International Mandjara Heritage",
+          "High Royal and Traditional Patronage"
+        ]
+      }
     },
     {
       id: 'bafia',
