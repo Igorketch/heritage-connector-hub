@@ -67,9 +67,12 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
           role: "Conseiller",
           portrait: ousmanouPortrait,
           bio: [
-            "Ousmanou NGAM est titulaire d'un Executive MBA de l'Université du Québec à Montréal et d'un Advanced Management Programme de l'ESSEC de Paris. En tant que Président de Global Trade Logistics Canada Inc, il a notamment orchestré l'acquisition du laboratoire de Cosmétique Capillaire KARILISS Inc, parmi d'autres réalisations notables.",
-            "Avant son installation au Canada, il a dirigé plusieurs entreprises en Afrique, en Europe et en Chine. Son engagement actif en tant qu'administrateur au sein de la fondation MMS (mère du monde pour la santé), ainsi que ses interventions comme éducateur à l'école TEFLER de l'Université d'Ottawa, soulignent son dévouement envers des causes philanthropiques et éducatives.",
-            "Ousmanou NGAM est membre de plusieurs organisations patronales Québécoises, notamment MMS, la Chambre de Commerce de Montréal Métropolitain, de Laval, Sainte-Thérèse-Blainville et du Conseil des Relations Internationales de Montréal."
+            "Nji Ousmanou NGAM est titulaire d'un Executive MBA de l'Université du Québec à Montréal et d'un Advanced Management Programme de l'ESSEC de Paris.",
+            "En tant que Président de Global Trade Logistics Canada Inc, il a notamment orchestré l'acquisition du laboratoire de Cosmétique Capillaire KARILISS Inc, parmi d'autres réalisations notables.",
+            "Avant son installation au Canada, il a dirigé plusieurs entreprises en Afrique, en Europe et en Chine.",
+            "Son engagement actif en tant qu'administrateur au sein de la fondation MMS (mère du monde pour la santé), ainsi que ses interventions comme éducateur à l'école TEFLER de l'Université d'Ottawa, soulignent son dévouement envers des causes philanthropiques et éducatives.",
+            "Ousmanou NGAM est membre de plusieurs organisations patronales québécoises, notamment MMS, la Chambre de Commerce de Montréal Métropolitain, de Laval, Sainte-Thérèse-Blainville et du Conseil des Relations Internationales de Montréal.",
+            "Dans le cadre de son rôle de Conseiller au sein du Comité des Sages de l'International Mandjara Heritage, il apporte son autorité morale et stratégique, sa vision éclairée sur la préservation du patrimoine culturel, et son expertise internationale en gouvernance et leadership. Sa contribution renforce la mission de l'organisation en matière de transmission des savoirs traditionnels, d'accompagnement des initiatives communautaires et d'encadrement des projets culturels d'envergure. Reconnu pour sa capacité à conjuguer expérience entrepreneuriale, sensibilité culturelle et engagement philanthropique, il joue un rôle central en tant que mentor et guide pour les jeunes leaders et les dignes filles et fils du terroir investis dans la valorisation du patrimoine commun."
           ],
           achievements: [
             { icon: Building2, title: "Global Trade Logistics Canada", description: "Président et acquisition du laboratoire KARILISS Inc" },
@@ -221,9 +224,12 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
           role: "Advisor",
           portrait: ousmanouPortrait,
           bio: [
-            "Ousmanou NGAM holds an Executive MBA from the Université du Québec à Montréal and an Advanced Management Programme from ESSEC Paris. As President of Global Trade Logistics Canada Inc, he notably orchestrated the acquisition of the KARILISS Inc hair cosmetics laboratory, among other notable achievements.",
-            "Before settling in Canada, he led several companies in Africa, Europe and China. His active involvement as a board member of the MMS Foundation (Mother of the World for Health), as well as his contributions as an educator at the Telfer School of the University of Ottawa, highlight his dedication to philanthropic and educational causes.",
-            "Ousmanou NGAM is a member of several Quebec business organizations, including MMS, the Chamber of Commerce of Metropolitan Montreal, Laval, Sainte-Thérèse-Blainville and the Council of International Relations of Montreal."
+            "Nji Ousmanou NGAM holds an Executive MBA from the Université du Québec à Montréal and an Advanced Management Programme from ESSEC Paris.",
+            "As President of Global Trade Logistics Canada Inc, he notably orchestrated the acquisition of the KARILISS Inc hair cosmetics laboratory, among other notable achievements.",
+            "Before settling in Canada, he led several companies in Africa, Europe and China.",
+            "His active involvement as a board member of the MMS Foundation (Mother of the World for Health), as well as his contributions as an educator at the Telfer School of the University of Ottawa, highlight his dedication to philanthropic and educational causes.",
+            "Ousmanou NGAM is a member of several Quebec business organizations, including MMS, the Chamber of Commerce of Metropolitan Montreal, Laval, Sainte-Thérèse-Blainville and the Council of International Relations of Montreal.",
+            "In his role as Advisor on the Council of Elders of International Mandjara Heritage, he brings his moral and strategic authority, his enlightened vision for cultural heritage preservation, and his international expertise in governance and leadership. His contribution strengthens the organization's mission in transmitting traditional knowledge, supporting community initiatives, and overseeing large-scale cultural projects. Recognized for his ability to combine entrepreneurial experience, cultural sensitivity and philanthropic commitment, he plays a central role as a mentor and guide for young leaders and the worthy sons and daughters of the homeland invested in the valorization of their shared heritage."
           ],
           achievements: [
             { icon: Building2, title: "Global Trade Logistics Canada", description: "President and acquisition of KARILISS Inc laboratory" },
