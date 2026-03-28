@@ -4,6 +4,7 @@ import { Star, Users, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
+import fonMbingloImg from '@/assets/team/fon-mbinglo.jpg';
 
 interface Patron {
   name: string;
@@ -62,7 +63,13 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      patrons: [],
+      patrons: [
+        {
+          name: "Son Altesse Royale Sehm Mbinglo I",
+          role: "Fon Suprême des Nso'",
+          image: fonMbingloImg,
+        }
+      ],
       message: {
         title: "Message de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'",
         paragraphs: [
@@ -126,7 +133,13 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      patrons: [],
+      patrons: [
+        {
+          name: "His Royal Highness Sehm Mbinglo I",
+          role: "Supreme Fon of the Nso'",
+          image: fonMbingloImg,
+        }
+      ],
       message: {
         title: "Message from His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'",
         paragraphs: [
