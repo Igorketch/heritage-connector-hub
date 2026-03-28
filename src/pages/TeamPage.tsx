@@ -44,7 +44,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
   fr: [
     {
       id: 'parrains',
-      title: 'Parrains',
+      title: 'Haut Patronage Royal et Traditionnel',
       subtitle: 'Personnalités de marque soutenant notre mission',
       icon: Star,
       link: '/team/parrains',
@@ -121,7 +121,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
   en: [
     {
       id: 'parrains',
-      title: 'Patrons',
+      title: 'High Royal & Traditional Patronage',
       subtitle: 'Distinguished figures supporting our mission',
       icon: Star,
       link: '/team/parrains',
