@@ -4,6 +4,7 @@ import { Star, Users, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
+import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
 
 interface SubCategory {
   id: string;
