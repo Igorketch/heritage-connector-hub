@@ -7,6 +7,7 @@ import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
 import adamuPortrait from '@/assets/adamu-portrait.jpg';
 import raoulPortrait from '@/assets/raoul-portrait.jpg';
+import geraldPortrait from '@/assets/team/gerald-wirmvem.jpg';
 
 export interface SagesSubCategory {
   id: string;
@@ -114,6 +115,28 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
             { icon: ScrollText, title: "Comité des Sages", description: "Conseiller apportant sagesse traditionnelle et leadership communautaire" }
           ],
           quote: "L'identité culturelle est le socle du développement durable, et le bonheur est à la portée de ceux qui vont au-delà d'eux-mêmes."
+        },
+        {
+          slug: "gerald-wirmvem",
+          name: "Mfoome Nso, Wirmvem Gerald Nyuywir",
+          role: "Conseiller",
+          portrait: geraldPortrait,
+          bio: [
+            "Né le 3 mai 1967 à Mbamsong, subdivision de Nkum (département du Bui), Mfoome Nso, Wirmvem Gerald Nyuywir incarne une autorité morale, culturelle et stratégique distinguée, profondément enracinée dans l'histoire et les dynamiques évolutives du peuple Nso.",
+            "Titulaire d'un diplôme en comptabilité financière et bancaire, il a bâti une solide carrière professionnelle en tant qu'assistant administratif à la Sous-préfecture de Douala IV (Bonabéri), où il a développé une expertise reconnue en gestion administrative et coordination organisationnelle.",
+            "Au-delà de sa trajectoire professionnelle, Mfoome Nso est largement reconnu pour son engagement exceptionnel au service de la communauté et de la préservation du patrimoine culturel. Il a occupé des postes de direction clés au sein de grandes organisations communautaires, servant comme Secrétaire financier puis Secrétaire général de la Communauté Nso à Douala (Bongnavti) de 2005 à 2016, où il fut l'un des principaux acteurs du Festival culturel Mandjara en 2011. Il a également servi comme chargé des relations publiques de la Nso Cultural and Development Association (NSODA) de 2009 à 2024.",
+            "Son leadership s'est étendu à la Mbam Valley Development Association (MBAVDA), où il a servi comme Secrétaire général pendant près de deux décennies (2007–2025) avant d'assumer le rôle de Président. La Vallée du Mbam, composée de huit villages dont Kovvifem — historiquement significatif comme lieu où Ngonnso arriva en 1394 pour établir la dynastie Nso avec le Clan Mntar — demeure un site central de patrimoine et de transmission culturelle auquel il est profondément attaché.",
+            "Par son dévouement de toute une vie, Mfoome Nso se dresse comme un véritable gardien de la sagesse, de la tradition et de la transmission, travaillant constamment à préserver les héritages culturels et à renforcer la cohésion communautaire. Ses contributions lui ont valu de multiples reconnaissances d'institutions telles que la Mah Area Development Association (MADA), la Nkum Area Development Union (NADU) et NSODA.",
+            "En 2014, il a reçu le prestigieux Ngonnso Excellence Award pour la promotion de la culture et du développement, une distinction approuvée par Sa Majesté Royale Sehm Mbinglo I, Fon Suprême des Nso. En 2023, lors de l'Assemblée générale annuelle de NSODA, il a été davantage honoré par cette autorité traditionnelle suprême, recevant une plume rouge et se voyant conférer le titre de « Mfoome Nso », affirmant ainsi sa légitimité, sa dignité et sa sagesse au sein de la communauté.",
+            "Aujourd'hui, en tant que conseiller de haut niveau au sein du Comité des Sages de l'organisation International Mandjara Heritage, il met son expérience, sa vision et son profond ancrage culturel au service de la transmission intergénérationnelle, de la promotion du patrimoine africain et de l'orientation stratégique de l'organisation."
+          ],
+          achievements: [
+            { icon: Crown, title: "Mfoome Nso", description: "Titre conféré par Sa Majesté Sehm Mbinglo I, Fon Suprême des Nso" },
+            { icon: Users, title: "Leader communautaire", description: "Secrétaire général puis Président de MBAVDA, acteur clé du Festival Mandjara 2011" },
+            { icon: Building2, title: "Assistant administratif", description: "Sous-préfecture de Douala IV, expertise en gestion et coordination" },
+            { icon: ScrollText, title: "Comité des Sages", description: "Conseiller apportant sagesse traditionnelle et vision stratégique" }
+          ],
+          quote: "Un véritable gardien de la sagesse, de la tradition et de la transmission, au service de la cohésion communautaire."
         }
       ]
     },
@@ -242,6 +265,28 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
             { icon: ScrollText, title: "Council of Elders", description: "Advisor bringing traditional wisdom and community leadership" }
           ],
           quote: "Cultural identity is the bedrock of sustainable development, and happiness lies within the reach of those who reach beyond themselves."
+        },
+        {
+          slug: "gerald-wirmvem",
+          name: "Mfoome Nso, Wirmvem Gerald Nyuywir",
+          role: "Advisor",
+          portrait: geraldPortrait,
+          bio: [
+            "Born on May 3, 1967, in Mbamsong, Nkum Subdivision (Bui Division), Mfoome Nso, Wirmvem Gerald Nyuywir embodies a distinguished moral, cultural, and strategic authority, deeply rooted in the history and evolving dynamics of the Nso people.",
+            "He holds a Diploma in Financial Accounting and Banking and has built a solid professional career as an Administrative Assistant at the Divisional Office of Douala IV Subdivision (Bonaberi), where he has developed recognized expertise in administrative management and organizational coordination.",
+            "Beyond his professional trajectory, Mfoome Nso is widely recognized for his outstanding commitment to community service and the preservation of cultural heritage. He held key leadership roles within major community organizations, serving as Financial Secretary and later Secretary General of the Nso Community in Douala (Bongnavti) from 2005 to 2016, where he was one of the principal actors of the Mandjara Cultural Festival in 2011. He also served as Public Relations Officer for the Nso Cultural and Development Association (NSODA) from 2009 to 2024.",
+            "His leadership further extended to the Mbam Valley Development Association (MBAVDA), where he served as Secretary General for nearly two decades (2007–2025) before assuming the role of President. The Mbam Valley, composed of eight villages including Kovvifem—historically significant as the place where Ngonnso arrived in 1394 to establish the Nso dynasty with the Mntar Clan—remains a central site of heritage and cultural transmission to which he is deeply committed.",
+            "Through his lifelong dedication, Mfoome Nso stands as a true guardian of wisdom, tradition, and transmission, consistently working to preserve cultural legacies and strengthen community cohesion. His contributions have earned him multiple recognitions from institutions such as the Mah Area Development Association (MADA), the Nkum Area Development Union (NADU), and NSODA.",
+            "In 2014, he was awarded the prestigious Ngonnso Excellence Award for the promotion of culture and development, a distinction endorsed by His Royal Majesty Sehm Mbinglo I, Paramount Fon of Nso. In 2023, during the NSODA Annual General Assembly, he was further honored by this supreme traditional authority, receiving a red feather and being conferred the title of \"Mfoome Nso,\" thus affirming his legitimacy, dignity, and wisdom within the community.",
+            "Today, as a high-level advisor to the Council of Elders of the International Mandjara Heritage Organization, he brings his experience, vision, and deep cultural grounding to the service of intergenerational transmission, the promotion of African heritage, and the strategic guidance of the organization's direction."
+          ],
+          achievements: [
+            { icon: Crown, title: "Mfoome Nso", description: "Title conferred by His Royal Majesty Sehm Mbinglo I, Paramount Fon of Nso" },
+            { icon: Users, title: "Community Leader", description: "Secretary General then President of MBAVDA, key actor of the 2011 Mandjara Festival" },
+            { icon: Building2, title: "Administrative Assistant", description: "Divisional Office of Douala IV, expertise in management and coordination" },
+            { icon: ScrollText, title: "Council of Elders", description: "Advisor bringing traditional wisdom and strategic vision" }
+          ],
+          quote: "A true guardian of wisdom, tradition, and transmission, in service of community cohesion."
         }
       ]
     },
