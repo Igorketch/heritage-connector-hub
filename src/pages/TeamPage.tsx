@@ -20,6 +20,7 @@ import sylviePortrait from '@/assets/sylvie-portrait.jpg';
 import ousmanouPortrait from '@/assets/ousmanou-portrait.jpg';
 import adamuPortrait from '@/assets/adamu-portrait.jpg';
 import raoulPortrait from '@/assets/raoul-portrait.jpg';
+import geraldPortrait from '@/assets/team/gerald-wirmvem.jpg';
 import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
 import massanPortrait from '@/assets/massan-abiroko-portrait.png';
 
@@ -112,6 +113,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         { name: 'Nji Ousmanou NGAM', role: 'Conseiller', portrait: ousmanouPortrait },
         { name: 'Nji Nfût Sylvie Mouchingam épouse TABUE', role: 'Conseillère', portrait: sylviePortrait },
         { name: 'Shey Tadze Adamu Mbiydzela', role: 'Conseiller', portrait: adamuPortrait },
+        { name: 'Mfoome Nso, Wirmvem Gerald Nyuywir', role: 'Conseiller', portrait: geraldPortrait },
         { name: 'Dr. Raoul Tamekou Tsowa', role: 'Conseiller', portrait: raoulPortrait }
       ]
     }
@@ -188,6 +190,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         { name: 'Nji Ousmanou NGAM', role: 'Advisor', portrait: ousmanouPortrait },
         { name: 'Nji Nfût Sylvie Mouchingam née TABUE', role: 'Advisor', portrait: sylviePortrait },
         { name: 'Shey Tadze Adamu Mbiydzela', role: 'Advisor', portrait: adamuPortrait },
+        { name: 'Mfoome Nso, Wirmvem Gerald Nyuywir', role: 'Advisor', portrait: geraldPortrait },
         { name: 'Dr. Raoul Tamekou Tsowa', role: 'Advisor', portrait: raoulPortrait }
       ]
     }
