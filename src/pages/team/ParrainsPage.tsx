@@ -2,19 +2,26 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Users, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
-import { TeamMemberCard, TeamMember } from '@/components/team/TeamMemberCard';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
+
+interface Patron {
+  name: string;
+  role: string;
+  image: string;
+}
+
+interface PatronMessage {
+  title: string;
+  paragraphs: string[];
+  signature: string[];
+}
 
 interface SubCategory {
   id: string;
   label: string;
-  members: TeamMember[];
-  message?: {
-    title: string;
-    paragraphs: string[];
-    signature: string[];
-  };
+  patrons: Patron[];
+  message?: PatronMessage;
 }
 
 const parrainsData: Record<Language, SubCategory[]> = {
@@ -22,12 +29,11 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'bamoun',
       label: 'Bamoun',
-      members: [
+      patrons: [
         {
           name: "Sa Majesté Nfonrifoum Mbombo Njoya Mouhamed Nabil",
-          title: "Sultan Roi des Bamoun",
+          role: "Sultan Roi des Bamoun",
           image: sultanNabilImg,
-          bio: []
         }
       ],
       message: {
@@ -56,24 +62,23 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      members: []
+      patrons: []
     },
     {
       id: 'bafia',
       label: 'Bafia',
-      members: []
+      patrons: []
     }
   ],
   en: [
     {
       id: 'bamoun',
       label: 'Bamoun',
-      members: [
+      patrons: [
         {
           name: "His Majesty Nfonrifoum Mbombo Njoya Mouhamed Nabil",
-          title: "Sultan King of Bamoun",
+          role: "Sultan King of Bamoun",
           image: sultanNabilImg,
-          bio: []
         }
       ],
       message: {
@@ -102,12 +107,12 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'nso',
       label: "Nso'",
-      members: []
+      patrons: []
     },
     {
       id: 'bafia',
       label: 'Bafia',
-      members: []
+      patrons: []
     }
   ]
 };
@@ -210,18 +215,64 @@ const ParrainsPage = () => {
             ))}
           </div>
 
-          {/* Members */}
+          {/* Patrons Content */}
           <motion.div
             key={activeTab}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            {activeCategory && activeCategory.members.length > 0 ? (
-              <div className="space-y-20">
-                {activeCategory.members.map((member, index) => (
-                  <TeamMemberCard key={member.name} member={member} index={index} />
+            {activeCategory && activeCategory.patrons.length > 0 ? (
+              <div className="space-y-16">
+                {/* Patron portraits */}
+                {activeCategory.patrons.map((patron) => (
+                  <div key={patron.name} className="flex flex-col items-center">
+                    <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-heritage-gold/40 shadow-xl shadow-heritage-gold/10 mb-6">
+                      <img
+                        src={patron.image}
+                        alt={patron.name}
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-display font-bold text-heritage-cream text-center">
+                      {patron.name}
+                    </h3>
+                    <p className="text-heritage-gold text-lg mt-2">{patron.role}</p>
+                  </div>
                 ))}
+
+                {/* Message */}
+                {activeCategory.message && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    className="max-w-4xl mx-auto bg-heritage-earth/60 border border-heritage-gold/20 rounded-2xl p-8 md:p-12"
+                  >
+                    <div className="flex items-center gap-3 mb-8">
+                      <ScrollText className="w-6 h-6 text-heritage-gold" />
+                      <h3 className="text-xl md:text-2xl font-display font-bold text-heritage-gold">
+                        {activeCategory.message.title}
+                      </h3>
+                    </div>
+
+                    <div className="space-y-5 text-heritage-cream/85 leading-relaxed">
+                      {activeCategory.message.paragraphs.map((paragraph, idx) => (
+                        <p key={idx} className={idx === 0 ? "text-heritage-gold/90 font-semibold text-center whitespace-pre-line" : ""}>
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+
+                    <div className="mt-10 pt-6 border-t border-heritage-gold/20 text-right">
+                      {activeCategory.message.signature.map((line, idx) => (
+                        <p key={idx} className={`${idx === 0 ? 'font-bold text-heritage-cream' : 'text-heritage-cream/70'} ${idx === 0 ? 'text-lg' : 'text-sm'}`}>
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
               </div>
             ) : (
               <div className="text-center py-20">
