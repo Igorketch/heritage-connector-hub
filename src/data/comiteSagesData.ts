@@ -24,11 +24,15 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
         {
           slug: "nchare-oumarou",
           name: "Titamfon Nji Ncharé Oumarou",
-          role: "Titamfon, Vice Premier Ministre, Notable du Royaume — Conseiller",
+          role: "Vice-Premier Ministre, Notable du Royaume — Conseiller",
           portrait: ncharePortrait,
           bio: [
-            "Figure majeure de la préservation et de la transmission du patrimoine culturel Bamoun, Monsieur Ncharé Oumarou occupe le poste de Directeur des Affaires administratives et culturelles du Palais des Rois Bamoun, où il œuvre depuis plusieurs décennies à la sauvegarde et à la diffusion de l'héritage historique du Royaume Bamoun.",
-            "Linguiste, archiviste et muséologue, il est reconnu comme spécialiste de l'écriture Shu-Mom et des langues inventées par le Roi Njoya. Co-traducteur du Saint Coran en langue bamoun, il contribue à la transmission intergénérationnelle des savoirs Bamoun."
+            "Titamfon Nji Ncharé Oumarou est une figure majeure de la préservation et de la transmission du patrimoine culturel Bamoun. Il occupe actuellement le poste de Directeur des Affaires administratives et culturelles du Palais des Rois Bamoun, où il œuvre depuis plusieurs décennies à la sauvegarde, à la valorisation et à la diffusion de l'héritage historique et intellectuel du Royaume Bamoun. Il est également Directeur général du Musée des Rois Bamoun, contribuant activement à la conservation et à la mise en lumière des trésors matériels et immatériels du royaume.",
+            "Titamfon, Vice-Premier Ministre et notable du Royaume Bamoun, incarne une autorité traditionnelle et institutionnelle dont la parole et l'action s'inscrivent dans la continuité des hautes charges de gouvernance et de transmission.",
+            "Linguiste de formation, archiviste et muséologue, il est reconnu comme spécialiste de l'écriture Shu-Mom et des langues inventées par le Roi Njoya. Il a consacré une part essentielle de son parcours à la traduction, à l'interprétation et à la conservation des manuscrits royaux, contribuant ainsi à la transmission intergénérationnelle des savoirs Bamoun. Il est également co-traducteur du Saint Coran en langue bamoun, une œuvre majeure de médiation linguistique et culturelle.",
+            "Au sein de l'International Mandjara Heritage, Monsieur Ncharé Oumarou a gracieusement accepté d'assumer un rôle éminent et significatif de Conseiller au sein du Comité des sages, apportant son expertise, sa mémoire historique et sa sagesse aux orientations stratégiques, culturelles et éthiques de l'organisation.",
+            "À travers ses fonctions institutionnelles, ses publications et son engagement associatif, il participe activement à la valorisation du patrimoine Bamoun aux niveaux national et international, notamment à travers le Nguon et les initiatives de mémoire collective.",
+            "Originaire de Foumban, dans la région de l'Ouest (département du Noun – Bamoun), il incarne une mémoire vivante au service de la culture, de l'histoire et de l'identité des peuples."
           ],
           achievements: [
             { icon: Crown, title: "Palais des Rois Bamoun", description: "Directeur des Affaires administratives et culturelles du Palais" },
@@ -174,11 +178,15 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
         {
           slug: "nchare-oumarou",
           name: "Titamfon Nji Ncharé Oumarou",
-          role: "Titamfon, Vice Prime Minister, Kingdom Notable — Advisor",
+          role: "Vice Prime Minister, Kingdom Notable — Advisor",
           portrait: ncharePortrait,
           bio: [
-            "A major figure in the preservation and transmission of Bamoun cultural heritage, Mr. Ncharé Oumarou serves as Director of Administrative and Cultural Affairs at the Palace of Bamoun Kings, where he has worked for several decades to safeguard and disseminate the historical heritage of the Bamoun Kingdom.",
-            "A linguist, archivist and museologist, he is recognized as a specialist in Shu-Mom writing and the languages invented by King Njoya. Co-translator of the Holy Quran into the Bamoun language, he contributes to the intergenerational transmission of Bamoun knowledge."
+            "Titamfon Nji Ncharé Oumarou is a major figure in the preservation and transmission of Bamoun cultural heritage. He currently serves as Director of Administrative and Cultural Affairs at the Palace of Bamoun Kings, where he has worked for several decades to safeguard, promote, and disseminate the historical and intellectual legacy of the Bamoun Kingdom. He is also Director General of the Museum of Bamoun Kings, actively contributing to the conservation and highlighting of the kingdom's tangible and intangible treasures.",
+            "Titamfon, Vice Prime Minister and notable of the Bamoun Kingdom, embodies a traditional and institutional authority whose words and actions are rooted in the continuity of the highest offices of governance and transmission.",
+            "A linguist by training, archivist and museologist, he is recognized as a specialist in Shu-Mom writing and the languages invented by King Njoya. He has devoted a significant part of his career to the translation, interpretation, and conservation of royal manuscripts, thereby contributing to the intergenerational transmission of Bamoun knowledge. He is also co-translator of the Holy Quran into the Bamoun language, a major work of linguistic and cultural mediation.",
+            "Within International Mandjara Heritage, Mr. Ncharé Oumarou has graciously accepted to assume an eminent and significant role as Advisor within the Council of Elders, bringing his expertise, historical memory, and wisdom to the strategic, cultural, and ethical orientations of the organization.",
+            "Through his institutional functions, publications, and community involvement, he actively participates in the promotion of Bamoun heritage at national and international levels, particularly through the Nguon and collective memory initiatives.",
+            "Originally from Foumban, in the West Region (Noun Division – Bamoun), he embodies a living memory in the service of culture, history, and the identity of peoples."
           ],
           achievements: [
             { icon: Crown, title: "Palace of Bamoun Kings", description: "Director of Administrative and Cultural Affairs of the Palace" },
