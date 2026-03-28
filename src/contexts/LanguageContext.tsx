@@ -28,7 +28,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.team': 'Notre Équipe',
     'nav.donate': 'Faire un Don',
-    'nav.team.parrains': 'Parrains',
+    'nav.team.parrains': 'Haut Patronage Royal et Traditionnel',
     'nav.team.membres_honneur': 'Membres d\'honneur',
     'nav.team.conseil': 'Conseil d\'Administration',
     'nav.team.bureau': 'Bureau Exécutif',
@@ -301,7 +301,7 @@ const translations: Record<Language, Record<string, string>> = {
     'team.coming_soon': 'Cette section sera complétée prochainement',
 
     // Team Categories
-    'team.cat.parrains': 'Parrains',
+    'team.cat.parrains': 'Haut Patronage Royal et Traditionnel',
     'team.cat.parrains_sub': 'Personnalités de marque soutenant notre mission',
     'team.cat.honneur': 'Membres d\'honneur',
     'team.cat.honneur_sub': 'Reconnus pour leur contribution exceptionnelle',
@@ -378,7 +378,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.team': 'Our Team',
     'nav.donate': 'Donate',
-    'nav.team.parrains': 'Patrons',
+    'nav.team.parrains': 'High Royal & Traditional Patronage',
     'nav.team.membres_honneur': 'Honorary Members',
     'nav.team.conseil': 'Board of Directors',
     'nav.team.bureau': 'Executive Board',
@@ -651,7 +651,7 @@ const translations: Record<Language, Record<string, string>> = {
     'team.coming_soon': 'This section will be completed soon',
 
     // Team Categories
-    'team.cat.parrains': 'Patrons',
+    'team.cat.parrains': 'High Royal & Traditional Patronage',
     'team.cat.parrains_sub': 'Distinguished figures supporting our mission',
     'team.cat.honneur': 'Honorary Members',
     'team.cat.honneur_sub': 'Recognized for their outstanding contribution',
