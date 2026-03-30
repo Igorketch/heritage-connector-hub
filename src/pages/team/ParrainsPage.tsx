@@ -261,12 +261,6 @@ const ParrainsPage = () => {
                 : "One Father, Three Kingdoms, One Memory: The Patrons of International Mandjara Heritage"}
             </h2>
 
-            <p className="text-center italic text-heritage-cream/70">
-              International Mandjara Heritage opère sous le Haut Patronage Royal et Traditionnel de trois éminentes autorités traditionnelles.
-            </p>
-            <p className="text-center italic text-heritage-cream/70">
-              International Mandjara Heritage operates under the High Royal and Official Patronage of three eminent traditional authorities.
-            </p>
 
             <p>
               International Mandjara Heritage est né d'une conviction profonde : les peuples se projettent dans l'avenir lorsqu'ils savent d'où ils viennent. La mémoire, les traditions et les institutions qui les portent constituent le socle vivant de l'identité collective. Dans cet esprit, l'organisation a l'immense honneur de compter parmi ses Parrains royaux et officiels trois éminentes autorités traditionnelles dont l'engagement symbolise l'unité, la continuité et la dignité des héritages culturels africains. Ces Hautes Autorités sont :
