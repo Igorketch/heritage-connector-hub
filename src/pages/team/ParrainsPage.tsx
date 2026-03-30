@@ -257,8 +257,8 @@ const ParrainsPage = () => {
           >
             <h2 className="text-2xl md:text-3xl font-display font-bold text-heritage-gold text-center mb-8">
               {language === 'fr'
-                ? "Un Père, Trois Royaumes, Une Mémoire : Les Parrains d'International Mandjara Heritage"
-                : "One Father, Three Kingdoms, One Memory: The Patrons of International Mandjara Heritage"}
+                ? "Deux frères – Une sœur - Trois Royaumes – Un héritage"
+                : "Two Brothers – One Sister - Three Kingdoms – One Heritage"}
             </h2>
 
 
