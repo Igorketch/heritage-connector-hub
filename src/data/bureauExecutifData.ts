@@ -177,6 +177,25 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Heart, title: "Bamoun Community", description: "Representative of the Bamoun community within the Executive Board" }
       ],
       quote: "Putting entrepreneurship at the service of African cultural heritage preservation."
+    },
+    {
+      slug: "waly-faye",
+      name: "Waly Faye",
+      role: "Project Coordinator",
+      portrait: walyPortrait,
+      bio: [
+        "Waly Faye is an international development professional whose career has been shaped at the intersection of research, education, and community action. With over fifteen years of experience coordinating complex projects across West and Central Africa, he has developed a rare expertise in managing multi-site, multicultural, and multi-stakeholder initiatives within both local and international institutional environments. This operational strength is complemented by a strategic ability to bridge local knowledge systems with global dynamics, fostering sustainable transformation and the recognition of human and cultural heritage.",
+        "As Director of Research and Innovation at Radio Workshop, a certified trainer with the Young African Leadership Initiative (YALI), and former Country Coordinator for the Minnesota Studies in International Development, Waly has led projects combining field-based documentation, curriculum development, community engagement, and institutional advocacy. His work includes research on community health, gender dynamics, natural resource governance, and communication practices within rural African communities. Through these engagements, he has established himself as both a knowledge producer and a practitioner, capable of translating grassroots realities into levers for systemic change and influence.",
+        "As Project Coordinator at International Mandjara Heritage, Waly Faye actively contributes to advancing a bold and transformative vision: a world in which cultural heritage, ancestral knowledge, and traditional institutions are recognized as essential pillars of development, dignity, and the sovereignty of peoples. In this capacity, he plays a key role in the design, structuring, and implementation of initiatives that promote memory preservation, intergenerational transmission, and international visibility, in close collaboration with traditional authorities, institutions, and communities.",
+        "His work is deeply aligned with a broader mission of restoring narratives, strengthening collective identities, and elevating intangible heritage as a living force that connects past, present, and future. Through his commitment, he contributes to amplifying legitimate, rooted, and forward-looking voices, serving both present and future generations.",
+        "Multilingual (French, English, Wolof, Serer), Waly embodies a remarkable ability to navigate cultural boundaries with nuance, intelligence, and respect, while remaining grounded in a fundamental conviction: behind every heritage lies the story of men and women whose dignity, memory, and legacy deserve to be recognized, honored, and faithfully transmitted."
+      ],
+      achievements: [
+        { icon: Globe, title: "International Development", description: "Over 15 years of experience coordinating projects across West and Central Africa" },
+        { icon: GraduationCap, title: "Research & Innovation", description: "Director of Research and Innovation at Radio Workshop" },
+        { icon: HandHeart, title: "Project Coordinator", description: "Project coordination at International Mandjara Heritage" }
+      ],
+      quote: "Behind every heritage lies the story of men and women whose dignity, memory, and legacy deserve to be recognized, honored, and faithfully transmitted."
     }
   ]
 };
