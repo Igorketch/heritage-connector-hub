@@ -5,6 +5,7 @@ import lauretinePortrait from '@/assets/lauretine-portrait.jpg';
 import evelinePortrait from '@/assets/eveline-kinyuy-portrait-2.png';
 import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
+import walyPortrait from '@/assets/waly-faye-portrait.jpg';
 
 export interface BureauMember extends TeamMember {
   slug: string;
