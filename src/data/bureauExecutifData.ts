@@ -84,6 +84,25 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Heart, title: "Communauté Bamoun", description: "Représentante de la communauté Bamoun au sein du Bureau exécutif" }
       ],
       quote: "Mettre l'entrepreneuriat au service de la préservation du patrimoine culturel africain."
+    },
+    {
+      slug: "waly-faye",
+      name: "Waly Faye",
+      role: "Coordonnateur de projet",
+      portrait: walyPortrait,
+      bio: [
+        "Waly Faye est un professionnel du développement international dont le parcours s'est construit à la croisée de la recherche, de l'éducation et de l'action communautaire. Fort de plus de quinze ans d'expérience en coordination de projets complexes à travers l'Afrique de l'Ouest et du Centre, il a développé une maîtrise rare de la gestion multisite, multiculturelle et multi-acteurs dans des contextes institutionnels aussi bien locaux qu'internationaux. À cette expertise opérationnelle s'ajoute une capacité stratégique à faire dialoguer savoirs locaux et dynamiques globales, dans une perspective de transformation durable et de valorisation des patrimoines humains et culturels.",
+        "Directeur de la Recherche et de l'Innovation à Radio Workshop, formateur certifié au sein du Young African Leadership Initiative (YALI) et ancien coordinateur pays pour le Minnesota Studies in International Development, Waly a piloté des projets alliant documentation de terrain, élaboration curriculaire, animation communautaire et plaidoyer institutionnel. Il a notamment conduit des recherches sur la santé communautaire, les dynamiques de genre, la gouvernance des ressources naturelles et les pratiques de communication au sein de communautés rurales africaines. À travers ces engagements, il s'est affirmé comme un acteur de savoir et d'action, capable de traduire les réalités du terrain en leviers d'influence et de changement à l'échelle systémique.",
+        "Coordonnateur de projet au sein d'International Mandjara Heritage, Waly Faye contribue activement à la mise en œuvre d'une vision ambitieuse : celle d'un monde où les héritages culturels, les savoirs ancestraux et les structures traditionnelles sont reconnus comme des piliers essentiels du développement, de la dignité et de la souveraineté des peuples. À ce titre, il participe à la conception, à la structuration et au déploiement d'initiatives porteuses de mémoire, de transmission intergénérationnelle et de rayonnement international, en étroite collaboration avec des autorités traditionnelles, des institutions et des communautés.",
+        "Son rôle s'inscrit dans une dynamique de réhabilitation des récits, de consolidation des identités collectives et de valorisation des patrimoines immatériels, en cohérence avec la mission d'International Mandjara Heritage de relier passé, présent et avenir dans une continuité vivante et assumée. Par son engagement, il contribue à faire émerger une parole légitime, enracinée et tournée vers l'avenir, au service des générations actuelles et futures.",
+        "Multilingue (français, anglais, wolof, sérère), Waly incarne cette capacité à traverser les frontières culturelles avec finesse, intelligence et respect, sans jamais perdre de vue l'essentiel : que derrière chaque patrimoine, il y a des femmes et des hommes dont l'histoire, la dignité et la mémoire méritent d'être reconnues, honorées et transmises avec justesse et profondeur."
+      ],
+      achievements: [
+        { icon: Globe, title: "Développement International", description: "Plus de 15 ans d'expérience en coordination de projets en Afrique de l'Ouest et du Centre" },
+        { icon: GraduationCap, title: "Recherche & Innovation", description: "Directeur de la Recherche et de l'Innovation à Radio Workshop" },
+        { icon: HandHeart, title: "Coordonnateur de projet", description: "Coordination de projets au sein d'International Mandjara Heritage" }
+      ],
+      quote: "Derrière chaque patrimoine, il y a des femmes et des hommes dont l'histoire, la dignité et la mémoire méritent d'être reconnues, honorées et transmises."
     }
   ],
   en: [
