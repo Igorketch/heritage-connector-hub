@@ -23,6 +23,7 @@ import raoulPortrait from '@/assets/raoul-portrait.jpg';
 import geraldPortrait from '@/assets/team/gerald-wirmvem.jpg';
 import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
 import massanPortrait from '@/assets/massan-abiroko-portrait.png';
+import walyPortrait from '@/assets/waly-faye-portrait.jpg';
 
 interface MemberThumb {
   name: string;
