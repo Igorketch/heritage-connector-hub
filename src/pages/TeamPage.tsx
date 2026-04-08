@@ -164,7 +164,8 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         { name: "Dr. Laurentine Mouchingam Mefire Nguwuo' Petuenju'", role: 'President', portrait: lauretinePortrait },
         { name: 'Queen Mother Eveline Kinyuy', role: 'Vice-President', portrait: evelinePortrait, portraitPosition: 'center 20%' },
         { name: 'Nathalie Sandrine Kouotou', role: 'Secretary General', portrait: nathaliePortrait },
-        { name: 'Aïchetou Fafa Pouyona', role: 'Treasurer', portrait: aichetouPortrait }
+        { name: 'Aïchetou Fafa Pouyona', role: 'Treasurer', portrait: aichetouPortrait },
+        { name: 'Waly Faye', role: 'Project Coordinator', portrait: walyPortrait }
       ]
     },
     {
