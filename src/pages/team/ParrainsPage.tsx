@@ -300,7 +300,7 @@ const ParrainsPage = () => {
             {categories.map((cat) => (
               <button
                 key={cat.id}
-                onClick={() => setActiveTab(cat.id)}
+                onClick={() => setActiveTab(activeTab === cat.id ? null : cat.id)}
                 className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
                   activeTab === cat.id
                     ? 'bg-heritage-gold text-heritage-earth border-heritage-gold shadow-lg shadow-heritage-gold/20'
