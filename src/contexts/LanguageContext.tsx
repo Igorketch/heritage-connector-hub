@@ -378,7 +378,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.team': 'Our Team',
     'nav.donate': 'Donate',
-    'nav.team.parrains': 'High Royal & Traditional Patronage',
+    'nav.team.parrains': 'Royal and Traditional High Patronage',
     'nav.team.membres_honneur': 'Honorary Members',
     'nav.team.conseil': 'Board of Directors',
     'nav.team.bureau': 'Executive Board',
