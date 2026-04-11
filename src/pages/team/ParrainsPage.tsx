@@ -260,34 +260,38 @@ const ParrainsPage = () => {
 
 
             <p>
-              International Mandjara Heritage est né d'une conviction profonde : les peuples se projettent dans l'avenir lorsqu'ils savent d'où ils viennent. La mémoire, les traditions et les institutions qui les portent constituent le socle vivant de l'identité collective. Dans cet esprit, l'organisation a l'immense honneur de compter parmi ses Parrains royaux et officiels trois éminentes autorités traditionnelles dont l'engagement symbolise l'unité, la continuité et la dignité des héritages culturels africains. Ces Hautes Autorités sont :
+              International Mandjara Heritage est né d'une conviction profonde : les peuples se projettent dans l'avenir lorsqu'ils savent d'où ils viennent. La mémoire, les traditions et les institutions qui les portent constituent le socle vivant de l'identité collective.
+            </p>
+
+            <p>
+              Dans cet esprit, International Mandjara Heritage opère sous le Haut Patronage Royal et Traditionnel de trois éminentes autorités traditionnelles dont l'engagement symbolise l'unité, la continuité et la dignité des héritages culturels africains:
             </p>
 
             <ul className="space-y-4 pl-4">
               <li className="flex gap-3">
-                <span className="text-heritage-gold font-bold">—</span>
-                <span><strong className="text-heritage-cream">Sa Majesté Nabil Mbombo Njoya</strong>, Sultan Roi des Bamoun, souverain du Royaume de Foumban, héritier d'une dynastie prestigieuse dont l'influence culturelle, artistique et politique marque l'histoire de l'Afrique centrale depuis des siècles.</span>
+                <span className="text-heritage-gold font-bold">·</span>
+                <span><strong className="text-heritage-cream">Sa Majesté Mforifoum Mbombo Njoya Mouhammad-Nabil</strong>, le Sultan Roi des Bamoun, souverain du Royaume de Foumban, héritier d'une dynastie prestigieuse dont l'influence culturelle, artistique et politique marque l'histoire de l'Afrique centrale depuis des siècles.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-heritage-gold font-bold">—</span>
-                <span><strong className="text-heritage-cream">Son Altesse Royale Sehm Mbinglo I</strong>, Fon Suprême du Royaume de Nso, gardien d'une institution traditionnelle majeure des Grassfields, reconnue pour son rôle dans la préservation des valeurs sociales, spirituelles et culturelles de son peuple.</span>
+                <span className="text-heritage-gold font-bold">·</span>
+                <span><strong className="text-heritage-cream">Son Altesse Royale Sehm Mbinglo I</strong>, Fon Suprême des Nso', gardien d'une institution traditionnelle majeure des Grassfields, reconnue pour son rôle dans la préservation des valeurs sociales, spirituelles et culturelles de son peuple.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-heritage-gold font-bold">—</span>
-                <span><strong className="text-heritage-cream">Sa Majesté Mouthe à Bidias Camille</strong>, Patriarche de Bafia, autorité traditionnelle respectée et dépositaire d'une mémoire historique et culturelle essentielle pour les générations présentes et futures.</span>
+                <span className="text-heritage-gold font-bold">·</span>
+                <span><strong className="text-heritage-cream">Sa Majesté Moute à Bidias Camille</strong>, Patriarche des Bafia, autorité traditionnelle respectée et dépositaire d'une mémoire historique et culturelle essentielle pour les générations présentes et futures.</span>
               </li>
             </ul>
 
             <p>
-              Par leur acceptation de ce rôle de Parrains Royaux et Officiels de International Mandjara Heritage, ces trois souverains et autorités traditionnelles offrent à l'organisation une bénédiction morale et symbolique qui dépasse les frontières géographiques et générationnelles. Leur présence rappelle une vérité fondamentale : les institutions traditionnelles ne sont pas seulement des héritages du passé, elles sont aussi des piliers de continuité, de sagesse et d'équilibre pour l'avenir.
+              Par leur acceptation du rôle de Parrains Royaux et Traditionnel de International Mandjara Heritage, ces trois souverains et autorités traditionnelles offrent à l'organisation une bénédiction morale et symbolique qui dépasse les frontières géographiques et générationnelles. Leur présence rappelle une vérité fondamentale: les institutions traditionnelles ne sont pas seulement des héritages du passé, elles sont aussi des piliers de continuité, de sagesse et d'équilibre pour l'avenir.
             </p>
 
             <p>
-              Sous leur haute bienveillance, International Mandjara Heritage poursuit sa mission : <em>préserver, transmettre et faire rayonner l'héritage Mandjara et les traditions africaines à travers le monde, en renforçant les liens entre les communautés locales et les diasporas.</em>
+              Sous leur haute bienveillance, International Mandjara Heritage poursuit sa mission de préserver, transmettre et faire rayonner l'héritage Mandjara et les traditions africaines à travers le monde, en renforçant les liens entre les communautés locales et les diasporas.
             </p>
 
             <p className="text-heritage-gold/90 italic text-center border-t border-heritage-gold/20 pt-6 mt-8">
-              Ainsi se tisse un pont entre mémoire et modernité, entre royaumes et diaspora, entre héritage ancestral et responsabilité contemporaine. Car lorsque les traditions parlent d'une seule voix, les peuples se souviennent de ce qui les unit.
+              Ainsi se tisse un pont entre mémoire et modernité, entre royaumes et diaspora, entre héritage ancestral et responsabilité contemporaine, car lorsque les traditions parlent d'une seule voix, les peuples se souviennent de ce qui les unit.
             </p>
           </motion.div>
 
