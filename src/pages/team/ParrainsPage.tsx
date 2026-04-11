@@ -243,9 +243,6 @@ const ParrainsPage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-heritage-cream mb-6">
               {t('team.cat.parrains')}
             </h1>
-            <p className="text-xl text-heritage-cream/70 max-w-2xl mx-auto">
-              {t('team.cat.parrains_sub')}
-            </p>
           </motion.div>
 
           {/* Descriptive Text */}
