@@ -245,7 +245,8 @@ const ParrainsPage = () => {
             </h1>
           </motion.div>
 
-          {/* Descriptive Text */}
+          {/* Descriptive Text - hidden when a tab is active */}
+          {!activeTab && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -294,6 +295,7 @@ const ParrainsPage = () => {
               Ainsi se tisse un pont entre mémoire et modernité, entre royaumes et diaspora, entre héritage ancestral et responsabilité contemporaine, car lorsque les traditions parlent d'une seule voix, les peuples se souviennent de ce qui les unit.
             </p>
           </motion.div>
+          )}
 
           {/* Sub-category Tabs */}
           <div className="flex flex-wrap justify-center gap-3 mb-16">
