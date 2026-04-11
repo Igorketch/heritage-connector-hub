@@ -72,7 +72,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         }
       ],
       message: {
-        title: "Message de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'",
+        title: "Message de Son Altesse Royale",
         paragraphs: [
           "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
           "C'est avec une immense fierté, une profonde gratitude et une sincère appréciation pour la continuité historique de notre héritage commun, que j'accepte d'accorder mon Haut Patronage Royal et Traditionnel à l'organisation International Mandjara Heritage, et de m'y associer en qualité de Parrain, aux côtés de Sa Majesté Nfonrifoum Mbombo Njoya Mouhamed Nabil, Sultan Roi des Bamoun, et de Sa Majesté Moute à Bidias Camille, Patriarche des Bafia.",
