@@ -102,7 +102,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         }
       ],
       message: {
-        title: "Message de Sa Majesté Moute à Bidias Camille",
+        title: "Message de Sa Majesté",
         paragraphs: [
           "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
           "C'est avec honneur et satisfaction que j'accepte d'accorder mon Haut Patronage Royal et Traditionnel à l'organisation International Mandjara Heritage, et d'y servir comme Parrain, aux côtés de Sa Majesté le Sultan Roi des Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil, et de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'.",
