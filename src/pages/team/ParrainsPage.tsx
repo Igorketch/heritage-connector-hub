@@ -39,7 +39,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         }
       ],
       message: {
-        title: "Message de Sa Majesté le Sultan Roi des Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil",
+        title: "Message de Sa Majesté",
         paragraphs: [
           "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
           "C'est avec une fierté incommensurable et une considération toute particulière pour cette initiative portée par de dignes filles du terroir profondément attachées à notre héritage, que j'accueille cette distinction avec honneur.",
