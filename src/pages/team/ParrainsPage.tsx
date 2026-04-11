@@ -313,75 +313,78 @@ const ParrainsPage = () => {
           </div>
 
           {/* Patrons Content */}
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            {activeCategory && activeCategory.patrons.length > 0 ? (
-              <div className="space-y-16">
-                {/* Patron portraits */}
-                {activeCategory.patrons.map((patron) => (
-                  <div key={patron.name} className="flex flex-col items-center">
-                    <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-heritage-gold/40 shadow-xl shadow-heritage-gold/10 mb-6">
-                      <img
-                        src={patron.image}
-                        alt={patron.name}
-                        className="w-full h-full object-cover object-top"
-                      />
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-display font-bold text-heritage-cream text-center">
-                      {patron.name}
-                    </h3>
-                    <p className="text-heritage-gold text-lg mt-2">{patron.role}</p>
-                  </div>
-                ))}
-
-                {/* Message */}
-                {activeCategory.message && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                    className="max-w-4xl mx-auto bg-heritage-earth/60 border border-heritage-gold/20 rounded-2xl p-8 md:p-12"
-                  >
-                    <div className="flex items-center gap-3 mb-8">
-                      <ScrollText className="w-6 h-6 text-heritage-gold" />
-                      <h3 className="text-xl md:text-2xl font-display font-bold text-heritage-gold">
-                        {activeCategory.message.title}
+          {activeTab && activeCategory && (
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              {activeCategory.patrons.length > 0 ? (
+                <div className="space-y-16">
+                  {/* Patron portraits */}
+                  {activeCategory.patrons.map((patron) => (
+                    <div key={patron.name} className="text-center">
+                      <div className="w-48 h-48 md:w-56 md:h-56 mx-auto rounded-full overflow-hidden border-4 border-heritage-gold/40 shadow-xl mb-6">
+                        <img
+                          src={patron.image}
+                          alt={patron.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-2xl font-display font-bold text-heritage-cream mb-2">
+                        {patron.name}
                       </h3>
+                      <p className="text-heritage-gold text-lg">{patron.role}</p>
                     </div>
+                  ))}
 
-                    <div className="space-y-5 text-heritage-cream/85 leading-relaxed">
-                      {activeCategory.message.paragraphs.map((paragraph, idx) => (
-                        <p key={idx} className={idx === 0 ? "text-heritage-gold/90 font-semibold text-center whitespace-pre-line" : ""}>
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-
-                    <div className="mt-10 pt-6 border-t border-heritage-gold/20 text-right">
-                      {activeCategory.message.signature.map((line, idx) => (
-                        <p key={idx} className={`${idx === 0 ? 'font-bold text-heritage-cream' : 'text-heritage-cream/70'} ${idx === 0 ? 'text-lg' : 'text-sm'}`}>
-                          {line}
-                        </p>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </div>
-            ) : (
-              <div className="text-center py-20">
-                <div className="w-20 h-20 rounded-full bg-heritage-gold/10 border border-heritage-gold/20 flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-heritage-gold/40" />
+                  {/* Official Message */}
+                  {activeCategory.message && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.3 }}
+                      className="max-w-4xl mx-auto bg-heritage-earth/80 border border-heritage-gold/20 rounded-xl p-8 md:p-12"
+                    >
+                      <div className="flex items-center gap-3 mb-8">
+                        <ScrollText className="w-6 h-6 text-heritage-gold" />
+                        <h4 className="text-xl font-display font-bold text-heritage-gold">
+                          {activeCategory.message.title}
+                        </h4>
+                      </div>
+                      <div className="space-y-4 text-heritage-cream/85 leading-relaxed">
+                        {activeCategory.message.paragraphs.map((p, i) => (
+                          <p key={i} className={i === 0 ? "font-semibold text-heritage-gold/90" : ""}>
+                            {p.split('\n').map((line, j) => (
+                              <span key={j}>
+                                {line}
+                                {j < p.split('\n').length - 1 && <br />}
+                              </span>
+                            ))}
+                          </p>
+                        ))}
+                      </div>
+                      <div className="mt-8 pt-6 border-t border-heritage-gold/20">
+                        {activeCategory.message.signature.map((line, i) => (
+                          <p key={i} className={`text-heritage-cream/90 ${i === 0 ? 'font-bold text-heritage-gold' : 'text-sm'}`}>
+                            {line}
+                          </p>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
                 </div>
-                <p className="text-heritage-cream/50 text-lg italic">
-                  {language === 'fr' ? 'Membres à venir...' : 'Members coming soon...'}
-                </p>
-              </div>
-            )}
-          </motion.div>
+              ) : (
+                <div className="text-center py-16">
+                  <Users className="w-16 h-16 text-heritage-gold/30 mx-auto mb-4" />
+                  <p className="text-heritage-cream/50 text-lg">
+                    {language === 'fr' ? 'Membres à venir...' : 'Members coming soon...'}
+                  </p>
+                </div>
+              )}
+            </motion.div>
+          )}
         </div>
       </section>
     </PageLayout>
