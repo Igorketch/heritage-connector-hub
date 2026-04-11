@@ -245,7 +245,8 @@ const ParrainsPage = () => {
             </h1>
           </motion.div>
 
-          {/* Descriptive Text */}
+          {/* Descriptive Text - hidden when a tab is active */}
+          {!activeTab && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
