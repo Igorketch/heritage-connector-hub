@@ -651,7 +651,7 @@ const translations: Record<Language, Record<string, string>> = {
     'team.coming_soon': 'This section will be completed soon',
 
     // Team Categories
-    'team.cat.parrains': 'High Royal & Traditional Patronage',
+    'team.cat.parrains': 'Royal and Traditional High Patronage',
     'team.cat.parrains_sub': 'Distinguished figures supporting our mission',
     'team.cat.honneur': 'Honorary Members',
     'team.cat.honneur_sub': 'Recognized for their outstanding contribution',
