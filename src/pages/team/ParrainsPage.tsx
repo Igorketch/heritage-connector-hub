@@ -222,7 +222,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
 const ParrainsPage = () => {
   const { language, t } = useLanguage();
   const categories = parrainsData[language];
-  const [activeTab, setActiveTab] = useState('bamoun');
+  const [activeTab, setActiveTab] = useState<string | null>(null);
 
   const activeCategory = categories.find(c => c.id === activeTab);
 
