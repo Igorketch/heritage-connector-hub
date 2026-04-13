@@ -24,7 +24,7 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
         {
           slug: "nchare-oumarou",
           name: "Titamfon Nji Ncharé Oumarou",
-          role: "Vice-Premier Ministre, Notable du Royaume — Conseiller",
+          role: "Vice-Premier Ministre, Notable du Royaume, Conseiller",
           portrait: ncharePortrait,
           bio: [
             "Titamfon Nji Ncharé Oumarou est une figure majeure de la préservation et de la transmission du patrimoine culturel Bamoun. Il occupe actuellement le poste de Directeur des Affaires administratives et culturelles du Palais des Rois Bamoun, où il œuvre depuis plusieurs décennies à la sauvegarde, à la valorisation et à la diffusion de l'héritage historique et intellectuel du Royaume Bamoun. Il est également Directeur général du Musée des Rois Bamoun, contribuant activement à la conservation et à la mise en lumière des trésors matériels et immatériels du royaume.",
