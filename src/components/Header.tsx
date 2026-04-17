@@ -79,7 +79,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <img alt="International Mandjara Heritage" className="h-36 w-auto transition-transform duration-300 group-hover:scale-105" src={mandjaraLogo} />
+              <img alt="International Mandjara Heritage" className="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105" src={mandjaraLogo} />
             </div>
           </Link>
 
