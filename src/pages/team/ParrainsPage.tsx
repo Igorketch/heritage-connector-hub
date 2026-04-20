@@ -134,7 +134,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         }
       ],
       message: {
-        title: "Message from His Majesty the Sultan King of Bamoun, Mforifoum Mbombo Njoya Mouhammad-Nabil",
+        title: "Message from His Majesty",
         paragraphs: [
           "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
           "It is with immeasurable pride and particular consideration for this initiative carried by worthy daughters of the homeland deeply attached to our heritage, that I welcome this distinction with honour.",
