@@ -33,7 +33,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
       label: 'Bamoun',
       patrons: [
         {
-          name: "Sa Majesté Nfonrifoum Mbombo Njoya Mouhamed Nabil",
+          name: "Sa Majesté Mforifoum Mbombo Njoya Mouhammad-Nabil",
           role: "Sultan Roi des Bamoun",
           image: sultanNabilImg,
         }
@@ -54,7 +54,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
           "En ma qualité de Sultan Roi des Bamoun, je formule des bénédictions pour cette initiative, et je la confie à la sagesse de nos ancêtres, afin qu'elle contribue durablement à l'unité, à la dignité et au rayonnement de nos peuples."
         ],
         signature: [
-          "Sa Majesté Nfonrifoum Mbombo Njoya Mouhamed Nabil,",
+          "Sa Majesté Mforifoum Mbombo Njoya Mouhammad-Nabil,",
           "Sultan Roi des Bamoun,",
           "Parrain de International Mandjara Heritage",
           "Haut Patronage Royal et Traditionnel"
@@ -128,13 +128,13 @@ const parrainsData: Record<Language, SubCategory[]> = {
       label: 'Bamoun',
       patrons: [
         {
-          name: "His Majesty Nfonrifoum Mbombo Njoya Mouhamed Nabil",
+          name: "His Majesty Mforifoum Mbombo Njoya Mouhammad-Nabil",
           role: "Sultan King of Bamoun",
           image: sultanNabilImg,
         }
       ],
       message: {
-        title: "Message from His Majesty the Sultan King of Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil",
+        title: "Message from His Majesty the Sultan King of Bamoun, Mforifoum Mbombo Njoya Mouhammad-Nabil",
         paragraphs: [
           "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
           "It is with immeasurable pride and particular consideration for this initiative carried by worthy daughters of the homeland deeply attached to our heritage, that I welcome this distinction with honour.",
@@ -149,7 +149,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
           "In my capacity as Sultan King of the Bamoun, I offer blessings for this initiative, and I entrust it to the wisdom of our ancestors, so that it may durably contribute to the unity, dignity and influence of our peoples."
         ],
         signature: [
-          "His Majesty Nfonrifoum Mbombo Njoya Mouhamed Nabil,",
+          "His Majesty Mforifoum Mbombo Njoya Mouhammad-Nabil,",
           "Sultan King of Bamoun,",
           "Patron of International Mandjara Heritage",
           "High Royal and Traditional Patronage"
@@ -170,7 +170,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         title: "Message from His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'",
         paragraphs: [
           "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
-          "It is with immense pride, deep gratitude and sincere appreciation for the historical continuity of our shared heritage, that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to be associated with it as Patron, alongside His Majesty Nfonrifoum Mbombo Njoya Mouhamed Nabil, Sultan King of the Bamoun, and His Majesty Moute à Bidias Camille, Patriarch of the Bafia.",
+          "It is with immense pride, deep gratitude and sincere appreciation for the historical continuity of our shared heritage, that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to be associated with it as Patron, alongside His Majesty Mforifoum Mbombo Njoya Mouhammad-Nabil, Sultan King of the Bamoun, and His Majesty Moute à Bidias Camille, Patriarch of the Bafia.",
           "For many years, I have observed with attention and esteem the efforts undertaken to preserve and revive the Mandjara heritage. I remember the early impulses that led to the Mandjara festivals of 2009 and 2011, as well as the initiative Les Grandes Retrouvailles organized in Douala, whose spirit of gathering and symbolic strength I had commended. These moments reminded our peoples of the depth of our ancestral bonds and the responsibility that falls upon us to transmit them.",
           "The Bamoun, Nso' and Bafia peoples share a history shaped by kinship, solidarity and a common memory. This ancient brotherhood constitutes a precious foundation, and it is in this continuity that I recognize the relevance of the approach carried today by International Mandjara Heritage. By inscribing our heritage in a structured, contemporary and globally open framework, while remaining faithful to traditional foundations, this organization contributes to strengthening the unity, dignity and visibility of our collective identity.",
           "I also wish to commend the remarkable commitment of the worthy Mandjara daughters behind this initiative, whose determination follows in the footsteps of the women who have always carried life, memory and the cohesion of our communities. As I have recalled in the past, the strength of a society rests on its women, pillars of unity, culture and development. Their role in transmitting values and in educating future generations remains essential for the future of our kingdoms.",
@@ -200,7 +200,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
         title: "Message from His Majesty Moute à Bidias Camille",
         paragraphs: [
           "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
-          "It is with honour and satisfaction that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to serve as Patron, alongside His Majesty the Sultan King of the Bamoun, Nfonrifoum Mbombo Njoya Mouhamed Nabil, and His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'.",
+          "It is with honour and satisfaction that I accept to grant my High Royal and Traditional Patronage to the organization International Mandjara Heritage, and to serve as Patron, alongside His Majesty the Sultan King of the Bamoun, Mforifoum Mbombo Njoya Mouhammad-Nabil, and His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'.",
           "In this spirit of fraternity and unity among traditional authorities, I express my deep attachment to my brothers, His Majesty the Sultan King Nabil and His Royal Highness Sehm Mbinglo I, with whom I share a common vision of preservation and promotion of our heritage. It is with their support and in this fraternal synergy that we will fully contribute to the success of this initiative.",
           "The memory of a people constitutes one of its greatest treasures. It must be preserved, protected and transmitted from generation to generation so that roots remain alive and future generations know the history, values and dignity of their ancestors. This intergenerational transmission represents an essential foundation for the continuity of our cultures and our kingdoms.",
           "I commend with esteem the initiative carried by a Mandjara daughter, founder of this organization, whose commitment contributes to consolidating the bonds of fraternity, preserving our common cultural heritage, and promoting the transmission of the values that underpin our identity.",
