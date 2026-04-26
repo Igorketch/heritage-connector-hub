@@ -44,7 +44,7 @@ export const Footer = () => {
               <img
                 src={mandjaraLogo}
                 alt="International Mandjara Heritage"
-                className="h-24 md:h-28 w-auto object-contain"
+                className="h-20 md:h-24 w-auto object-contain"
               />
             </Link>
             <p className="text-heritage-cream/60 leading-relaxed mb-6 max-w-md">
