@@ -77,9 +77,13 @@ export const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <img alt="International Mandjara Heritage" className="h-16 md:h-20 w-auto transition-transform duration-300 group-hover:scale-105" src={mandjaraLogo} />
+          <Link to="/" className="flex items-center gap-2 group shrink-0">
+            <div className="relative -my-4">
+              <img
+                alt="International Mandjara Heritage"
+                src={mandjaraLogo}
+                className="h-20 md:h-24 lg:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
+              />
             </div>
           </Link>
 
