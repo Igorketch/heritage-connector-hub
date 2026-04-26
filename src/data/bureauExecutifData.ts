@@ -6,6 +6,7 @@ import evelinePortrait from '@/assets/eveline-kinyuy-portrait-2.png';
 import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
 import walyPortrait from '@/assets/waly-faye-portrait.jpg';
+import liliStephaniePortrait from '@/assets/lili-stephanie-portrait.jpg';
 
 export interface BureauMember extends TeamMember {
   slug: string;
@@ -35,6 +36,26 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Sparkles, title: "Fondatrice", description: "Fondatrice de l'International Mandjara Heritage" }
       ],
       quote: "Œuvrer à la décolonisation des savoirs et au dialogue entre les communautés africaines et diasporiques."
+    },
+    {
+      slug: "lili-stephanie-dondjio",
+      name: "Lili Stéphanie Dondjio O.",
+      role: "Assistante exécutive de la Présidente",
+      portrait: liliStephaniePortrait,
+      bio: [
+        "Lili Stéphanie Dondjio O. est une professionnelle bilingue (français–anglais) chevronnée en administration et en coordination stratégique, comptant plus de huit années d'expérience dans des environnements institutionnels, corporatifs et multiculturels. Elle occupe actuellement le poste d'assistante exécutive de la Présidente au sein de International Mandjara Heritage, où elle contribue activement à la structuration et au rayonnement des initiatives de l'organisation.",
+        "Titulaire d'un Master en traduction anglais/français de l'Université de Buea, elle possède une solide expertise en communication, en gestion administrative et en appui aux hautes instances décisionnelles. Son parcours professionnel inclut des fonctions clés au sein du Ministère de la Santé Publique du Cameroun, où elle a assuré la coordination administrative et la traduction de documents stratégiques pour des partenaires internationaux tels que l'OMS et l'UNICEF. Elle a également occupé des postes d'assistante exécutive et d'assistante de direction dans le secteur privé, où elle s'est distinguée par sa capacité à optimiser les processus, réduire les coûts et améliorer la performance organisationnelle.",
+        "Dans son rôle actuel, Lili Stéphanie assure la gestion de l'agenda présidentiel, la préparation et le suivi des réunions stratégiques, ainsi que la coordination des communications internes et externes. Elle agit comme point de liaison avec le Conseil d'administration et les partenaires institutionnels, tout en apportant un soutien direct aux dossiers stratégiques de la Présidence. Son sens aigu de la confidentialité, sa rigueur organisationnelle et sa capacité à évoluer dans des environnements complexes font d'elle un pilier essentiel au fonctionnement exécutif de l'organisation.",
+        "Engagée à titre bénévole, elle incarne pleinement les valeurs de International Mandjara Heritage, notamment la valorisation du patrimoine, la transmission intergénérationnelle, la décolonisation des savoirs et l'engagement communautaire et international. Son leadership collaboratif, son intelligence émotionnelle et son orientation vers l'excellence du service renforcent sa contribution à la mission et à la vision de l'organisation.",
+        "Parallèlement à ses fonctions, elle poursuit un perfectionnement en gestion des ressources humaines et de la paie au Canada, témoignant de sa volonté constante d'évolution professionnelle et de renforcement de ses compétences."
+      ],
+      achievements: [
+        { icon: Briefcase, title: "Assistante exécutive", description: "Assistante exécutive de la Présidente d'International Mandjara Heritage" },
+        { icon: GraduationCap, title: "Master en traduction", description: "Master en traduction anglais/français de l'Université de Buea" },
+        { icon: Globe, title: "Expérience internationale", description: "Plus de 8 ans d'expérience en coordination avec l'OMS, l'UNICEF et le secteur privé" },
+        { icon: ScrollText, title: "Coordination stratégique", description: "Gestion de l'agenda présidentiel et liaison avec le Conseil d'administration" }
+      ],
+      quote: "Servir avec rigueur, discrétion et excellence pour faire rayonner la mission de l'organisation."
     },
     {
       slug: "eveline-kinyuy",
@@ -128,6 +149,26 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Sparkles, title: "Founder", description: "Founder of International Mandjara Heritage" }
       ],
       quote: "Working toward the decolonization of knowledge and dialogue between African and diasporic communities."
+    },
+    {
+      slug: "lili-stephanie-dondjio",
+      name: "Lili Stéphanie Dondjio O.",
+      role: "Executive Assistant to the President",
+      portrait: liliStephaniePortrait,
+      bio: [
+        "Lili Stéphanie Dondjio O. is a seasoned bilingual (French–English) administrative and strategic coordination professional with over eight years of experience in institutional, corporate, and multicultural environments. She currently serves as Executive Assistant to the President at International Mandjara Heritage, where she plays a key role in strengthening the organization's structure and advancing its strategic initiatives.",
+        "She holds a Master's degree in English/French Translation from the University of Buea and brings strong expertise in communication, administrative management, and executive support. Her professional background includes key roles within the Ministry of Public Health in Cameroon, where she coordinated administrative operations and translated strategic documents for international partners such as the World Health Organization (WHO) and UNICEF. She has also held executive and senior administrative support positions in the private sector, where she distinguished herself by optimizing processes, reducing operational costs, and improving organizational performance.",
+        "In her current role, Lili Stéphanie manages the President's schedule, prepares and follows up on strategic meetings, and coordinates internal and external communications. She serves as a liaison with the Board of Directors and institutional partners while providing direct support on executive and strategic matters. Her strong sense of confidentiality, organizational rigor, and ability to navigate complex environments make her an essential pillar of the organization's executive operations.",
+        "Serving in a volunteer capacity, she fully embodies the values of International Mandjara Heritage, including heritage preservation, intergenerational knowledge transfer, the decolonization of knowledge, and community and international engagement. Her collaborative leadership style, emotional intelligence, and commitment to service excellence significantly contribute to advancing the organization's mission and vision.",
+        "Alongside her professional responsibilities, she is currently pursuing further training in Human Resources and Payroll Management in Canada, reflecting her continuous commitment to professional growth and skills development."
+      ],
+      achievements: [
+        { icon: Briefcase, title: "Executive Assistant", description: "Executive Assistant to the President of International Mandjara Heritage" },
+        { icon: GraduationCap, title: "Master's in Translation", description: "Master's in English/French Translation from the University of Buea" },
+        { icon: Globe, title: "International Experience", description: "Over 8 years of coordination experience with WHO, UNICEF and the private sector" },
+        { icon: ScrollText, title: "Strategic Coordination", description: "Managing the President's schedule and liaising with the Board of Directors" }
+      ],
+      quote: "Serving with rigor, discretion and excellence to advance the organization's mission."
     },
     {
       slug: "eveline-kinyuy",
