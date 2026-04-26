@@ -41,7 +41,11 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src={mandjaraLogo} alt="International Mandjara Heritage" className="h-16 w-auto" />
+              <img
+                src={mandjaraLogo}
+                alt="International Mandjara Heritage"
+                className="h-24 md:h-28 w-auto object-contain"
+              />
             </Link>
             <p className="text-heritage-cream/60 leading-relaxed mb-6 max-w-md">
               {t('footer.description')}
