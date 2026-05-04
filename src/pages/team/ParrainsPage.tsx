@@ -31,35 +31,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'bamoun',
       label: 'Bamoun',
-      patrons: [
-        {
-          name: "Sa Majesté Mforifoum Mbombo Njoya Mouhammad-Nabil",
-          role: "Sultan Roi des Bamoun",
-          image: sultanNabilImg,
-        }
-      ],
-      message: {
-        title: "Message de Sa Majesté",
-        paragraphs: [
-          "Parrain de International Mandjara Heritage\nHaut Patronage Royal et Traditionnel",
-          "C'est avec une fierté incommensurable et une considération toute particulière pour cette initiative portée par de dignes filles du terroir profondément attachées à notre héritage, que j'accueille cette distinction avec honneur.",
-          "Je salue grandement l'initiative visant à placer l'organisation International Mandjara Heritage sous un Haut Patronage Royal et Traditionnel, et j'accepte d'y être associé en qualité de Parrain, aux côtés de Sa Majesté Moute à Bidias Camille, Patriarche des Bafia, et de Son Altesse Royale Sehm Mbinglo I, Fon Suprême des Nso'.",
-          "Dans la continuité de l'héritage transmis par nos prédécesseurs, et fidèle à la vision portée par mon feu père Sa Majesté le Sultan Roi Ibrahim Mbombo Njoya, qui a soutenu avec engagement les premières initiatives du mouvement Mandjara au Cameroun, je reconnais dans cette démarche une volonté noble de consolidation des liens historiques et fraternels qui unissent nos peuples, à savoir les Bamoun, les Nso', et les Bafia.",
-          "Les relations entre les Bamoun, les Nso' et les Bafia ne relèvent pas uniquement d'une proximité culturelle, mais s'inscrivent dans une mémoire ancienne, forgée par des liens de parenté, de solidarité et de destin commun. Cette réalité constitue un socle précieux sur lequel reposent notre identité collective et notre responsabilité envers les générations à venir.",
-          "Je reconnais également, dans la démarche portée par International Mandjara Heritage, une vision claire et structurée, fidèle aux fondements traditionnels tout en s'inscrivant résolument dans une dynamique contemporaine. Les actions menées pour préserver et promouvoir l'héritage Mandjara, renforcer les liens entre les communautés et leurs diasporas, encourager la transmission intergénérationnelle et soutenir des initiatives culturelles et éducatives, témoignent d'un engagement profond envers l'unité et la cohésion de nos peuples, ainsi qu'à la valorisation d'une histoire commune appelée à rayonner au-delà des frontières.",
-          "Je salue en particulier cette orientation, qui allie mémoire, modernité et responsabilité collective, s'inscrivant ainsi dans la continuité naturelle des efforts entrepris depuis plusieurs décennies pour structurer et faire rayonner le mouvement Mandjara. Elle traduit une volonté affirmée de consolider les bases d'un héritage commun appelé à inspirer durablement les générations présentes et futures. Cette fidélité à la mémoire, à la tradition et à l'esprit de rassemblement renforce la légitimité et la portée de cette nouvelle étape qui s'inscrit à l'échelle internationale.",
-          "En accordant mon Haut Patronage Royal et Traditionnel à cette organisation, j'exprime mon attachement à toute action qui contribue à raviver la conscience de notre unité, à promouvoir la transmission intergénérationnelle, et à inscrire notre héritage dans une perspective durable, structurée et porteuse d'avenir.",
-          "J'encourage celles et ceux qui portent cette vision à poursuivre leur engagement avec rigueur et fidélité aux valeurs fondamentales qui fondent notre identité, afin que cet héritage commun continue d'inspirer, de rassembler et de guider les générations présentes et futures.",
-          "J'adresse également mes salutations à l'ensemble des fils et filles des communautés concernées, tant sur le continent qu'au sein de la diaspora, et les exhorte à demeurer profondément attachés à leurs racines, à leur histoire et aux liens qui les unissent.",
-          "En ma qualité de Sultan Roi des Bamoun, je formule des bénédictions pour cette initiative, et je la confie à la sagesse de nos ancêtres, afin qu'elle contribue durablement à l'unité, à la dignité et au rayonnement de nos peuples."
-        ],
-        signature: [
-          "Sa Majesté Mforifoum Mbombo Njoya Mouhammad-Nabil,",
-          "Sultan Roi des Bamoun,",
-          "Parrain de International Mandjara Heritage",
-          "Haut Patronage Royal et Traditionnel"
-        ]
-      }
+      patrons: [],
     },
     {
       id: 'nso',
@@ -126,35 +98,7 @@ const parrainsData: Record<Language, SubCategory[]> = {
     {
       id: 'bamoun',
       label: 'Bamoun',
-      patrons: [
-        {
-          name: "His Majesty Mforifoum Mbombo Njoya Mouhammad-Nabil",
-          role: "Sultan King of Bamoun",
-          image: sultanNabilImg,
-        }
-      ],
-      message: {
-        title: "Message from His Majesty",
-        paragraphs: [
-          "Patron of International Mandjara Heritage\nHigh Royal and Traditional Patronage",
-          "It is with immeasurable pride and particular consideration for this initiative carried by worthy daughters of the homeland deeply attached to our heritage, that I welcome this distinction with honour.",
-          "I greatly commend the initiative to place the organization International Mandjara Heritage under a High Royal and Traditional Patronage, and I accept to be associated with it as Patron, alongside His Majesty Moute à Bidias Camille, Patriarch of the Bafia, and His Royal Highness Sehm Mbinglo I, Supreme Fon of the Nso'.",
-          "In continuity with the legacy transmitted by our predecessors, and faithful to the vision carried by my late father His Majesty Sultan King Ibrahim Mbombo Njoya, who supported with commitment the early initiatives of the Mandjara movement in Cameroon, I recognize in this approach a noble will to consolidate the historical and fraternal bonds that unite our peoples, namely the Bamoun, the Nso', and the Bafia.",
-          "The relations between the Bamoun, the Nso' and the Bafia are not merely a matter of cultural proximity, but are rooted in an ancient memory, forged through bonds of kinship, solidarity and common destiny. This reality constitutes a precious foundation upon which rest our collective identity and our responsibility towards future generations.",
-          "I also recognize, in the approach carried by International Mandjara Heritage, a clear and structured vision, faithful to traditional foundations while resolutely embracing a contemporary dynamic. The actions undertaken to preserve and promote the Mandjara heritage, strengthen the bonds between communities and their diasporas, encourage intergenerational transmission and support cultural and educational initiatives, bear witness to a deep commitment to the unity and cohesion of our peoples, as well as to the enhancement of a shared history destined to shine beyond borders.",
-          "I particularly commend this orientation, which combines memory, modernity and collective responsibility, thus fitting naturally into the continuity of efforts undertaken over several decades to structure and promote the Mandjara movement. It reflects a firm will to consolidate the foundations of a common heritage destined to lastingly inspire present and future generations. This faithfulness to memory, tradition and the spirit of gathering strengthens the legitimacy and scope of this new stage at the international level.",
-          "By granting my High Royal and Traditional Patronage to this organization, I express my attachment to any action that contributes to reviving the consciousness of our unity, promoting intergenerational transmission, and inscribing our heritage in a sustainable, structured and forward-looking perspective.",
-          "I encourage those who carry this vision to pursue their commitment with rigour and faithfulness to the fundamental values that underpin our identity, so that this common heritage continues to inspire, unite and guide present and future generations.",
-          "I also extend my greetings to all the sons and daughters of the communities concerned, both on the continent and within the diaspora, and urge them to remain deeply attached to their roots, their history and the bonds that unite them.",
-          "In my capacity as Sultan King of the Bamoun, I offer blessings for this initiative, and I entrust it to the wisdom of our ancestors, so that it may durably contribute to the unity, dignity and influence of our peoples."
-        ],
-        signature: [
-          "His Majesty Mforifoum Mbombo Njoya Mouhammad-Nabil,",
-          "Sultan King of Bamoun,",
-          "Patron of International Mandjara Heritage",
-          "High Royal and Traditional Patronage"
-        ]
-      }
+      patrons: [],
     },
     {
       id: 'nso',
@@ -381,7 +325,7 @@ const ParrainsPage = () => {
                 <div className="text-center py-16">
                   <Users className="w-16 h-16 text-heritage-gold/30 mx-auto mb-4" />
                   <p className="text-heritage-cream/50 text-lg">
-                    {language === 'fr' ? 'Membres à venir...' : 'Members coming soon...'}
+                    {language === 'fr' ? 'À venir' : 'Coming soon'}
                   </p>
                 </div>
               )}
