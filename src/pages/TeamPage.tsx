@@ -24,6 +24,7 @@ import geraldPortrait from '@/assets/team/gerald-wirmvem.jpg';
 import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
 import massanPortrait from '@/assets/massan-abiroko-portrait.png';
 import walyPortrait from '@/assets/waly-faye-portrait.jpg';
+import henriLeyamPortrait from '@/assets/henri-leyam-tolale-portrait.png';
 
 interface MemberThumb {
   name: string;
@@ -87,6 +88,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         { name: 'Reine Mère Eveline Kinyuy', role: 'Vice-Présidente', portrait: evelinePortrait, portraitPosition: 'center 20%' },
         { name: 'Nathalie Sandrine Kouotou', role: 'Secrétaire Générale', portrait: nathaliePortrait },
         { name: 'Aïchetou Fafa Pouyona', role: 'Trésorière', portrait: aichetouPortrait },
+        { name: 'Henri Leyam Tolale', role: 'Responsable de la Communication', portrait: henriLeyamPortrait },
         { name: 'Waly Faye', role: 'Coordonnateur de projet', portrait: walyPortrait }
       ]
     },
@@ -165,6 +167,7 @@ const teamCategoriesData: Record<Language, TeamCategory[]> = {
         { name: 'Queen Mother Eveline Kinyuy', role: 'Vice-President', portrait: evelinePortrait, portraitPosition: 'center 20%' },
         { name: 'Nathalie Sandrine Kouotou', role: 'Secretary General', portrait: nathaliePortrait },
         { name: 'Aïchetou Fafa Pouyona', role: 'Treasurer', portrait: aichetouPortrait },
+        { name: 'Henri Leyam Tolale', role: 'Communications Lead', portrait: henriLeyamPortrait },
         { name: 'Waly Faye', role: 'Project Coordinator', portrait: walyPortrait }
       ]
     },
