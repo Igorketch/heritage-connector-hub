@@ -1,0 +1,25 @@
+# International Mandjara Heritage
+
+> Organisation internationale dédiée à la préservation et à la transmission du patrimoine culturel, historique et social des peuples Mandjara — Bamoun, Nso' et Bafia.
+
+## Pages
+
+- [Accueil](/): Présentation de l'organisation et accès aux sections principales.
+- [Contexte](/context): Histoire et contexte des peuples Mandjara.
+- [Peuples](/peoples): Présentation des peuples Bamoun, Nso' et Bafia.
+- [Mission](/mission): Mission de l'organisation.
+- [Valeurs](/values): Valeurs portées par Mandjara Heritage.
+- [Équipe](/team): Vue d'ensemble de l'équipe.
+- [Parrains](/team/parrains): Parrains et marraines.
+- [Membres d'honneur](/team/membres-honneur): Membres honoraires.
+- [Conseil d'administration](/team/conseil-administration): Membres du conseil.
+- [Bureau exécutif](/team/bureau-executif): Membres du bureau.
+- [Représentants nationaux](/team/representants-nationaux): Représentants par pays.
+- [Comité des sages](/team/comite-sages): Membres du comité.
+- [Publications](/publications): Documents et publications.
+- [Événements](/evenements): Événements à venir et passés.
+- [Nguoun 2024](/evenements/nguoun-2024): Festival Nguoun 2024.
+- [Galerie](/galerie): Galerie photo.
+- [Partenaires](/partenaires): Partenaires de l'organisation.
+- [Contact](/contact): Nous contacter.
+- [Don](/donation): Soutenir Mandjara Heritage.
