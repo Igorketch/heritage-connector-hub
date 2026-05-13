@@ -5,6 +5,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { bureauData } from '@/data/bureauExecutifData';
+import { SEO } from '@/components/SEO';
 
 const BureauExecutifPage = () => {
   const { language, t } = useLanguage();
@@ -12,6 +13,7 @@ const BureauExecutifPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Bureau exécutif | Mandjara Heritage"} description={"Le bureau exécutif d'International Mandjara Heritage — équipe opérationnelle."} />
       <section className="py-20 bg-gradient-to-b from-heritage-earth to-heritage-earth/95">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div

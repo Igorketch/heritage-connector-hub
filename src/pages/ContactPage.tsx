@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -21,6 +22,7 @@ const ContactPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Contact | International Mandjara Heritage"} description={"Contactez International Mandjara Heritage : info@internationalmandjaraheritage.org."} />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-heritage-earth">
         <div className="absolute inset-0 heritage-pattern opacity-10" />

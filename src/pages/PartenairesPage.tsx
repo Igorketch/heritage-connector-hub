@@ -2,12 +2,14 @@ import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Handshake, ExternalLink } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const PartenairesPage = () => {
   const { t } = useLanguage();
 
   return (
     <PageLayout>
+      <SEO title={"Partenaires | International Mandjara Heritage"} description={"Nos partenaires institutionnels, culturels et éducatifs."} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-heritage-earth overflow-hidden">
         <div className="absolute inset-0 heritage-pattern opacity-30" />

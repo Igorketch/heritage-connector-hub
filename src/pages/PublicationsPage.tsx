@@ -3,6 +3,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { FileText, Calendar, User, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEO } from '@/components/SEO';
 
 interface Publication {
   title: string;
@@ -33,6 +34,7 @@ const PublicationsPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Publications | International Mandjara Heritage"} description={"Documents, recherches et publications d'International Mandjara Heritage."} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-heritage-earth overflow-hidden">
         <div className="absolute inset-0 heritage-pattern opacity-30" />

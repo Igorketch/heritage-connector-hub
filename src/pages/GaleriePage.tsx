@@ -14,6 +14,7 @@ import queenFlorence from '@/assets/galerie/queen-florence.png';
 import queenMotherEveline from '@/assets/galerie/queen-mother-eveline.png';
 import symboleBafia from '@/assets/galerie/symbole-bafia.png';
 import nguonSpecial from '@/assets/galerie/nguon-special-event.jpg';
+import { SEO } from '@/components/SEO';
 
 const galleryItems = [
   { src: queenMotherEveline, alt: 'Queen Mother Eveline Kinyuy', category: 'portraits', span: 'row-span-2' },
@@ -37,6 +38,7 @@ const GaleriePage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Galerie photo | International Mandjara Heritage"} description={"Galerie photo : moments forts, rencontres et traditions Mandjara."} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-heritage-earth overflow-hidden">
         <div className="absolute inset-0 heritage-pattern opacity-30" />

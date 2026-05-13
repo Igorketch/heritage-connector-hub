@@ -2,12 +2,14 @@ import { motion } from 'framer-motion';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { PartyPopper, Calendar, MapPin, Users, Film } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const NguounPage = () => {
   const { t } = useLanguage();
 
   return (
     <PageLayout>
+      <SEO title={"Festival Nguoun 2024 | Mandjara Heritage"} description={"Le festival Nguoun 2024 — célébration biennale du peuple Bamoun à Foumban."} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-heritage-earth overflow-hidden">
         <div className="absolute inset-0 heritage-pattern opacity-30" />

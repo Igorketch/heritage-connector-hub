@@ -11,7 +11,7 @@ export const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Heritage culturel Mandjara" className="w-full h-full object-cover" />
+        <img src={heroImage} alt="Heritage culturel Mandjara — Bamoun, Nso' et Bafia" className="w-full h-full object-cover" width={1920} height={1080} fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="absolute inset-0 bg-heritage-earth/40" />
       </div>
@@ -36,6 +36,7 @@ export const HeroSection = () => {
             {t('hero.title1')}{' '}
             <span className="text-gradient-gold">{t('hero.title2')}</span>{' '}
             <span className="block mt-2">{t('hero.title3')}</span>
+            <span className="sr-only"> — {t('hero.subtitle')} Bamoun, Nso' et Bafia</span>
           </motion.h1>
 
           {/* Subtitle */}

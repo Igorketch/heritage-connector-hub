@@ -47,7 +47,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title3': 'Heritage',
     'hero.subtitle': 'Préserver et transmettre le patrimoine culturel, historique et social des peuples',
     'hero.cta1': 'Découvrir Notre Mission',
-    'hero.cta2': 'En Savoir Plus',
+    'hero.cta2': 'Découvrir les Peuples Mandjara',
     'hero.scroll': 'Découvrir',
 
     // Index
@@ -397,7 +397,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title3': 'Heritage',
     'hero.subtitle': 'Preserving and transmitting the cultural, historical and social heritage of the',
     'hero.cta1': 'Discover Our Mission',
-    'hero.cta2': 'Learn More',
+    'hero.cta2': 'Explore the Mandjara Peoples',
     'hero.scroll': 'Discover',
 
     // Index

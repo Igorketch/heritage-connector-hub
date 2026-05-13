@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Heart, Gift, Users, Globe, Sparkles, CreditCard, Building2, Wallet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const DonationPage = () => {
   const { t } = useLanguage();
@@ -22,6 +23,7 @@ const DonationPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Faire un don | International Mandjara Heritage"} description={"Soutenez la préservation du patrimoine Mandjara — Bamoun, Nso' et Bafia — par un don."} />
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32 bg-gradient-to-br from-heritage-earth via-heritage-earth/95 to-heritage-terracotta/20 overflow-hidden">
         <div className="absolute inset-0">

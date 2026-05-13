@@ -6,6 +6,7 @@ import { ArrowRight, BookOpen, Users, Target, Heart, Sparkles } from 'lucide-rea
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -44,6 +45,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <SEO title={"Mandjara Heritage | Patrimoine Bamoun, Nso', Bafia"} description={"Préserver et transmettre le patrimoine culturel des peuples Mandjara — Bamoun, Nso' et Bafia. Organisation internationale basée au Canada."} />
       <main>
         <HeroSection />
         

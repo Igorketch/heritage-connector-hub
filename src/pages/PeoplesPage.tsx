@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import bamounImage from '@/assets/bamoun-culture.jpg';
 import bafiaImage from '@/assets/bafia-culture.jpg';
 import nsoImage from '@/assets/nso-culture.jpg';
+import { SEO } from '@/components/SEO';
 
 const PeoplesPage = () => {
   const { t } = useLanguage();
@@ -56,6 +57,7 @@ const PeoplesPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Peuples Bamoun, Nso' et Bafia | Mandjara"} description={"Découvrez les trois peuples Mandjara : Bamoun, Nso' et Bafia — culture, langue, traditions."} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-heritage-earth">
         <div className="absolute inset-0 heritage-pattern opacity-10" />
