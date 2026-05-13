@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://heritage-connector-hub.lovable.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/context</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/peoples</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/mission</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/values</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/parrains</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/membres-honneur</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/conseil-administration</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/bureau-executif</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/representants-nationaux</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/team/comite-sages</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/publications</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/evenements</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/evenements/nguoun-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/galerie</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/partenaires</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://heritage-connector-hub.lovable.app/donation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
