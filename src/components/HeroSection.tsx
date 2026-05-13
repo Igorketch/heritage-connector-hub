@@ -36,6 +36,7 @@ export const HeroSection = () => {
             {t('hero.title1')}{' '}
             <span className="text-gradient-gold">{t('hero.title2')}</span>{' '}
             <span className="block mt-2">{t('hero.title3')}</span>
+            <span className="sr-only"> — {t('hero.subtitle')} Bamoun, Nso' et Bafia</span>
           </motion.h1>
 
           {/* Subtitle */}
