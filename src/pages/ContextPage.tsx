@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { BookOpen, Globe2, Heart, Scroll, Calendar, MapPin, Crown, Mountain } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const ContextPage = () => {
   const { t } = useLanguage();
@@ -21,6 +22,7 @@ const ContextPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Contexte historique des peuples Mandjara"} description={"Histoire et contexte des peuples Mandjara : Bamoun, Nso' et Bafia, leurs racines et leur trajectoire."} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-heritage-earth">
         <div className="absolute inset-0 heritage-pattern opacity-10" />

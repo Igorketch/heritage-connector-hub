@@ -5,6 +5,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { sagesData } from '@/data/comiteSagesData';
+import { SEO } from '@/components/SEO';
 
 const ComiteSagesPage = () => {
   const { language, t } = useLanguage();
@@ -15,6 +16,7 @@ const ComiteSagesPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Comité des sages | Mandjara Heritage"} description={"Le comité des sages d'International Mandjara Heritage — sagesse et continuité culturelle."} />
       <section className="py-20 bg-gradient-to-b from-heritage-earth to-heritage-earth/95">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div

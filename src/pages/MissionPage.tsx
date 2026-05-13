@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Target, Eye, Compass, Leaf, BookOpen, Users2, Globe, Handshake, GraduationCap, Heart, Building } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const MissionPage = () => {
   const { t } = useLanguage();
@@ -22,6 +23,7 @@ const MissionPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Notre mission | International Mandjara Heritage"} description={"La mission de Mandjara Heritage : préservation, transmission et rayonnement du patrimoine culturel africain."} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-heritage-earth">
         <div className="absolute inset-0 heritage-pattern opacity-10" />

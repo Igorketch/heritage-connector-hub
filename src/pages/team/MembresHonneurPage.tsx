@@ -4,6 +4,7 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { membresHonneurData } from '@/data/membresHonneurData';
+import { SEO } from '@/components/SEO';
 
 const MembresHonneurPage = () => {
   const { language, t } = useLanguage();
@@ -11,6 +12,7 @@ const MembresHonneurPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Membres d'honneur | Mandjara Heritage"} description={"Membres d'honneur d'International Mandjara Heritage, gardiens du rayonnement Mandjara."} />
       <section className="py-20 bg-gradient-to-b from-heritage-earth to-heritage-earth/95">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div

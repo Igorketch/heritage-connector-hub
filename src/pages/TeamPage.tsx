@@ -25,6 +25,7 @@ import elizabethPortrait from '@/assets/elizabeth-mbanka.png';
 import massanPortrait from '@/assets/massan-abiroko-portrait.png';
 import walyPortrait from '@/assets/waly-faye-portrait.jpg';
 import henriLeyamPortrait from '@/assets/henri-leyam-tolale-portrait.png';
+import { SEO } from '@/components/SEO';
 
 interface MemberThumb {
   name: string;
@@ -313,6 +314,7 @@ const TeamPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Notre équipe | International Mandjara Heritage"} description={"Découvrez les leaders et bénévoles d'International Mandjara Heritage : conseil, bureau, comité des sages, parrains."} />
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-heritage-cream">
         <div className="absolute top-0 left-0 w-64 h-64 bg-heritage-gold/10 rounded-full -translate-x-1/2 -translate-y-1/2" />

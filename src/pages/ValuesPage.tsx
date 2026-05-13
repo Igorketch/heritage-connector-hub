@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Lightbulb, MessageCircle, Heart, Shield, Leaf, Sparkles, TrendingUp, Users, Globe } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { SEO } from '@/components/SEO';
 
 const ValuesPage = () => {
   const { t } = useLanguage();
@@ -53,6 +54,7 @@ const ValuesPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Nos valeurs | International Mandjara Heritage"} description={"Les valeurs qui guident International Mandjara Heritage : respect, transmission, solidarité, excellence."} />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-heritage-sand via-background to-heritage-sand">
         <div className="absolute inset-0 heritage-pattern opacity-10" />

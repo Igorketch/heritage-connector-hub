@@ -3,12 +3,14 @@ import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { PartyPopper, GraduationCap, Users, Info, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '@/components/SEO';
 
 const EvenementsPage = () => {
   const { t } = useLanguage();
 
   return (
     <PageLayout>
+      <SEO title={"Événements | International Mandjara Heritage"} description={"Événements à venir et passés d'International Mandjara Heritage."} />
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-heritage-earth overflow-hidden">
         <div className="absolute inset-0 heritage-pattern opacity-30" />

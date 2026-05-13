@@ -6,6 +6,7 @@ import { useLanguage, Language } from '@/contexts/LanguageContext';
 import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
 import fonMbingloImg from '@/assets/team/fon-mbinglo.jpg';
 import camilleMouteImg from '@/assets/team/camille-moute.jpg';
+import { SEO } from '@/components/SEO';
 
 interface Patron {
   name: string;
@@ -172,6 +173,7 @@ const ParrainsPage = () => {
 
   return (
     <PageLayout>
+      <SEO title={"Parrains et marraines | Mandjara Heritage"} description={"Les Hauts Patronages d'International Mandjara Heritage — Bamoun, Nso' et Bafia."} />
       <section className="py-20 bg-gradient-to-b from-heritage-earth to-heritage-earth/95">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
