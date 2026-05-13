@@ -11,7 +11,7 @@ export const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Heritage culturel Mandjara" className="w-full h-full object-cover" />
+        <img src={heroImage} alt="Heritage culturel Mandjara — Bamoun, Nso' et Bafia" className="w-full h-full object-cover" width={1920} height={1080} fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="absolute inset-0 bg-heritage-earth/40" />
       </div>
