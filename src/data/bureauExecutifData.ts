@@ -7,6 +7,7 @@ import aichetouPortrait from '@/assets/aichetou-portrait.png';
 import nathaliePortrait from '@/assets/nathalie-kouotou-portrait.jpg';
 import walyPortrait from '@/assets/waly-faye-portrait.jpg';
 import liliStephaniePortrait from '@/assets/lili-stephanie-portrait.jpg';
+import henriLeyamPortrait from '@/assets/henri-leyam-tolale-portrait.png';
 
 export interface BureauMember extends TeamMember {
   slug: string;
@@ -105,6 +106,24 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Heart, title: "Communauté Bamoun", description: "Représentante de la communauté Bamoun au sein du Bureau exécutif" }
       ],
       quote: "Mettre l'entrepreneuriat au service de la préservation du patrimoine culturel africain."
+    },
+    {
+      slug: "henri-leyam-tolale",
+      name: "Henri Leyam Tolale",
+      role: "Responsable de la Communication",
+      portrait: henriLeyamPortrait,
+      bio: [
+        "Leyam Tolale est un entrepreneur visionnaire, bâtisseur de communautés et promoteur du patrimoine culturel, dont le parcours se distingue par une profonde volonté de créer des espaces porteurs d'identité, de mémoire et de transmission intergénérationnelle. Il est le moteur derrière Batack Hills Estates, une destination résidentielle de premier plan définie par l'excellence architecturale, la sérénité des paysages et une vision profondément enracinée dans l'héritage culturel africain.",
+        "Doté d'un œil averti pour la conception résidentielle et animé par une passion pour le développement communautaire, il s'est forgé une réputation en alliant le luxe moderne aux valeurs du patrimoine culturel, de l'authenticité et du vivre-ensemble. Sa philosophie de conception s'inspire de la tradition architecturale Bamiléké, reconnue pour son intégrité structurelle, sa richesse symbolique et sa forte dimension communautaire. Pour lui, l'architecture est un langage de mémoire, un outil de transmission intergénérationnelle et un pont entre héritage ancestral et modernité.",
+        "Fondateur de Leyam Tolale & Co. — Gestion Immobilière & Services Résidentiels, il a bâti une entreprise dédiée aux normes les plus élevées en matière d'architecture résidentielle, de gestion immobilière haut de gamme et d'expansion internationale, notamment vers les marchés émergents du Cameroun.",
+        "Au sein d'International Mandjara Heritage, où il occupe le rôle de Responsable de la Communication, Leyam Tolale contribue activement au rayonnement de la mission de l'organisation à travers des stratégies de communication porteuses de sens, centrées sur la valorisation du patrimoine culturel, l'identité africaine, la mémoire collective et l'engagement communautaire. Son approche humaine et rassembleuse vise à créer des ponts entre les générations, les cultures et les communautés."
+      ],
+      achievements: [
+        { icon: Sparkles, title: "Responsable Communication", description: "Stratégie de communication d'International Mandjara Heritage" },
+        { icon: Building2, title: "Fondateur & Directeur Principal", description: "Leyam Tolale & Co. — Gestion Immobilière & Services Résidentiels" },
+        { icon: Globe, title: "Bâtisseur de communautés", description: "Promoteur du patrimoine culturel et de l'architecture Bamiléké" }
+      ],
+      quote: "L'architecture est un langage de mémoire, un pont entre héritage ancestral et modernité."
     },
     {
       slug: "waly-faye",
@@ -218,6 +237,24 @@ export const bureauData: Record<Language, BureauMember[]> = {
         { icon: Heart, title: "Bamoun Community", description: "Representative of the Bamoun community within the Executive Board" }
       ],
       quote: "Putting entrepreneurship at the service of African cultural heritage preservation."
+    },
+    {
+      slug: "henri-leyam-tolale",
+      name: "Henri Leyam Tolale",
+      role: "Communications Lead",
+      portrait: henriLeyamPortrait,
+      bio: [
+        "Leyam Tolale is a visionary entrepreneur, community builder, and advocate for cultural heritage, whose journey is distinguished by a deep commitment to creating spaces that embody identity, memory, and intergenerational transmission. He is the driving force behind Batack Hills Estates, a premier residential destination defined by architectural excellence, serene landscapes, and a vision deeply rooted in African cultural heritage.",
+        "With a discerning eye for residential design and a passion for community development, he has built a reputation for blending modern luxury with the values of cultural heritage, authenticity, and collective living. His design philosophy draws inspiration from Bamiléké architectural tradition, recognized for its structural integrity, symbolic richness, and strong sense of community. For him, architecture is a language of memory, a tool for intergenerational transmission, and a bridge between ancestral heritage and modernity.",
+        "As founder of Leyam Tolale & Co. — Property Management & Residential Services, he has built a company dedicated to the highest standards in residential architecture, high-end property management, and international expansion, particularly into emerging markets in Cameroon.",
+        "Within International Mandjara Heritage, where he serves as Communications Lead, Leyam Tolale actively contributes to advancing the organization's mission through meaningful communication strategies centered on the promotion of cultural heritage, African identity, collective memory, and community engagement. His human-centered and unifying approach aims to build bridges between generations, cultures, and communities."
+      ],
+      achievements: [
+        { icon: Sparkles, title: "Communications Lead", description: "Communications strategy for International Mandjara Heritage" },
+        { icon: Building2, title: "Founder & Principal Director", description: "Leyam Tolale & Co. — Property Management & Residential Services" },
+        { icon: Globe, title: "Community Builder", description: "Advocate for cultural heritage and Bamiléké architecture" }
+      ],
+      quote: "Architecture is a language of memory, a bridge between ancestral heritage and modernity."
     },
     {
       slug: "waly-faye",
