@@ -31,7 +31,7 @@ export const TeamThumbnailGrid = ({ members, basePath }: TeamThumbnailGridProps)
   }
 
   return (
-    <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-6 md:gap-8 lg:gap-10">
       {members.map((member, index) => (
         <motion.button
           key={member.slug}
@@ -39,9 +39,9 @@ export const TeamThumbnailGrid = ({ members, basePath }: TeamThumbnailGridProps)
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.12 }}
           onClick={() => navigate(`${basePath}/${member.slug}`)}
-          className="group text-center focus:outline-none"
+          className="group text-center focus:outline-none flex flex-col items-center"
         >
-          <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 mx-auto mb-4 rounded-full overflow-hidden border-3 border-heritage-gold/30 transition-all duration-500 shadow-lg group-hover:border-heritage-gold group-hover:shadow-heritage-gold/30 group-hover:shadow-xl">
+          <div className="relative w-44 h-44 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 mx-auto mb-4 rounded-full overflow-hidden border-[3px] border-heritage-gold/30 transition-all duration-500 shadow-lg group-hover:border-heritage-gold group-hover:shadow-heritage-gold/30 group-hover:shadow-xl">
             <img
               src={member.portrait}
               alt={member.name}
@@ -50,10 +50,10 @@ export const TeamThumbnailGrid = ({ members, basePath }: TeamThumbnailGridProps)
             />
             <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
-          <h4 className="font-display font-semibold text-heritage-cream text-sm md:text-base leading-tight max-w-[160px] mx-auto">
+          <h4 className="font-display font-semibold text-heritage-cream text-base sm:text-sm md:text-base leading-tight max-w-[220px] sm:max-w-[160px] mx-auto">
             {member.name}
           </h4>
-          <p className="text-heritage-gold/70 text-xs md:text-sm mt-1 max-w-[150px] mx-auto">{member.role}</p>
+          <p className="text-heritage-gold/70 text-sm sm:text-xs md:text-sm mt-1 max-w-[220px] sm:max-w-[150px] mx-auto">{member.role}</p>
         </motion.button>
       ))}
     </div>
