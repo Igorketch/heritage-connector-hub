@@ -397,7 +397,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.title3': 'Heritage',
     'hero.subtitle': 'Preserving and transmitting the cultural, historical and social heritage of the',
     'hero.cta1': 'Discover Our Mission',
-    'hero.cta2': 'Learn More',
+    'hero.cta2': 'Explore the Mandjara Peoples',
     'hero.scroll': 'Discover',
 
     // Index
