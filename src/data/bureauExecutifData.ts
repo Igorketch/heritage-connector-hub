@@ -96,6 +96,7 @@ export const bureauData: Record<Language, BureauMember[]> = {
       name: "Madame Aïchetou Fafa Pouyona",
       role: "Trésorière",
       portrait: aichetouPortrait,
+      portraitPosition: 'center',
       bio: [
         "Entrepreneure engagée et leader innovante, Madame Aïchetou est spécialisée dans la valorisation durable des ressources naturelles africaines, avec plus de quinze années d'expérience dans l'agroalimentaire, le bien-être, la formation et le développement d'entreprises.",
         "Au sein du Bureau exécutif, elle assure la gestion financière et la transparence budgétaire de l'organisation, mettant son expertise entrepreneuriale au service de la mission patrimoniale de Mandjara Heritage."
@@ -228,6 +229,7 @@ export const bureauData: Record<Language, BureauMember[]> = {
       name: "Mrs. Aïchetou Fafa Pouyona",
       role: "Treasurer",
       portrait: aichetouPortrait,
+      portraitPosition: 'center',
       bio: [
         "A committed entrepreneur and innovative leader, Mrs. Aïchetou specializes in the sustainable valorization of African natural resources, with over fifteen years of experience in agri-food, wellness, training and business development.",
         "Within the Executive Board, she manages the organization's finances and budgetary transparency, putting her entrepreneurial expertise at the service of Mandjara Heritage's cultural mission."
