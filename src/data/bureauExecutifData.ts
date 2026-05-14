@@ -226,7 +226,7 @@ export const bureauData: Record<Language, BureauMember[]> = {
     {
       slug: "aichetou-pouyona",
       name: "Mrs. Aïchetou Fafa Pouyona",
-      role: "Treasurer (Bamoun)",
+      role: "Treasurer",
       portrait: aichetouPortrait,
       bio: [
         "A committed entrepreneur and innovative leader, Mrs. Aïchetou specializes in the sustainable valorization of African natural resources, with over fifteen years of experience in agri-food, wellness, training and business development.",
