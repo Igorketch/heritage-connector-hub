@@ -172,7 +172,7 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
         },
         {
           slug: "jean-michel-vidal",
-          name: "Dr Jean-Michel Vidal (M.D., Ph.D.)",
+          name: "Dr. Jean-Michel Vidal (M.D., Ph.D.)",
           role: "Conseiller",
           portrait: "",
           bio: [
