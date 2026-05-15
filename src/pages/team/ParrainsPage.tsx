@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Users, ScrollText } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
+import { IdentityTabs } from '@/components/team/IdentityTabs';
 import { useLanguage, Language } from '@/contexts/LanguageContext';
 import sultanNabilImg from '@/assets/team/sultan-nabil.jpg';
 import fonMbingloImg from '@/assets/team/fon-mbinglo.jpg';
