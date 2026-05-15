@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
+import { IdentityTabs } from '@/components/team/IdentityTabs';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { representantsData } from '@/data/representantsNationauxData';
 import { SEO } from '@/components/SEO';
@@ -37,25 +38,19 @@ const RepresentantsNationauxPage = () => {
             </p>
           </motion.div>
 
-          {/* Sub-category Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveTab(cat.id)}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
-                  activeTab === cat.id
-                    ? 'bg-heritage-gold text-heritage-earth border-heritage-gold shadow-lg shadow-heritage-gold/20'
-                    : 'bg-heritage-earth/50 text-heritage-cream/70 border-heritage-gold/30 hover:border-heritage-gold/60 hover:text-heritage-cream'
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
+          <IdentityTabs
+            tabs={categories.map(c => ({ id: c.id, label: c.label }))}
+            activeTab={activeTab}
+            onChange={setActiveTab}
+            ariaLabel={language === 'fr' ? 'Identités des représentants nationaux' : 'National representatives identities'}
+            panelId="representants-panel"
+          />
 
           <motion.div
             key={activeTab}
+            id="representants-panel"
+            role="tabpanel"
+            aria-labelledby={activeTab ? `tab-${activeTab}` : undefined}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
