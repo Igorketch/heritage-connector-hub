@@ -10,9 +10,9 @@ import { SEO } from '@/components/SEO';
 const RepresentantsNationauxPage = () => {
   const { language, t } = useLanguage();
   const categories = representantsData[language];
-  const [activeTab, setActiveTab] = useState('bamoun');
+  const [activeTab, setActiveTab] = useState<string | null>(null);
 
-  const activeCategory = categories.find(c => c.id === activeTab);
+  const activeCategory = activeTab ? categories.find(c => c.id === activeTab) : null;
 
   return (
     <PageLayout>
