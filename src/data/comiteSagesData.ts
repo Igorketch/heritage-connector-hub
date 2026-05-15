@@ -169,6 +169,27 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
             { icon: ScrollText, title: "Comité des Sages", description: "Conseiller, convergence stratégique entre recherche, patrimoine et coopération internationale" }
           ],
           quote: "À l'intersection de la recherche, de l'action publique et de l'entrepreneuriat social, au service du patrimoine et du dialogue interculturel."
+        },
+        {
+          slug: "jean-michel-vidal",
+          name: "Dr Jean-Michel Vidal (M.D., Ph.D.)",
+          role: "Conseiller",
+          portrait: "",
+          bio: [
+            "Médecin généraliste et anthropologue médical basé à Montréal, le Docteur Jean-Michel Vidal est une figure reconnue à l'intersection de la médecine, des sciences sociales et de la santé transculturelle. Tout au long de sa carrière, il a contribué à faire dialoguer savoirs cliniques et réalités sociales, en portant une attention particulière aux expériences vécues par les personnes issues de l'immigration et des communautés afro-caribéennes.",
+            "Professeur associé au Département d'anthropologie de l'Université de Montréal et co-thérapeute à la clinique de psychiatrie transculturelle de l'Hôpital Jean-Talon, il a consacré ses recherches à l'adolescence, aux trajectoires migratoires et aux dynamiques psychosociales des communautés afrodescendantes. Son travail met en lumière l'importance des récits de vie, des espaces communautaires, et des ancrages culturels dans les processus de résilience, d'identité et d'intégration.",
+            "Auteur de nombreuses publications scientifiques en anthropologie médicale, ainsi que d'ouvrages tels que Voyage dans le monde de l'adolescence et le roman Mémoires d'outre-«mère», le Docteur Vidal se distingue par une approche profondément humaine, sensible et engagée. Son excellence en enseignement a également été reconnue par un prix d'excellence de l'Université de Montréal, témoignant de son impact auprès de plusieurs générations d'étudiants.",
+            "Au sein d'International Mandjara Heritage, le Docteur Jean-Michel Vidal agit à titre de Conseiller au Comité des Sages, où il apporte une contribution stratégique essentielle. Son expertise en santé transculturelle et en anthropologie médicale nourrit directement la mission de l'organisation : promouvoir des approches inclusives, décolonisées et ancrées dans les réalités des communautés d'ascendance africaine. Il contribue à orienter les réflexions et les actions de l'organisation vers une meilleure compréhension des enjeux identitaires, éducatifs et sociaux liés à l'héritage, à la transmission et à l'équité.",
+            "Son engagement auprès de la fondatrice de l'organisation, la Dre Laurentine Mouchingam Mefire, s'inscrit également dans une relation académique et intellectuelle profonde. En tant que co-directeur de sa thèse de doctorat en anthropologie — aux côtés du professeur émérite Gilles Bibeau — le Docteur Jean-Michel Vidal a joué un rôle déterminant dans l'élaboration d'une pensée critique ancrée dans les réalités diasporiques. Ensemble, ils ont contribué à un processus de transformation intellectuelle et personnelle, ce dont elle fait aujourd'hui un témoignage de vie, le qualifiant comme une décolonisation de son esprit et l'ultime aboutissement de son immigration au Canada — une étape essentielle dans le parcours migratoire et identitaire.",
+            "À travers son rôle au sein du Comité des Sages, le Docteur Jean-Michel Vidal incarne ainsi une mémoire vivante, une rigueur intellectuelle et une capacité rare à relier savoirs académiques et expériences humaines. Plus que de simples « moteurs », lui et ses pairs agissent comme des passeurs de conscience, accompagnant les trajectoires individuelles et collectives vers une compréhension plus juste, plus libre et plus ancrée de soi et du monde."
+          ],
+          achievements: [
+            { icon: GraduationCap, title: "Université de Montréal", description: "Professeur associé au Département d'anthropologie, prix d'excellence en enseignement" },
+            { icon: HandHeart, title: "Hôpital Jean-Talon", description: "Co-thérapeute à la clinique de psychiatrie transculturelle" },
+            { icon: BookOpen, title: "Auteur & chercheur", description: "Publications en anthropologie médicale et ouvrages dont Voyage dans le monde de l'adolescence" },
+            { icon: ScrollText, title: "Comité des Sages", description: "Conseiller, expertise en santé transculturelle et anthropologie médicale" }
+          ],
+          quote: "Un passeur de conscience, reliant savoirs académiques et expériences humaines au service d'une compréhension plus juste de soi et du monde."
         }
       ]
     }
@@ -326,6 +347,27 @@ export const sagesData: Record<Language, SagesSubCategory[]> = {
             { icon: ScrollText, title: "Council of Elders", description: "Advisor, strategic convergence between research, heritage and international cooperation" }
           ],
           quote: "At the intersection of research, public action and social entrepreneurship, in service of heritage and intercultural dialogue."
+        },
+        {
+          slug: "jean-michel-vidal",
+          name: "Dr. Jean-Michel Vidal (M.D., Ph.D.)",
+          role: "Advisor",
+          portrait: "",
+          bio: [
+            "A general practitioner and medical anthropologist based in Montreal, Dr. Jean-Michel Vidal is a recognized figure at the intersection of medicine, social sciences, and transcultural health. Throughout his career, he has worked to bridge clinical knowledge and social realities, with particular attention to the lived experiences of immigrant populations and Afro-Caribbean communities.",
+            "An Associate Professor in the Department of Anthropology at the Université de Montréal and co-therapist at the Transcultural Psychiatry Clinic of Hôpital Jean-Talon, he has dedicated his research to adolescence, migratory trajectories, and the psychosocial dynamics of Afro-descendant communities. His work highlights the importance of life narratives, community spaces, and cultural grounding in processes of resilience, identity, and integration.",
+            "Author of numerous scientific publications in medical anthropology, as well as works such as Voyage dans le monde de l'adolescence and the novel Mémoires d'outre-«mère», Dr. Vidal is distinguished by a deeply human, sensitive, and committed approach. His excellence in teaching has also been recognized by an excellence award from the Université de Montréal, reflecting his impact on several generations of students.",
+            "Within International Mandjara Heritage, Dr. Jean-Michel Vidal serves as an Advisor to the Council of Elders, where he provides essential strategic guidance. His expertise in transcultural health and medical anthropology directly supports the organization's mission: to promote inclusive, decolonized approaches grounded in the realities of communities of African descent. He contributes to guiding the organization's reflections and actions toward a deeper understanding of identity, education, and social issues related to heritage, transmission, and equity.",
+            "His engagement with the organization's founder, Dr. Laurentine Mouchingam Mefire, is also rooted in a profound academic and intellectual relationship. As co-supervisor of her doctoral thesis in anthropology — alongside Professor Emeritus Gilles Bibeau — Dr. Jean-Michel Vidal played a decisive role in shaping a critical perspective grounded in diasporic realities. Together, they contributed to a process of intellectual and personal transformation, which she now shares as a life testimony, describing it as a decolonization of her mind and the ultimate culmination of her immigration journey to Canada — a defining stage in her migratory and identity pathway.",
+            "Through his role within the Council of Elders, Dr. Jean-Michel Vidal embodies a living memory, intellectual rigor, and a rare ability to connect academic knowledge with human experience. More than simple \"drivers,\" he and his peers act as conveyors of consciousness, accompanying individual and collective journeys toward a more just, freer, and more grounded understanding of self and the world."
+          ],
+          achievements: [
+            { icon: GraduationCap, title: "Université de Montréal", description: "Associate Professor of Anthropology, recipient of an excellence in teaching award" },
+            { icon: HandHeart, title: "Hôpital Jean-Talon", description: "Co-therapist at the Transcultural Psychiatry Clinic" },
+            { icon: BookOpen, title: "Author & Researcher", description: "Publications in medical anthropology and books including Voyage dans le monde de l'adolescence" },
+            { icon: ScrollText, title: "Council of Elders", description: "Advisor, expertise in transcultural health and medical anthropology" }
+          ],
+          quote: "A conveyor of consciousness, connecting academic knowledge and human experience in service of a more just understanding of self and the world."
         }
       ]
     }
