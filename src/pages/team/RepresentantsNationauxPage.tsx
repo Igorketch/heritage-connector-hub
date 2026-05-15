@@ -10,9 +10,9 @@ import { SEO } from '@/components/SEO';
 const RepresentantsNationauxPage = () => {
   const { language, t } = useLanguage();
   const categories = representantsData[language];
-  const [activeTab, setActiveTab] = useState('bamoun');
+  const [activeTab, setActiveTab] = useState<string | null>(null);
 
-  const activeCategory = categories.find(c => c.id === activeTab);
+  const activeCategory = activeTab ? categories.find(c => c.id === activeTab) : null;
 
   return (
     <PageLayout>
@@ -60,8 +60,12 @@ const RepresentantsNationauxPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            {activeCategory && (
+            {activeCategory ? (
               <TeamThumbnailGrid members={activeCategory.members} basePath="/team/representants-nationaux" />
+            ) : (
+              <p className="text-center text-heritage-cream/60 italic py-12">
+                {language === 'fr' ? "Sélectionnez une identité pour afficher les représentants." : "Select an identity to display the representatives."}
+              </p>
             )}
           </motion.div>
         </div>
