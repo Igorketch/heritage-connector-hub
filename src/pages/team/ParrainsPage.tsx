@@ -245,21 +245,13 @@ const ParrainsPage = () => {
           )}
 
           {/* Sub-category Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveTab(activeTab === cat.id ? null : cat.id)}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
-                  activeTab === cat.id
-                    ? 'bg-heritage-gold text-heritage-earth border-heritage-gold shadow-lg shadow-heritage-gold/20'
-                    : 'bg-heritage-earth/50 text-heritage-cream/70 border-heritage-gold/30 hover:border-heritage-gold/60 hover:text-heritage-cream'
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
+          <IdentityTabs
+            tabs={categories.map(c => ({ id: c.id, label: c.label }))}
+            activeTab={activeTab}
+            onChange={(id) => setActiveTab(activeTab === id ? null : id)}
+            ariaLabel={language === 'fr' ? 'Identités du Haut Patronage Royal et Traditionnel' : 'High Royal and Traditional Patronage identities'}
+            panelId="parrains-panel"
+          />
 
           {/* Patrons Content */}
           {activeTab && activeCategory && (
