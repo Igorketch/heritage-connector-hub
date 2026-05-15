@@ -42,12 +42,18 @@ export const TeamThumbnailGrid = ({ members, basePath }: TeamThumbnailGridProps)
           className="group text-center focus:outline-none flex flex-col items-center"
         >
           <div className="relative w-44 h-44 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 mx-auto mb-4 rounded-full overflow-hidden border-[3px] border-heritage-gold/30 transition-all duration-500 shadow-lg group-hover:border-heritage-gold group-hover:shadow-heritage-gold/30 group-hover:shadow-xl">
-            <img
-              src={member.portrait}
-              alt={member.name}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              style={{ objectPosition: member.portraitPosition || 'top' }}
-            />
+            {member.portrait ? (
+              <img
+                src={member.portrait}
+                alt={member.name}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                style={{ objectPosition: member.portraitPosition || 'top' }}
+              />
+            ) : (
+              <div className="w-full h-full bg-heritage-earth/80 flex items-center justify-center">
+                <span className="text-5xl font-display text-heritage-gold/40">{member.name.charAt(0)}</span>
+              </div>
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-heritage-earth/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
           <h4 className="font-display font-semibold text-heritage-cream text-base sm:text-sm md:text-base leading-tight max-w-[220px] sm:max-w-[160px] mx-auto">
