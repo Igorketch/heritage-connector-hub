@@ -1,18 +1,18 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Building2, UserPlus } from 'lucide-react';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { conseilMembers, conseilPlaceholder } from '@/data/conseilAdministrationData';
+import { useTeamMembers } from '@/hooks/useTeamMembers';
 import { SEO } from '@/components/SEO';
 
 const ConseilAdministrationPage = () => {
   const { language, t } = useLanguage();
-  const members = conseilMembers[language];
+  const { members: dbMembers, hasData } = useTeamMembers('conseil');
+  const members = hasData ? dbMembers : conseilMembers[language];
   const placeholder = conseilPlaceholder[language];
 
-  // Insert placeholder after index 2 (after Charlotte Wirsiy)
   const membersBeforePlaceholder = members.slice(0, 3);
   const membersAfterPlaceholder = members.slice(3);
 
@@ -41,7 +41,6 @@ const ConseilAdministrationPage = () => {
 
           <TeamThumbnailGrid members={membersBeforePlaceholder} basePath="/team/conseil-administration" />
 
-          {/* Bafia Placeholder */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

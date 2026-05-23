@@ -6,12 +6,22 @@ import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { IdentityTabs } from '@/components/team/IdentityTabs';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { representantsData } from '@/data/representantsNationauxData';
+import { useTeamMembers } from '@/hooks/useTeamMembers';
 import { SEO } from '@/components/SEO';
 
 const RepresentantsNationauxPage = () => {
   const { language, t } = useLanguage();
-  const categories = representantsData[language];
+  const staticCategories = representantsData[language];
+  const { members, hasData } = useTeamMembers('representants');
   const [activeTab, setActiveTab] = useState<string | null>(null);
+
+  const categories = hasData
+    ? [
+        { id: 'bamoun', label: 'Bamoun', members: members.filter(m => (m as any).ethnic_group === 'bamoun') },
+        { id: 'nso', label: "Nso'", members: members.filter(m => (m as any).ethnic_group === 'nso') },
+        { id: 'bafia', label: 'Bafia', members: members.filter(m => (m as any).ethnic_group === 'bafia') },
+      ]
+    : staticCategories;
 
   const activeCategory = activeTab ? categories.find(c => c.id === activeTab) : null;
 

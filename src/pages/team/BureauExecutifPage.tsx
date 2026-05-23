@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import { Briefcase } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { bureauData } from '@/data/bureauExecutifData';
+import { useTeamMembers } from '@/hooks/useTeamMembers';
 import { SEO } from '@/components/SEO';
 
 const BureauExecutifPage = () => {
   const { language, t } = useLanguage();
-  const bureauExecutif = bureauData[language];
+  const { members, hasData } = useTeamMembers('bureau');
+  const displayMembers = hasData ? members : bureauData[language];
 
   return (
     <PageLayout>
@@ -34,7 +35,7 @@ const BureauExecutifPage = () => {
             </p>
           </motion.div>
 
-          <TeamThumbnailGrid members={bureauExecutif} basePath="/team/bureau-executif" />
+          <TeamThumbnailGrid members={displayMembers} basePath="/team/bureau-executif" />
         </div>
       </section>
     </PageLayout>

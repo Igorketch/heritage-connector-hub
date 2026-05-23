@@ -6,12 +6,25 @@ import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { IdentityTabs } from '@/components/team/IdentityTabs';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { sagesData } from '@/data/comiteSagesData';
+import { useTeamMembers } from '@/hooks/useTeamMembers';
 import { SEO } from '@/components/SEO';
 
 const ComiteSagesPage = () => {
   const { language, t } = useLanguage();
-  const categories = sagesData[language];
+  const staticCategories = sagesData[language];
+  const { members, hasData } = useTeamMembers('sages');
   const [activeTab, setActiveTab] = useState<string | null>(null);
+
+  // Build categories from DB if available, else use static
+  const SPECIAL_LABEL = language === 'fr' ? 'Conseil consultatif spécial international' : 'Special International Advisory Board';
+  const categories = hasData
+    ? [
+        { id: 'bamoun', label: 'Bamoun', members: members.filter(m => (m as any).ethnic_group === 'bamoun') },
+        { id: 'nso', label: "Nso'", members: members.filter(m => (m as any).ethnic_group === 'nso') },
+        { id: 'bafia', label: 'Bafia', members: members.filter(m => (m as any).ethnic_group === 'bafia') },
+        { id: 'special', label: SPECIAL_LABEL, members: members.filter(m => (m as any).ethnic_group === 'autre') },
+      ]
+    : staticCategories;
 
   const activeCategory = activeTab ? categories.find(c => c.id === activeTab) : null;
 
