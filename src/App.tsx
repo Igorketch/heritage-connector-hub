@@ -5,6 +5,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { AuthProvider } from "@/hooks/useAuth";
+import AuthPage from "./pages/AuthPage";
+import { AdminLayout } from "@/components/admin/AdminLayout";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import UsersPage from "./pages/admin/UsersPage";
+import SettingsPage from "./pages/admin/SettingsPage";
+import { PlaceholderPage } from "./pages/admin/PlaceholderPage";
 import Index from "./pages/Index";
 import ContextPage from "./pages/ContextPage";
 import PeoplesPage from "./pages/PeoplesPage";
@@ -40,9 +47,21 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <AuthProvider>
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/auth" element={<AuthPage />} />
+              <Route path="/admin" element={<AdminLayout />}>
+                <Route index element={<AdminDashboard />} />
+                <Route path="pages" element={<PlaceholderPage title="Gestion des pages" description="Modifier les contenus des pages publiques." />} />
+                <Route path="members" element={<PlaceholderPage title="Gestion des membres" description="Parrains, conseil, bureau, représentants, comité des sages." />} />
+                <Route path="publications" element={<PlaceholderPage title="Gestion des publications" description="Articles, thèses et documents." />} />
+                <Route path="events" element={<PlaceholderPage title="Gestion des événements" description="Événements à venir et passés." />} />
+                <Route path="media" element={<PlaceholderPage title="Gestion des médias" description="Galerie photo et fichiers multimédias." />} />
+                <Route path="users" element={<UsersPage />} />
+                <Route path="settings" element={<SettingsPage />} />
+              </Route>
               <Route path="/context" element={<ContextPage />} />
               <Route path="/peoples" element={<PeoplesPage />} />
               <Route path="/values" element={<ValuesPage />} />
@@ -70,6 +89,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
+          </AuthProvider>
         </BrowserRouter>
       </LanguageProvider>
     </TooltipProvider>
