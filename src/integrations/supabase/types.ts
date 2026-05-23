@@ -41,6 +41,69 @@ export type Database = {
         }
         Relationships: []
       }
+      team_members: {
+        Row: {
+          achievements: Json
+          bio_en: Json
+          bio_fr: Json
+          category: Database["public"]["Enums"]["team_category"]
+          created_at: string
+          display_order: number
+          ethnic_group: Database["public"]["Enums"]["ethnic_group"]
+          id: string
+          is_visible: boolean
+          name: string
+          portrait_position: string | null
+          portrait_url: string | null
+          quote_en: string | null
+          quote_fr: string | null
+          role_en: string | null
+          role_fr: string | null
+          slug: string
+          updated_at: string
+        }
+        Insert: {
+          achievements?: Json
+          bio_en?: Json
+          bio_fr?: Json
+          category: Database["public"]["Enums"]["team_category"]
+          created_at?: string
+          display_order?: number
+          ethnic_group?: Database["public"]["Enums"]["ethnic_group"]
+          id?: string
+          is_visible?: boolean
+          name: string
+          portrait_position?: string | null
+          portrait_url?: string | null
+          quote_en?: string | null
+          quote_fr?: string | null
+          role_en?: string | null
+          role_fr?: string | null
+          slug: string
+          updated_at?: string
+        }
+        Update: {
+          achievements?: Json
+          bio_en?: Json
+          bio_fr?: Json
+          category?: Database["public"]["Enums"]["team_category"]
+          created_at?: string
+          display_order?: number
+          ethnic_group?: Database["public"]["Enums"]["ethnic_group"]
+          id?: string
+          is_visible?: boolean
+          name?: string
+          portrait_position?: string | null
+          portrait_url?: string | null
+          quote_en?: string | null
+          quote_fr?: string | null
+          role_en?: string | null
+          role_fr?: string | null
+          slug?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
@@ -77,6 +140,14 @@ export type Database = {
     }
     Enums: {
       app_role: "admin" | "editor" | "user"
+      ethnic_group: "bamoun" | "nso" | "bafia" | "autre"
+      team_category:
+        | "bureau"
+        | "conseil"
+        | "sages"
+        | "representants"
+        | "parrains"
+        | "honneur"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -205,6 +276,15 @@ export const Constants = {
   public: {
     Enums: {
       app_role: ["admin", "editor", "user"],
+      ethnic_group: ["bamoun", "nso", "bafia", "autre"],
+      team_category: [
+        "bureau",
+        "conseil",
+        "sages",
+        "representants",
+        "parrains",
+        "honneur",
+      ],
     },
   },
 } as const
