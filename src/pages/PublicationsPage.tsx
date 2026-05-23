@@ -21,6 +21,16 @@ const PublicationsPage = () => {
 
   const publications: Publication[] = [
     {
+      title: t('publications.nso_gender_title'),
+      author: 'Fengai Fortibui, Florence Fonka',
+      year: '2025',
+      type: t('publications.type_article'),
+      institution: 'International Mandjara Heritage',
+      description: t('publications.nso_gender_desc'),
+      fileUrl: '/documents/yaah-florence-manjara-gender-values-nso-society.pdf',
+      fileName: 'yaah-florence-manjara-gender-values-nso-society.pdf',
+    },
+    {
       title: 'Politiques publiques, programmes et projets sensibles au genre : cas de la communauté Mandjara au Cameroun',
       author: 'Laurentine Mouchingam Mefire',
       year: '2016',
