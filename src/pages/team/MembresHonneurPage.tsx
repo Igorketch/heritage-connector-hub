@@ -4,11 +4,13 @@ import { PageLayout } from '@/components/PageLayout';
 import { TeamThumbnailGrid } from '@/components/team/TeamThumbnailGrid';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { membresHonneurData } from '@/data/membresHonneurData';
+import { useTeamMembers } from '@/hooks/useTeamMembers';
 import { SEO } from '@/components/SEO';
 
 const MembresHonneurPage = () => {
   const { language, t } = useLanguage();
-  const members = membresHonneurData[language];
+  const { members: dbMembers, hasData } = useTeamMembers('honneur');
+  const members = hasData ? dbMembers : membresHonneurData[language];
 
   return (
     <PageLayout>
