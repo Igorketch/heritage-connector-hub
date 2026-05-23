@@ -9,19 +9,29 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Plus, Pencil, Trash2, ArrowUp, ArrowDown, Upload, Loader2 } from 'lucide-react';
+import { Plus, Pencil, Trash2, ArrowUp, ArrowDown, Upload, Loader2, Download, X } from 'lucide-react';
 import { toast } from 'sonner';
+import { ICON_NAMES } from '@/lib/teamIcons';
+import { importStaticTeamData } from '@/lib/importTeamData';
 
 type Category = 'bureau' | 'conseil' | 'sages' | 'representants' | 'parrains' | 'honneur';
 type Ethnic = 'bamoun' | 'nso' | 'bafia' | 'autre';
 
+interface AchievementItem {
+  icon: string;
+  title_fr?: string;
+  title_en?: string;
+  description_fr?: string;
+  description_en?: string;
+}
+
 const CATEGORY_LABELS: Record<Category, string> = {
   bureau: 'Bureau exécutif',
-  conseil: 'Conseil d\'administration',
+  conseil: "Conseil d'administration",
   sages: 'Comité des sages',
   representants: 'Représentants nationaux',
   parrains: 'Parrains',
-  honneur: 'Membres d\'honneur',
+  honneur: "Membres d'honneur",
 };
 
 interface TeamMember {
@@ -36,6 +46,7 @@ interface TeamMember {
   bio_en: string[];
   quote_fr: string | null;
   quote_en: string | null;
+  achievements: AchievementItem[];
   portrait_url: string | null;
   portrait_position: string | null;
   display_order: number;
@@ -53,6 +64,7 @@ const emptyMember = (category: Category): Partial<TeamMember> => ({
   bio_en: [],
   quote_fr: '',
   quote_en: '',
+  achievements: [],
   portrait_url: '',
   portrait_position: 'top',
   display_order: 0,
@@ -70,6 +82,7 @@ const MembersPage = () => {
   const [editing, setEditing] = useState<Partial<TeamMember> | null>(null);
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [importing, setImporting] = useState(false);
 
   const fetchMembers = async () => {
     setLoading(true);
@@ -131,16 +144,65 @@ const MembersPage = () => {
     toast.success('Photo téléversée');
   };
 
+  const handleImport = async () => {
+    if (!confirm('Importer toutes les données existantes (Bureau, Conseil, Sages, Représentants, Honneur) dans la base ? Les membres existants seront ignorés.')) return;
+    setImporting(true);
+    try {
+      const result = await importStaticTeamData();
+      toast.success(`${result.inserted} membres importés, ${result.skipped} ignorés.`);
+      if (result.errors.length) {
+        console.warn('Erreurs d\'import:', result.errors);
+        toast.warning(`${result.errors.length} erreurs (voir console)`);
+      }
+      fetchMembers();
+    } catch (e: any) {
+      toast.error(e?.message || 'Erreur d\'import');
+    } finally {
+      setImporting(false);
+    }
+  };
+
+  const updateAchievement = (idx: number, patch: Partial<AchievementItem>) => {
+    setEditing(prev => {
+      if (!prev) return prev;
+      const list = [...(prev.achievements || [])];
+      list[idx] = { ...list[idx], ...patch };
+      return { ...prev, achievements: list };
+    });
+  };
+
+  const addAchievement = () => {
+    setEditing(prev => prev ? {
+      ...prev,
+      achievements: [...(prev.achievements || []), { icon: 'Award', title_fr: '', title_en: '', description_fr: '', description_en: '' }],
+    } : prev);
+  };
+
+  const removeAchievement = (idx: number) => {
+    setEditing(prev => {
+      if (!prev) return prev;
+      const list = [...(prev.achievements || [])];
+      list.splice(idx, 1);
+      return { ...prev, achievements: list };
+    });
+  };
+
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-6 gap-4 flex-wrap">
         <div>
           <h2 className="font-serif text-3xl font-bold">Gestion des membres</h2>
           <p className="text-muted-foreground">Créez et organisez les membres par catégorie.</p>
         </div>
-        <Button onClick={() => setEditing(emptyMember(category))}>
-          <Plus className="w-4 h-4 mr-2" /> Nouveau membre
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" onClick={handleImport} disabled={importing}>
+            {importing ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Download className="w-4 h-4 mr-2" />}
+            Importer les données existantes
+          </Button>
+          <Button onClick={() => setEditing(emptyMember(category))}>
+            <Plus className="w-4 h-4 mr-2" /> Nouveau membre
+          </Button>
+        </div>
       </div>
 
       <Tabs value={category} onValueChange={(v) => setCategory(v as Category)}>
@@ -270,6 +332,39 @@ const MembersPage = () => {
                 <div>
                   <Label>Citation EN</Label>
                   <Textarea rows={2} value={editing.quote_en || ''} onChange={(e) => setEditing({ ...editing, quote_en: e.target.value })} />
+                </div>
+              </div>
+
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <Label>Réalisations / Achievements</Label>
+                  <Button type="button" variant="outline" size="sm" onClick={addAchievement}>
+                    <Plus className="w-3 h-3 mr-1" /> Ajouter
+                  </Button>
+                </div>
+                <div className="space-y-3">
+                  {(editing.achievements || []).map((a, idx) => (
+                    <Card key={idx} className="p-3 space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Select value={a.icon} onValueChange={(v) => updateAchievement(idx, { icon: v })}>
+                          <SelectTrigger className="w-40"><SelectValue /></SelectTrigger>
+                          <SelectContent className="max-h-60">
+                            {ICON_NAMES.map(n => <SelectItem key={n} value={n}>{n}</SelectItem>)}
+                          </SelectContent>
+                        </Select>
+                        <div className="flex-1" />
+                        <Button type="button" variant="ghost" size="icon" onClick={() => removeAchievement(idx)}>
+                          <X className="w-4 h-4 text-destructive" />
+                        </Button>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2">
+                        <Input placeholder="Titre FR" value={a.title_fr || ''} onChange={e => updateAchievement(idx, { title_fr: e.target.value })} />
+                        <Input placeholder="Title EN" value={a.title_en || ''} onChange={e => updateAchievement(idx, { title_en: e.target.value })} />
+                        <Textarea rows={2} placeholder="Description FR" value={a.description_fr || ''} onChange={e => updateAchievement(idx, { description_fr: e.target.value })} />
+                        <Textarea rows={2} placeholder="Description EN" value={a.description_en || ''} onChange={e => updateAchievement(idx, { description_en: e.target.value })} />
+                      </div>
+                    </Card>
+                  ))}
                 </div>
               </div>
 
