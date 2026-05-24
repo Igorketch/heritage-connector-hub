@@ -14,6 +14,105 @@ export type Database = {
   }
   public: {
     Tables: {
+      events: {
+        Row: {
+          cover_url: string | null
+          created_at: string
+          description_en: string | null
+          description_fr: string | null
+          display_order: number
+          end_date: string | null
+          external_url: string | null
+          id: string
+          is_visible: boolean
+          location: string | null
+          slug: string
+          start_date: string | null
+          title_en: string | null
+          title_fr: string
+          updated_at: string
+        }
+        Insert: {
+          cover_url?: string | null
+          created_at?: string
+          description_en?: string | null
+          description_fr?: string | null
+          display_order?: number
+          end_date?: string | null
+          external_url?: string | null
+          id?: string
+          is_visible?: boolean
+          location?: string | null
+          slug: string
+          start_date?: string | null
+          title_en?: string | null
+          title_fr: string
+          updated_at?: string
+        }
+        Update: {
+          cover_url?: string | null
+          created_at?: string
+          description_en?: string | null
+          description_fr?: string | null
+          display_order?: number
+          end_date?: string | null
+          external_url?: string | null
+          id?: string
+          is_visible?: boolean
+          location?: string | null
+          slug?: string
+          start_date?: string | null
+          title_en?: string | null
+          title_fr?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      media_items: {
+        Row: {
+          caption_en: string | null
+          caption_fr: string | null
+          created_at: string
+          display_order: number
+          file_url: string
+          id: string
+          is_visible: boolean
+          media_type: Database["public"]["Enums"]["media_type"]
+          thumbnail_url: string | null
+          title_en: string | null
+          title_fr: string | null
+          updated_at: string
+        }
+        Insert: {
+          caption_en?: string | null
+          caption_fr?: string | null
+          created_at?: string
+          display_order?: number
+          file_url: string
+          id?: string
+          is_visible?: boolean
+          media_type?: Database["public"]["Enums"]["media_type"]
+          thumbnail_url?: string | null
+          title_en?: string | null
+          title_fr?: string | null
+          updated_at?: string
+        }
+        Update: {
+          caption_en?: string | null
+          caption_fr?: string | null
+          created_at?: string
+          display_order?: number
+          file_url?: string
+          id?: string
+          is_visible?: boolean
+          media_type?: Database["public"]["Enums"]["media_type"]
+          thumbnail_url?: string | null
+          title_en?: string | null
+          title_fr?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -38,6 +137,60 @@ export type Database = {
           full_name?: string | null
           id?: string
           updated_at?: string
+        }
+        Relationships: []
+      }
+      publications: {
+        Row: {
+          author: string | null
+          cover_url: string | null
+          created_at: string
+          description_en: string | null
+          description_fr: string | null
+          display_order: number
+          file_name: string | null
+          file_url: string | null
+          id: string
+          institution: string | null
+          is_visible: boolean
+          pub_type: Database["public"]["Enums"]["publication_type"]
+          title: string
+          updated_at: string
+          year: string | null
+        }
+        Insert: {
+          author?: string | null
+          cover_url?: string | null
+          created_at?: string
+          description_en?: string | null
+          description_fr?: string | null
+          display_order?: number
+          file_name?: string | null
+          file_url?: string | null
+          id?: string
+          institution?: string | null
+          is_visible?: boolean
+          pub_type?: Database["public"]["Enums"]["publication_type"]
+          title: string
+          updated_at?: string
+          year?: string | null
+        }
+        Update: {
+          author?: string | null
+          cover_url?: string | null
+          created_at?: string
+          description_en?: string | null
+          description_fr?: string | null
+          display_order?: number
+          file_name?: string | null
+          file_url?: string | null
+          id?: string
+          institution?: string | null
+          is_visible?: boolean
+          pub_type?: Database["public"]["Enums"]["publication_type"]
+          title?: string
+          updated_at?: string
+          year?: string | null
         }
         Relationships: []
       }
@@ -141,6 +294,8 @@ export type Database = {
     Enums: {
       app_role: "admin" | "editor" | "user"
       ethnic_group: "bamoun" | "nso" | "bafia" | "autre"
+      media_type: "image" | "video"
+      publication_type: "article" | "thesis" | "book" | "report" | "other"
       team_category:
         | "bureau"
         | "conseil"
@@ -277,6 +432,8 @@ export const Constants = {
     Enums: {
       app_role: ["admin", "editor", "user"],
       ethnic_group: ["bamoun", "nso", "bafia", "autre"],
+      media_type: ["image", "video"],
+      publication_type: ["article", "thesis", "book", "report", "other"],
       team_category: [
         "bureau",
         "conseil",
