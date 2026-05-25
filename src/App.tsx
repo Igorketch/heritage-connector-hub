@@ -13,6 +13,9 @@ import UsersPage from "./pages/admin/UsersPage";
 import SettingsPage from "./pages/admin/SettingsPage";
 import { PlaceholderPage } from "./pages/admin/PlaceholderPage";
 import MembersPage from "./pages/admin/MembersPage";
+import AdminPublicationsPage from "./pages/admin/PublicationsPage";
+import AdminEventsPage from "./pages/admin/EventsPage";
+import AdminMediaPage from "./pages/admin/MediaPage";
 import Index from "./pages/Index";
 import ContextPage from "./pages/ContextPage";
 import PeoplesPage from "./pages/PeoplesPage";
@@ -57,9 +60,9 @@ const App = () => (
                 <Route index element={<AdminDashboard />} />
                 <Route path="pages" element={<PlaceholderPage title="Gestion des pages" description="Modifier les contenus des pages publiques." />} />
                 <Route path="members" element={<MembersPage />} />
-                <Route path="publications" element={<PlaceholderPage title="Gestion des publications" description="Articles, thèses et documents." />} />
-                <Route path="events" element={<PlaceholderPage title="Gestion des événements" description="Événements à venir et passés." />} />
-                <Route path="media" element={<PlaceholderPage title="Gestion des médias" description="Galerie photo et fichiers multimédias." />} />
+                <Route path="publications" element={<AdminPublicationsPage />} />
+                <Route path="events" element={<AdminEventsPage />} />
+                <Route path="media" element={<AdminMediaPage />} />
                 <Route path="users" element={<UsersPage />} />
                 <Route path="settings" element={<SettingsPage />} />
               </Route>
