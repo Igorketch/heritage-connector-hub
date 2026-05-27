@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useQuery } from '@tanstack/react-query';
 import { PageLayout } from '@/components/PageLayout';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { X } from 'lucide-react';
+import { X, Loader2 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
+import { supabase } from '@/integrations/supabase/client';
 
 import symboleBamoun from '@/assets/galerie/symbole-bamoun.jpg';
 import iconeFondatriceNso from '@/assets/galerie/icone-fondatrice-nso.jpg';
@@ -14,27 +17,80 @@ import queenFlorence from '@/assets/galerie/queen-florence.png';
 import queenMotherEveline from '@/assets/galerie/queen-mother-eveline.png';
 import symboleBafia from '@/assets/galerie/symbole-bafia.png';
 import nguonSpecial from '@/assets/galerie/nguon-special-event.jpg';
-import { SEO } from '@/components/SEO';
 
-const galleryItems = [
-  { src: queenMotherEveline, alt: 'Queen Mother Eveline Kinyuy', category: 'portraits', span: 'row-span-2' },
-  { src: symboleBamoun, alt: 'Symbole des Bamoun', category: 'symboles', span: '' },
-  { src: charlotte, alt: 'Charlotte', category: 'portraits', span: 'row-span-2' },
-  { src: iconeFondatriceNso, alt: 'Icône de la fondatrice Nso', category: 'symboles', span: 'row-span-2' },
-  { src: queenFlorence, alt: 'Queen Florence', category: 'portraits', span: 'row-span-2' },
-  { src: iconeMbam, alt: 'Icône Mbam', category: 'symboles', span: '' },
-  { src: njiNchare, alt: 'Nji Nchare Oumarou', category: 'portraits', span: 'row-span-2' },
-  { src: mamanAbiroko, alt: 'Maman Abiroko', category: 'portraits', span: '' },
-  { src: symboleBafia, alt: 'Symbole des Bafia - Mfombam Yen', category: 'symboles', span: '' },
-  { src: nguonSpecial, alt: 'Journée culturelle Nguon Special - Communauté Bamoun', category: 'symboles', span: '' },
-];
+// Fallback map for legacy entries that reference bundled assets under /src/assets/galerie/
+const BUNDLED_FALLBACKS: Record<string, string> = {
+  'symbole-bamoun.jpg': symboleBamoun,
+  'icone-fondatrice-nso.jpg': iconeFondatriceNso,
+  'icone-mbam.png': iconeMbam,
+  'charlotte.jpg': charlotte,
+  'maman-abiroko.png': mamanAbiroko,
+  'nji-nchare-oumarou.jpg': njiNchare,
+  'queen-florence.png': queenFlorence,
+  'queen-mother-eveline.png': queenMotherEveline,
+  'symbole-bafia.png': symboleBafia,
+  'nguon-special-event.jpg': nguonSpecial,
+};
+
+const resolveUrl = (url: string): string => {
+  if (!url) return url;
+  if (url.startsWith('/src/assets/')) {
+    const name = url.split('/').pop() || '';
+    return BUNDLED_FALLBACKS[name] || url;
+  }
+  return url;
+};
+
+type MediaType = 'image' | 'video';
+
+interface MediaRow {
+  id: string;
+  title_fr: string | null;
+  title_en: string | null;
+  caption_fr: string | null;
+  caption_en: string | null;
+  file_url: string;
+  thumbnail_url: string | null;
+  media_type: MediaType;
+}
+
+// Symboles culturels keywords (used to derive category since DB has no category column)
+const SYMBOL_KEYWORDS = ['symbole', 'icône', 'icone', 'nguon'];
+const inferCategory = (label: string): 'portraits' | 'symboles' => {
+  const l = label.toLowerCase();
+  return SYMBOL_KEYWORDS.some(k => l.includes(k)) ? 'symboles' : 'portraits';
+};
 
 const GaleriePage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [filter, setFilter] = useState<'all' | 'portraits' | 'symboles'>('all');
 
-  const filtered = filter === 'all' ? galleryItems : galleryItems.filter(i => i.category === filter);
+  const { data: items = [], isLoading } = useQuery({
+    queryKey: ['public-media'],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('media_items')
+        .select('id,title_fr,title_en,caption_fr,caption_en,file_url,thumbnail_url,media_type')
+        .eq('is_visible', true)
+        .order('display_order', { ascending: true });
+      if (error) throw error;
+      return (data ?? []) as MediaRow[];
+    },
+  });
+
+  const enriched = items.map((m) => {
+    const label = (language === 'en' ? m.title_en : m.title_fr) || m.title_fr || m.title_en || '';
+    return {
+      id: m.id,
+      src: resolveUrl(m.file_url),
+      alt: label,
+      category: inferCategory(label),
+      type: m.media_type,
+    };
+  });
+
+  const filtered = filter === 'all' ? enriched : enriched.filter(i => i.category === filter);
 
   return (
     <PageLayout>
@@ -84,6 +140,18 @@ const GaleriePage = () => {
             ))}
           </div>
 
+          {isLoading && (
+            <div className="flex justify-center py-20">
+              <Loader2 className="w-8 h-8 animate-spin text-heritage-gold" />
+            </div>
+          )}
+
+          {!isLoading && filtered.length === 0 && (
+            <p className="text-center text-muted-foreground italic py-12">
+              {t('publications.coming_soon')}
+            </p>
+          )}
+
           {/* Masonry grid */}
           <motion.div
             layout
@@ -92,7 +160,7 @@ const GaleriePage = () => {
             <AnimatePresence mode="popLayout">
               {filtered.map((item, index) => (
                 <motion.div
-                  key={item.alt}
+                  key={item.id}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
