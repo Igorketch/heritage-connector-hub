@@ -1,9 +1,42 @@
-import { Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet, Navigate } from 'react-router-dom';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { AdminSidebar } from './AdminSidebar';
 import { RequireAdmin } from './RequireAdmin';
+import { supabase } from '@/integrations/supabase/client';
+import { Loader2 } from 'lucide-react';
+
+const RESET_FLAG = 'admin_session_reset_v1';
 
 export const AdminLayout = () => {
+  const [resetting, setResetting] = useState(() => !localStorage.getItem(RESET_FLAG));
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    if (!resetting) return;
+    (async () => {
+      try {
+        await supabase.auth.signOut();
+        Object.keys(localStorage)
+          .filter((k) => k.startsWith('sb-') || k.includes('supabase'))
+          .forEach((k) => localStorage.removeItem(k));
+      } catch {}
+      localStorage.setItem(RESET_FLAG, '1');
+      setResetting(false);
+      setDone(true);
+    })();
+  }, [resetting]);
+
+  if (resetting) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-heritage-gold" />
+      </div>
+    );
+  }
+
+  if (done) return <Navigate to="/auth" replace />;
+
   return (
     <RequireAdmin>
       <SidebarProvider>
