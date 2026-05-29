@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { supabase } from '@/integrations/supabase/client';
 
 export type Language = 'fr' | 'en';
 
@@ -6,6 +7,9 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  defaultT: (key: string, lang?: Language) => string;
+  overrides: Record<Language, Record<string, string>>;
+  refreshOverrides: () => Promise<void>;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -729,6 +733,18 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     const saved = localStorage.getItem('imh-language');
     return (saved === 'en' || saved === 'fr') ? saved : 'fr';
   });
+  const [overrides, setOverrides] = useState<Record<Language, Record<string, string>>>({ fr: {}, en: {} });
+
+  const refreshOverrides = async () => {
+    const { data } = await supabase.from('content_overrides').select('key, lang, value');
+    const next: Record<Language, Record<string, string>> = { fr: {}, en: {} };
+    (data ?? []).forEach((r: any) => {
+      if (r.lang === 'fr' || r.lang === 'en') next[r.lang as Language][r.key] = r.value;
+    });
+    setOverrides(next);
+  };
+
+  useEffect(() => { refreshOverrides(); }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
@@ -736,12 +752,25 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    return overrides[language][key] ?? translations[language][key] ?? key;
+  };
+
+  const defaultT = (key: string, lang: Language = language): string => {
+    return translations[lang][key] ?? key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t, defaultT, overrides, refreshOverrides }}>
       {children}
     </LanguageContext.Provider>
   );
 };
+
+export const getAllTranslationKeys = (): string[] => {
+  const keys = new Set<string>();
+  Object.keys(translations.fr).forEach((k) => keys.add(k));
+  Object.keys(translations.en).forEach((k) => keys.add(k));
+  return Array.from(keys);
+};
+
+export const getDefaultTranslations = () => translations;
