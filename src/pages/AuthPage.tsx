@@ -27,6 +27,16 @@ const AuthPage = () => {
   const [fullName, setFullName] = useState('');
 
   useEffect(() => {
+    // Réinitialise toute session existante à l'arrivée sur la page
+    supabase.auth.signOut().catch(() => {});
+    try {
+      Object.keys(localStorage)
+        .filter((k) => k.startsWith('sb-') || k.includes('supabase'))
+        .forEach((k) => localStorage.removeItem(k));
+    } catch {}
+  }, []);
+
+  useEffect(() => {
     if (!loading && session) navigate('/admin', { replace: true });
   }, [session, loading, navigate]);
 
