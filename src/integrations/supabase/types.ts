@@ -14,6 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
+      content_overrides: {
+        Row: {
+          created_at: string
+          id: string
+          key: string
+          lang: string
+          updated_at: string
+          value: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          key: string
+          lang: string
+          updated_at?: string
+          value: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          key?: string
+          lang?: string
+          updated_at?: string
+          value?: string
+        }
+        Relationships: []
+      }
       events: {
         Row: {
           cover_url: string | null
