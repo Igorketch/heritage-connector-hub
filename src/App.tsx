@@ -11,7 +11,7 @@ import { AdminLayout } from "@/components/admin/AdminLayout";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import UsersPage from "./pages/admin/UsersPage";
 import SettingsPage from "./pages/admin/SettingsPage";
-import { PlaceholderPage } from "./pages/admin/PlaceholderPage";
+import PagesPage from "./pages/admin/PagesPage";
 import MembersPage from "./pages/admin/MembersPage";
 import AdminPublicationsPage from "./pages/admin/PublicationsPage";
 import AdminEventsPage from "./pages/admin/EventsPage";
@@ -58,7 +58,7 @@ const App = () => (
               <Route path="/auth" element={<AuthPage />} />
               <Route path="/admin" element={<AdminLayout />}>
                 <Route index element={<AdminDashboard />} />
-                <Route path="pages" element={<PlaceholderPage title="Gestion des pages" description="Modifier les contenus des pages publiques." />} />
+                <Route path="pages" element={<PagesPage />} />
                 <Route path="members" element={<MembersPage />} />
                 <Route path="publications" element={<AdminPublicationsPage />} />
                 <Route path="events" element={<AdminEventsPage />} />
