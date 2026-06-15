@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import mandjaraLogo from '@/assets/mandjara-logo.png';
+import newLogo from '@/assets/New_Logo_White.png.asset.json';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
@@ -81,7 +81,7 @@ export const Header = () => {
             <div className="relative -my-3">
               <img
                 alt="International Mandjara Heritage"
-                src={mandjaraLogo}
+                src={newLogo.url}
                 className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 2xl:h-28 w-auto aspect-square object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
               />
             </div>
