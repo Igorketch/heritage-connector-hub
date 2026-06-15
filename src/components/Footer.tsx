@@ -42,7 +42,7 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <img
-                src={mandjaraLogo}
+                src={newLogo.url}
                 alt="International Mandjara Heritage"
                 className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto aspect-square object-contain"
               />

@@ -81,7 +81,7 @@ export const Header = () => {
             <div className="relative -my-3">
               <img
                 alt="International Mandjara Heritage"
-                src={mandjaraLogo}
+                src={newLogo.url}
                 className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 2xl:h-28 w-auto aspect-square object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
               />
             </div>
