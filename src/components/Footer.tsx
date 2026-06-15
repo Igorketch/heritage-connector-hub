@@ -1,7 +1,7 @@
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
-import mandjaraLogo from '@/assets/mandjara-logo.png';
+import newLogo from '@/assets/New_Logo_White.png.asset.json';
 
 export const Footer = () => {
   const { t } = useLanguage();
